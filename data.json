@@ -1,17 +1,17 @@
 {
- "asOf": "2026-10-06T21:42:38.701Z",
+ "asOf": "2026-10-06T23:34:39.111Z",
  "goal": 150179,
  "month": "October 2026",
- "pace": 29212,
- "sold": 14022,
+ "pace": 29580,
+ "sold": 14439,
  "teams": [
   {
    "name": "Pro Shop",
-   "pace": 12853,
+   "pace": 13015,
    "people": [
     {
      "all": 3029,
-     "byToday": 4284,
+     "byToday": 4338,
      "goal": 22026,
      "name": "Lucia N.",
      "today": 0,
@@ -19,7 +19,7 @@
     },
     {
      "all": 1667,
-     "byToday": 4284,
+     "byToday": 4338,
      "goal": 22026,
      "name": "Jim D.",
      "today": 0,
@@ -27,31 +27,39 @@
     },
     {
      "all": 1106,
-     "byToday": 4284,
+     "byToday": 4338,
      "goal": 22026,
      "name": "Sara W.",
      "today": 832,
      "week": 1106
     }
    ],
-   "sold": 5658,
+   "sold": 5762,
    "target": 66079
   },
   {
    "name": "Range & Bar",
-   "pace": 15395,
+   "pace": 15588,
    "people": [
     {
-     "all": 1720,
-     "byToday": 1924,
+     "all": 1825,
+     "byToday": 1949,
      "goal": 9893,
      "name": "Madison M.",
-     "today": 70,
-     "week": 528
+     "today": 174,
+     "week": 632
+    },
+    {
+     "all": 1452,
+     "byToday": 1949,
+     "goal": 9893,
+     "name": "Ariana H.",
+     "today": 373,
+     "week": 373
     },
     {
      "all": 1374,
-     "byToday": 1924,
+     "byToday": 1949,
      "goal": 9893,
      "name": "Campbell W.",
      "today": 225,
@@ -59,23 +67,15 @@
     },
     {
      "all": 1346,
-     "byToday": 1924,
+     "byToday": 1949,
      "goal": 9893,
      "name": "Jalyn B.",
      "today": 0,
      "week": 0
     },
     {
-     "all": 1140,
-     "byToday": 1924,
-     "goal": 9893,
-     "name": "Ariana H.",
-     "today": 60,
-     "week": 60
-    },
-    {
      "all": 868,
-     "byToday": 1924,
+     "byToday": 1949,
      "goal": 9893,
      "name": "Khrystin R.",
      "today": 0,
@@ -83,7 +83,7 @@
     },
     {
      "all": 838,
-     "byToday": 1924,
+     "byToday": 1949,
      "goal": 9893,
      "name": "Chisom N.",
      "today": 0,
@@ -91,7 +91,7 @@
     },
     {
      "all": 616,
-     "byToday": 1924,
+     "byToday": 1949,
      "goal": 9893,
      "name": "Manuela G.",
      "today": 0,
@@ -99,14 +99,14 @@
     },
     {
      "all": 318,
-     "byToday": 1924,
+     "byToday": 1949,
      "goal": 9893,
      "name": "Sarah B.",
      "today": 0,
      "week": 0
     }
    ],
-   "sold": 7756,
+   "sold": 8068,
    "target": 79144
   }
  ]

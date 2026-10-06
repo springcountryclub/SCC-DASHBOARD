@@ -1,113 +1,113 @@
 {
- "month": "October 2026",
+ "asOf": "2026-10-06T21:42:38.701Z",
  "goal": 150179,
- "sold": 13713,
- "pace": 28576,
- "asOf": "2026-10-06T18:28:45.282Z",
+ "month": "October 2026",
+ "pace": 29212,
+ "sold": 14022,
  "teams": [
   {
    "name": "Pro Shop",
-   "sold": 5481,
-   "target": 66079,
-   "pace": 12573,
+   "pace": 12853,
    "people": [
     {
-     "name": "Lucia N.",
      "all": 3029,
-     "today": 0,
-     "week": 0,
+     "byToday": 4284,
      "goal": 22026,
-     "byToday": 4191
+     "name": "Lucia N.",
+     "today": 0,
+     "week": 0
     },
     {
-     "name": "Jim D.",
      "all": 1667,
-     "today": 0,
-     "week": 315,
+     "byToday": 4284,
      "goal": 22026,
-     "byToday": 4191
+     "name": "Jim D.",
+     "today": 0,
+     "week": 315
     },
     {
-     "name": "Sara W.",
-     "all": 998,
-     "today": 725,
-     "week": 998,
+     "all": 1106,
+     "byToday": 4284,
      "goal": 22026,
-     "byToday": 4191
+     "name": "Sara W.",
+     "today": 832,
+     "week": 1106
     }
-   ]
+   ],
+   "sold": 5658,
+   "target": 66079
   },
   {
    "name": "Range & Bar",
-   "sold": 7624,
-   "target": 79144,
-   "pace": 15059,
+   "pace": 15395,
    "people": [
     {
+     "all": 1720,
+     "byToday": 1924,
+     "goal": 9893,
      "name": "Madison M.",
-     "all": 1651,
-     "today": 0,
-     "week": 458,
-     "goal": 9893,
-     "byToday": 1882
+     "today": 70,
+     "week": 528
     },
     {
-     "name": "Jalyn B.",
-     "all": 1346,
-     "today": 0,
-     "week": 0,
+     "all": 1374,
+     "byToday": 1924,
      "goal": 9893,
-     "byToday": 1882
-    },
-    {
      "name": "Campbell W.",
-     "all": 1302,
-     "today": 153,
-     "week": 444,
-     "goal": 9893,
-     "byToday": 1882
+     "today": 225,
+     "week": 516
     },
     {
+     "all": 1346,
+     "byToday": 1924,
+     "goal": 9893,
+     "name": "Jalyn B.",
+     "today": 0,
+     "week": 0
+    },
+    {
+     "all": 1140,
+     "byToday": 1924,
+     "goal": 9893,
      "name": "Ariana H.",
-     "all": 1080,
-     "today": 0,
-     "week": 0,
-     "goal": 9893,
-     "byToday": 1882
+     "today": 60,
+     "week": 60
     },
     {
-     "name": "Khrystin R.",
      "all": 868,
-     "today": 0,
-     "week": 0,
+     "byToday": 1924,
      "goal": 9893,
-     "byToday": 1882
+     "name": "Khrystin R.",
+     "today": 0,
+     "week": 0
     },
     {
-     "name": "Chisom N.",
      "all": 838,
-     "today": 0,
-     "week": 28,
+     "byToday": 1924,
      "goal": 9893,
-     "byToday": 1882
+     "name": "Chisom N.",
+     "today": 0,
+     "week": 28
     },
     {
-     "name": "Manuela G.",
      "all": 616,
-     "today": 0,
-     "week": 0,
+     "byToday": 1924,
      "goal": 9893,
-     "byToday": 1882
+     "name": "Manuela G.",
+     "today": 0,
+     "week": 0
     },
     {
-     "name": "Sarah B.",
      "all": 318,
-     "today": 0,
-     "week": 0,
+     "byToday": 1924,
      "goal": 9893,
-     "byToday": 1882
+     "name": "Sarah B.",
+     "today": 0,
+     "week": 0
     }
-   ]
+   ],
+   "sold": 7756,
+   "target": 79144
   }
  ]
 }

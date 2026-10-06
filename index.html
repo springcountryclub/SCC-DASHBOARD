@@ -43,6 +43,9 @@ header svg{width:40px;height:40px;color:#fff;flex:none}
 .lead{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.14);border-radius:12px;padding:10px 16px}
 .lead svg{width:28px;height:28px;fill:none;stroke:#F2D36B;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex:none}
 .lk{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;opacity:.85}.ln{font-size:18px;font-weight:700}.ls{font-size:12px;opacity:.9}
+.lastupd{margin:16px 0 -6px;font-size:14px;color:var(--fg2);display:flex;align-items:center;gap:8px}
+.lastupd b{color:var(--fg)}.lastupd .dot{width:9px;height:9px;border-radius:50%;background:var(--green);flex:none}
+.lastupd.old .dot{background:#E2B714}
 .team{margin:26px 0 12px}
 .tk{font-size:13px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
 .tt{font-size:22px;font-weight:800;margin-top:2px}.tt span{font-size:14px;font-weight:500;color:var(--fg2)}
@@ -75,6 +78,7 @@ header svg{width:40px;height:40px;color:#fff;flex:none}
   <div class="upd" id="upd">Loading…</div>
 </div></header>
 <main class="wrap">
+  <div class="lastupd" id="lastupd"></div>
   <section class="hero" id="hero"></section>
   <div id="teams"></div>
   <p class="foot">Updates automatically. Every guest: offer one more thing — a cart, a bucket, a drink, food with the drink.</p>
@@ -94,6 +98,10 @@ async function load() {
 }
 function stamp(d) {
   if (!d.asOf) return; const a = new Date(d.asOf), mins = Math.round((Date.now() - a) / 60000);
+  const ago = mins < 1 ? 'just now' : mins < 60 ? mins + ' min ago' : Math.floor(mins / 60) + ' h ' + (mins % 60) + ' min ago';
+  const sameDay = a.toDateString() === new Date().toDateString();
+  $('lastupd').className = 'lastupd' + (mins > 180 ? ' old' : '');
+  $('lastupd').innerHTML = `<span class="dot"></span>Last update: <b>${sameDay ? 'today' : a.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' })} at ${a.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' })}</b> · ${ago}`;
   $('upd').textContent = 'Sales as of ' + a.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' }) + (a.toDateString() !== new Date().toDateString() ? ' · ' + a.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) : '');
 }
 function render(d) {
@@ -121,7 +129,7 @@ function render(d) {
           <div class="sub">${chase} · this week ${fmt(p.week)}</div></div></div>`; }).join('')}`;
   }).join('') || '<p class="empty">No sales by person yet this month.</p>';
 }
-load(); setInterval(load, 2 * 60 * 1000);
+load(); setInterval(load, 2 * 60 * 1000); setInterval(() => { try { stamp(JSON.parse(last)); } catch {} }, 60 * 1000);
 setTimeout(() => location.reload(), 3 * 60 * 60 * 1000);
 </script>
 </body>

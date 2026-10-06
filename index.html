@@ -33,6 +33,12 @@ header svg{width:40px;height:40px;color:#fff;flex:none}
 .hfill{height:100%;border-radius:7px;background:#F2D36B}
 .hmark{position:absolute;top:-5px;bottom:-5px;width:3px;background:#fff;border-radius:2px}
 .hsub{font-size:14px;opacity:.95}
+.hero-grid{display:flex;gap:18px;align-items:stretch;flex-wrap:wrap}.hero-main{flex:1;min-width:260px}
+.today-box{flex:none;min-width:200px;background:rgba(255,255,255,.14);border-radius:12px;padding:14px 18px;display:flex;flex-direction:column;justify-content:center}
+.tb-n{font-size:40px;font-weight:800;line-height:1.05;margin-top:4px}.tb-s{font-size:13px;opacity:.9;margin-top:2px}
+.tb-track{height:8px;border-radius:4px;background:rgba(255,255,255,.2);margin-top:8px}.tb-fill{height:100%;border-radius:4px;background:#F2D36B}
+.tt-today{font-style:normal;font-size:14px;font-weight:700;color:var(--green);background:var(--ltgreen);padding:3px 10px;border-radius:999px;margin-left:8px;vertical-align:3px}
+@media (max-width:600px){.today-box{width:100%}.tb-n{font-size:32px}}
 .team{margin:26px 0 12px}
 .tk{font-size:13px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
 .tt{font-size:22px;font-weight:800;margin-top:2px}.tt span{font-size:14px;font-weight:500;color:var(--fg2)}
@@ -89,14 +95,15 @@ function stamp(d) {
 function render(d) {
   stamp(d);
   const pct = d.pace ? Math.round(d.sold / d.pace * 100) : 0;
-  $('hero').innerHTML = `<div class="k">Road to ${fmt(d.goal)} · ${esc(d.month)}</div>
+  const tday = d.today != null ? `<div class="today-box"><div class="k">Today</div><div class="tb-n">${fmt(d.today)}</div>${d.todayGoal ? `<div class="tb-s">of ${fmt(d.todayGoal)} · ${Math.round(d.today / d.todayGoal * 100)}%</div><div class="tb-track"><div class="tb-fill" style="width:${Math.min(100, d.today / d.todayGoal * 100)}%"></div></div>` : ''}</div>` : '';
+  $('hero').innerHTML = `<div class="hero-grid"><div class="hero-main"><div class="k">Road to ${fmt(d.goal)} · ${esc(d.month)}</div>
     <div class="big"><b>${fmt(d.sold)}</b><span>sold this month · ${Math.round(d.sold / d.goal * 100)}% of the goal</span></div>
     <div class="htrack"><div class="hfill" style="width:${Math.min(100, d.sold / d.goal * 100)}%"></div><div class="hmark" style="left:${Math.min(100, d.pace / d.goal * 100)}%"></div></div>
-    <div class="hsub">We should be at <b>${fmt(d.pace)}</b> by now · the club is at <b>${pct}%</b> of pace</div>`;
+    <div class="hsub">We should be at <b>${fmt(d.pace)}</b> by now · the club is at <b>${pct}%</b> of pace</div></div>${tday}</div>`;
   $('teams').innerHTML = (d.teams || []).map(t => {
     const ps = t.people;
     return `<div class="team"><div class="tk">${esc(t.name)}</div>
-      <div class="tt">${fmt(t.sold)} <span>of ${fmt(t.target)} this month · ${t.pace ? Math.round(t.sold / t.pace * 100) : 0}% of pace</span></div>
+      <div class="tt">${fmt(t.sold)} <span>of ${fmt(t.target)} this month · ${t.pace ? Math.round(t.sold / t.pace * 100) : 0}% of pace</span>${t.today != null ? `<em class="tt-today">${fmt(t.today)} today</em>` : ''}</div>
       <div class="ttrack"><div class="tfill" style="width:${Math.min(100, t.sold / t.target * 100)}%"></div><div class="tmark" style="left:${Math.min(100, t.pace / t.target * 100)}%"></div></div></div>
       ${ps.map((p, i) => {
         const up = ps[i - 1], first = ps[0].name.split(' ')[0];

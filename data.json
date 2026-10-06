@@ -1,0 +1,113 @@
+{
+ "month": "October 2026",
+ "goal": 150179,
+ "sold": 13713,
+ "pace": 28576,
+ "asOf": "2026-10-06T18:28:45.282Z",
+ "teams": [
+  {
+   "name": "Pro Shop",
+   "sold": 5481,
+   "target": 66079,
+   "pace": 12573,
+   "people": [
+    {
+     "name": "Lucia N.",
+     "all": 3029,
+     "today": 0,
+     "week": 0,
+     "goal": 22026,
+     "byToday": 4191
+    },
+    {
+     "name": "Jim D.",
+     "all": 1667,
+     "today": 0,
+     "week": 315,
+     "goal": 22026,
+     "byToday": 4191
+    },
+    {
+     "name": "Sara W.",
+     "all": 998,
+     "today": 725,
+     "week": 998,
+     "goal": 22026,
+     "byToday": 4191
+    }
+   ]
+  },
+  {
+   "name": "Range & Bar",
+   "sold": 7624,
+   "target": 79144,
+   "pace": 15059,
+   "people": [
+    {
+     "name": "Madison M.",
+     "all": 1651,
+     "today": 0,
+     "week": 458,
+     "goal": 9893,
+     "byToday": 1882
+    },
+    {
+     "name": "Jalyn B.",
+     "all": 1346,
+     "today": 0,
+     "week": 0,
+     "goal": 9893,
+     "byToday": 1882
+    },
+    {
+     "name": "Campbell W.",
+     "all": 1302,
+     "today": 153,
+     "week": 444,
+     "goal": 9893,
+     "byToday": 1882
+    },
+    {
+     "name": "Ariana H.",
+     "all": 1080,
+     "today": 0,
+     "week": 0,
+     "goal": 9893,
+     "byToday": 1882
+    },
+    {
+     "name": "Khrystin R.",
+     "all": 868,
+     "today": 0,
+     "week": 0,
+     "goal": 9893,
+     "byToday": 1882
+    },
+    {
+     "name": "Chisom N.",
+     "all": 838,
+     "today": 0,
+     "week": 28,
+     "goal": 9893,
+     "byToday": 1882
+    },
+    {
+     "name": "Manuela G.",
+     "all": 616,
+     "today": 0,
+     "week": 0,
+     "goal": 9893,
+     "byToday": 1882
+    },
+    {
+     "name": "Sarah B.",
+     "all": 318,
+     "today": 0,
+     "week": 0,
+     "goal": 9893,
+     "byToday": 1882
+    }
+   ]
+  }
+ ]
+}

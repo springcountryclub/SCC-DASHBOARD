@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="SCC Board">
+<title>SCC Sales Board</title>
+<link rel="icon" href="logo.svg">
+<link rel="apple-touch-icon" href="logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--header:#5E877A;--accent:#4F7468;--gold:#847D3D;--bg:#F2F2F2;--surface:#fff;--border:#E1E6E4;--fg:#333;--fg2:#5F6663;--fg3:#8A938F;--red:#B5483F;--green:#3F7A57;--ltgreen:#EAF1EE;--ltgold:#F4F1E2;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--header:#3F5F55;--accent:#9BC0B4;--gold:#B3A964;--bg:#1B201F;--surface:#252B29;--border:#36403D;--fg:#ECEFEE;--fg2:#B3BDB9;--fg3:#808B87;--red:#E28A80;--green:#8CC39E;--ltgreen:#22302B;--ltgold:#2E2C1D;color-scheme:dark}}
+*{box-sizing:border-box;margin:0}
+body{font-family:'Kumbh Sans',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--fg);-webkit-font-smoothing:antialiased}
+header{background:var(--header);color:#fff;padding:14px 16px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+header .wrap{display:flex;align-items:center;gap:12px;padding:0}
+header svg{width:40px;height:40px;color:#fff;flex:none}
+.brand b{display:block;letter-spacing:.18em;font-size:14px;font-weight:600;text-transform:uppercase}
+.brand span{font-size:12px;opacity:.85;letter-spacing:.12em;text-transform:uppercase}
+.upd{margin-left:auto;font-size:12px;background:rgba(255,255,255,.16);padding:6px 10px;border-radius:999px;white-space:nowrap}
+.hero{margin:18px auto;padding:20px 22px;border-radius:16px;background:var(--accent);color:#fff}
+@media (prefers-color-scheme:dark){.hero{background:#3F5F55}}
+.k{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;opacity:.85}
+.big{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-top:6px}
+.big b{font-size:44px;font-weight:800;line-height:1}
+.big span{font-size:15px;opacity:.9}
+.htrack{position:relative;height:14px;border-radius:7px;background:rgba(255,255,255,.2);margin:14px 0 8px}
+.hfill{height:100%;border-radius:7px;background:#F2D36B}
+.hmark{position:absolute;top:-5px;bottom:-5px;width:3px;background:#fff;border-radius:2px}
+.hsub{font-size:14px;opacity:.95}
+.team{margin:26px 0 12px}
+.tk{font-size:13px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.tt{font-size:22px;font-weight:800;margin-top:2px}.tt span{font-size:14px;font-weight:500;color:var(--fg2)}
+.ttrack{position:relative;height:10px;border-radius:5px;background:var(--surface);border:1px solid var(--border);margin-top:8px}
+.tfill{height:100%;border-radius:5px;background:var(--gold)}
+.tmark{position:absolute;top:-4px;bottom:-4px;width:2px;background:var(--fg);opacity:.6}
+.rc{display:flex;gap:16px;align-items:center;background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:16px 20px;margin-bottom:12px}
+.rc.first{border:2px solid var(--gold);background:linear-gradient(90deg,var(--ltgold),var(--surface) 60%)}
+.rank{flex:none;width:54px;height:54px;border-radius:50%;display:grid;place-items:center;font-size:24px;font-weight:800;background:var(--bg);color:var(--fg3)}
+.rank.r1{background:#E2B714;color:#fff}.rank.r2{background:#A9B1AE;color:#fff}.rank.r3{background:#B07A4A;color:#fff}
+.body{flex:1;min-width:0;display:flex;flex-direction:column;gap:7px}
+.top{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.name{font-size:26px;font-weight:700;line-height:1.1}
+.amt{margin-left:auto;font-size:34px;font-weight:800;font-variant-numeric:tabular-nums;line-height:1}
+.today{font-size:13px;font-weight:700;color:var(--green);background:var(--ltgreen);padding:3px 9px;border-radius:999px}
+.track{position:relative;height:20px;border-radius:10px;background:var(--bg)}
+.fill{height:100%;border-radius:10px;background:var(--red);min-width:8px;transition:width .6s}
+.fill.ok{background:var(--green)}
+.mark{position:absolute;top:-4px;bottom:-4px;width:2px;background:var(--fg);opacity:.55}
+.sub{font-size:14px;color:var(--fg2)}.sub b{color:var(--fg)}
+.foot{margin:20px auto 40px;font-size:13px;color:var(--fg3);text-align:center}
+.empty{margin:40px 0;text-align:center;color:var(--fg2)}
+@media (max-width:600px){.big b{font-size:34px}.rc{padding:12px 14px;gap:12px}.rank{width:40px;height:40px;font-size:19px}.name{font-size:20px}.amt{font-size:26px}.track{height:14px}.upd{display:none}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <svg viewBox="409 189 205 205" aria-hidden="true"><use href="logo.svg#m"></use></svg>
+  <div class="brand"><b>The Spring Country Club</b><span>Sales Challenge</span></div>
+  <div class="upd" id="upd">Loading…</div>
+</div></header>
+<main class="wrap">
+  <section class="hero" id="hero"></section>
+  <div id="teams"></div>
+  <p class="foot">Updates automatically. Every guest: offer one more thing — a cart, a bucket, a drink, food with the drink.</p>
+</main>
+<script>
+const $ = id => document.getElementById(id);
+const fmt = n => '$' + Math.round(n).toLocaleString('en-US');
+const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+fetch('logo.svg').then(r => r.text()).then(t => { const svg = document.querySelector('header svg'); const m = t.match(/<path[\s\S]*?\/>/g); if (m) svg.innerHTML = m.join(''); svg.setAttribute('fill', 'currentColor'); }).catch(() => {});
+let last = '';
+async function load() {
+  try {
+    const r = await fetch('data.json?t=' + Date.now(), { cache: 'no-store' });
+    const t = await r.text(); if (t === last) { stamp(JSON.parse(t)); return; } last = t;
+    render(JSON.parse(t));
+  } catch { $('upd').textContent = 'Offline — retrying'; }
+}
+function stamp(d) {
+  if (!d.asOf) return; const a = new Date(d.asOf), mins = Math.round((Date.now() - a) / 60000);
+  $('upd').textContent = 'Sales as of ' + a.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' }) + (a.toDateString() !== new Date().toDateString() ? ' · ' + a.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) : '');
+}
+function render(d) {
+  stamp(d);
+  const pct = d.pace ? Math.round(d.sold / d.pace * 100) : 0;
+  $('hero').innerHTML = `<div class="k">Road to ${fmt(d.goal)} · ${esc(d.month)}</div>
+    <div class="big"><b>${fmt(d.sold)}</b><span>sold this month · ${Math.round(d.sold / d.goal * 100)}% of the goal</span></div>
+    <div class="htrack"><div class="hfill" style="width:${Math.min(100, d.sold / d.goal * 100)}%"></div><div class="hmark" style="left:${Math.min(100, d.pace / d.goal * 100)}%"></div></div>
+    <div class="hsub">We should be at <b>${fmt(d.pace)}</b> by now · the club is at <b>${pct}%</b> of pace</div>`;
+  $('teams').innerHTML = (d.teams || []).map(t => {
+    const ps = t.people;
+    return `<div class="team"><div class="tk">${esc(t.name)}</div>
+      <div class="tt">${fmt(t.sold)} <span>of ${fmt(t.target)} this month · ${t.pace ? Math.round(t.sold / t.pace * 100) : 0}% of pace</span></div>
+      <div class="ttrack"><div class="tfill" style="width:${Math.min(100, t.sold / t.target * 100)}%"></div><div class="tmark" style="left:${Math.min(100, t.pace / t.target * 100)}%"></div></div></div>
+      ${ps.map((p, i) => {
+        const up = ps[i - 1], first = ps[0].name.split(' ')[0];
+        const chase = i === 0 ? (ps[1] ? `<b>${fmt(p.all - ps[1].all)} ahead</b> of ${esc(ps[1].name.split(' ')[0])} — keep pushing` : 'Leading')
+          : `<b>${fmt(up.all - p.all + 1)} to pass ${esc(up.name.split(' ')[0])}</b>${i > 1 ? ` · ${fmt(ps[0].all - p.all)} behind ${esc(first)}` : ''}`;
+        return `<div class="rc ${i === 0 ? 'first' : ''}"><div class="rank ${i < 3 ? 'r' + (i + 1) : ''}">${i + 1}</div><div class="body">
+          <div class="top"><span class="name">${esc(p.name)}</span>${p.today > 0 ? `<span class="today">+${fmt(p.today)} today</span>` : ''}<span class="amt">${fmt(p.all)}</span></div>
+          <div class="track"><div class="fill ${p.all >= p.byToday ? 'ok' : ''}" style="width:${Math.min(100, p.all / p.goal * 100)}%"></div><div class="mark" style="left:${Math.min(100, p.byToday / p.goal * 100)}%"></div></div>
+          <div class="sub"><b>${Math.round(p.all / p.goal * 100)}% of the ${fmt(p.goal)} goal</b> · should be at ${fmt(p.byToday)} by today</div>
+          <div class="sub">${chase} · this week ${fmt(p.week)}</div></div></div>`; }).join('')}`;
+  }).join('') || '<p class="empty">No sales by person yet this month.</p>';
+}
+load(); setInterval(load, 2 * 60 * 1000);
+setTimeout(() => location.reload(), 3 * 60 * 60 * 1000);
+</script>
+</body>
+</html>

@@ -39,6 +39,10 @@ header svg{width:40px;height:40px;color:#fff;flex:none}
 .tb-track{height:8px;border-radius:4px;background:rgba(255,255,255,.2);margin-top:8px}.tb-fill{height:100%;border-radius:4px;background:#F2D36B}
 .tt-today{font-style:normal;font-size:14px;font-weight:700;color:var(--green);background:var(--ltgreen);padding:3px 10px;border-radius:999px;margin-left:8px;vertical-align:3px}
 @media (max-width:600px){.today-box{width:100%}.tb-n{font-size:32px}}
+.leads{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.lead{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.14);border-radius:12px;padding:10px 16px}
+.lead svg{width:28px;height:28px;fill:none;stroke:#F2D36B;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.lk{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;opacity:.85}.ln{font-size:18px;font-weight:700}.ls{font-size:12px;opacity:.9}
 .team{margin:26px 0 12px}
 .tk{font-size:13px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
 .tt{font-size:22px;font-weight:800;margin-top:2px}.tt span{font-size:14px;font-weight:500;color:var(--fg2)}
@@ -99,7 +103,8 @@ function render(d) {
   $('hero').innerHTML = `<div class="hero-grid"><div class="hero-main"><div class="k">Road to ${fmt(d.goal)} · ${esc(d.month)}</div>
     <div class="big"><b>${fmt(d.sold)}</b><span>sold this month · ${Math.round(d.sold / d.goal * 100)}% of the goal</span></div>
     <div class="htrack"><div class="hfill" style="width:${Math.min(100, d.sold / d.goal * 100)}%"></div><div class="hmark" style="left:${Math.min(100, d.pace / d.goal * 100)}%"></div></div>
-    <div class="hsub">We should be at <b>${fmt(d.pace)}</b> by now · the club is at <b>${pct}%</b> of pace</div></div>${tday}</div>`;
+    <div class="hsub">We should be at <b>${fmt(d.pace)}</b> by now · the club is at <b>${pct}%</b> of pace</div>
+    <div class="leads">${(d.teams || []).filter(t => t.people.length).map(t => `<div class="lead"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4Z"/><path d="M7 6H4v2a3 3 0 0 0 3 3M17 6h3v2a3 3 0 0 1-3 3"/></svg><div><div class="lk">${esc(t.name)}</div><div class="ln">${esc(t.people[0].name)}</div><div class="ls">${fmt(t.people[0].all)} so far this month</div></div></div>`).join('')}</div></div>${tday}</div>`;
   $('teams').innerHTML = (d.teams || []).map(t => {
     const ps = t.people;
     return `<div class="team"><div class="tk">${esc(t.name)}</div>

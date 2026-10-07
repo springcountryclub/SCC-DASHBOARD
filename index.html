@@ -124,7 +124,7 @@ function render(d) {
         const chase = i === 0 ? (ps[1] ? `<b>${fmt(p.all - ps[1].all)} ahead</b> of ${esc(ps[1].name.split(' ')[0])} — keep pushing` : 'Leading')
           : `<b>${fmt(up.all - p.all + 1)} to pass ${esc(up.name.split(' ')[0])}</b>${i > 1 ? ` · ${fmt(ps[0].all - p.all)} behind ${esc(first)}` : ''}`;
         return `<div class="rc ${i === 0 ? 'first' : ''}"><div class="rank ${i < 3 ? 'r' + (i + 1) : ''}">${i + 1}</div><div class="body">
-          <div class="top"><span class="name">${esc(p.name)}</span>${p.today > 0 ? `<span class="today">+${fmt(p.today)} today</span>` : ''}${(p.elsewhere || []).map(e => `<span class="else">incl. ${fmt(e.amt)} at ${esc(e.team)}</span>`).join('')}<span class="amt">${fmt(p.all)}</span></div>
+          <div class="top"><span class="name">${esc(p.name)}</span>${p.today > 0 ? `<span class="today">+${fmt(p.today)} today</span>` : ''}${(p.elsewhere || []).map(e => `<span class="else">incl. ${fmt(e.amt)} ${e.label ? esc(e.label) : 'at ' + esc(e.team)}</span>`).join('')}<span class="amt">${fmt(p.all)}</span></div>
           <div class="track"><div class="fill ${p.all >= p.byToday ? 'ok' : ''}" style="width:${Math.min(100, p.all / p.goal * 100)}%"></div><div class="mark" style="left:${Math.min(100, p.byToday / p.goal * 100)}%"></div></div>
           <div class="sub"><b>${Math.round(p.all / p.goal * 100)}% of the ${fmt(p.goal)} goal</b> · should be at ${fmt(p.byToday)} by today</div>
           <div class="sub">${chase} · this week ${fmt(p.week)}</div></div></div>`; }).join('')}`;

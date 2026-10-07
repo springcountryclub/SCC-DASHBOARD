@@ -9,10 +9,10 @@
  "teams": [
   {
    "name": "Pro Shop",
-   "sold": 5762,
-   "today": 986,
-   "target": 66079,
-   "pace": 13015,
+   "sold": 6157,
+   "today": 1006,
+   "target": 69683,
+   "pace": 13725,
    "people": [
     {
      "name": "Lucia N.",
@@ -25,8 +25,8 @@
        "amt": 43
       }
      ],
-     "goal": 22026,
-     "byToday": 4338
+     "goal": 23228,
+     "byToday": 4575
     },
     {
      "name": "Jim D.",
@@ -34,8 +34,8 @@
      "today": 0,
      "week": 315,
      "elsewhere": [],
-     "goal": 22026,
-     "byToday": 4338
+     "goal": 23228,
+     "byToday": 4575
     },
     {
      "name": "Sara W.",
@@ -43,8 +43,8 @@
      "today": 832,
      "week": 1106,
      "elsewhere": [],
-     "goal": 22026,
-     "byToday": 4338
+     "goal": 23228,
+     "byToday": 4575
     }
    ]
   },
@@ -52,8 +52,8 @@
    "name": "Range & Bar",
    "sold": 8068,
    "today": 598,
-   "target": 79595,
-   "pace": 15677,
+   "target": 78994,
+   "pace": 15559,
    "people": [
     {
      "name": "Madison M.",
@@ -66,17 +66,22 @@
        "amt": 174
       }
      ],
-     "goal": 9949,
-     "byToday": 1960
+     "goal": 9874,
+     "byToday": 1945
     },
     {
      "name": "Ariana H.",
      "all": 1452,
      "today": 373,
      "week": 373,
-     "elsewhere": [],
-     "goal": 9949,
-     "byToday": 1960
+     "elsewhere": [
+      {
+       "label": "court rentals",
+       "amt": 30
+      }
+     ],
+     "goal": 9874,
+     "byToday": 1945
     },
     {
      "name": "Campbell W.",
@@ -84,26 +89,36 @@
      "today": 225,
      "week": 516,
      "elsewhere": [],
-     "goal": 9949,
-     "byToday": 1960
+     "goal": 9874,
+     "byToday": 1945
     },
     {
      "name": "Jalyn B.",
      "all": 1346,
      "today": 0,
      "week": 0,
-     "elsewhere": [],
-     "goal": 9949,
-     "byToday": 1960
+     "elsewhere": [
+      {
+       "label": "court rentals",
+       "amt": 90
+      }
+     ],
+     "goal": 9874,
+     "byToday": 1945
     },
     {
      "name": "Khrystin R.",
      "all": 868,
      "today": 0,
      "week": 0,
-     "elsewhere": [],
-     "goal": 9949,
-     "byToday": 1960
+     "elsewhere": [
+      {
+       "label": "court rentals",
+       "amt": 90
+      }
+     ],
+     "goal": 9874,
+     "byToday": 1945
     },
     {
      "name": "Chisom N.",
@@ -111,8 +126,8 @@
      "today": 0,
      "week": 28,
      "elsewhere": [],
-     "goal": 9949,
-     "byToday": 1960
+     "goal": 9874,
+     "byToday": 1945
     },
     {
      "name": "Manuela G.",
@@ -125,8 +140,8 @@
        "amt": 14
       }
      ],
-     "goal": 9949,
-     "byToday": 1960
+     "goal": 9874,
+     "byToday": 1945
     },
     {
      "name": "Sarah B.",
@@ -134,71 +149,26 @@
      "today": 0,
      "week": 0,
      "elsewhere": [],
-     "goal": 9949,
-     "byToday": 1960
+     "goal": 9874,
+     "byToday": 1945
     }
    ]
   },
   {
    "name": "Pickleball",
-   "sold": 608,
-   "today": 20,
-   "target": 4505,
-   "pace": 887,
+   "sold": 213,
+   "today": 0,
+   "target": 1502,
+   "pace": 296,
    "people": [
     {
      "name": "Ariana H.",
-     "all": 243,
+     "all": 213,
      "today": 0,
      "week": 0,
      "elsewhere": [],
-     "goal": 751,
-     "byToday": 148
-    },
-    {
-     "name": "Jim D.",
-     "all": 135,
-     "today": 0,
-     "week": 0,
-     "elsewhere": [],
-     "goal": 751,
-     "byToday": 148
-    },
-    {
-     "name": "Jalyn B.",
-     "all": 90,
-     "today": 0,
-     "week": 0,
-     "elsewhere": [],
-     "goal": 751,
-     "byToday": 148
-    },
-    {
-     "name": "Khrystin R.",
-     "all": 90,
-     "today": 0,
-     "week": 0,
-     "elsewhere": [],
-     "goal": 751,
-     "byToday": 148
-    },
-    {
-     "name": "Lucia N.",
-     "all": 30,
-     "today": 0,
-     "week": 0,
-     "elsewhere": [],
-     "goal": 751,
-     "byToday": 148
-    },
-    {
-     "name": "Sara W.",
-     "all": 20,
-     "today": 20,
-     "week": 20,
-     "elsewhere": [],
-     "goal": 751,
-     "byToday": 148
+     "goal": 1502,
+     "byToday": 296
     }
    ]
   }

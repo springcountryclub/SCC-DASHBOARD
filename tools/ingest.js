@@ -25,10 +25,15 @@ for (const k of keys) {
   // same report already loaded (a manual load of the same email is stamped a second apart)
   if (ups.some(u => Math.abs(new Date(u.at) - new Date(at)) < 120000)) { summary.days.push({ date: k, status: 'already-loaded', total: d.total }); continue; }
   if (isToday && latest && latest > at) { summary.days.push({ date: k, status: 'newer-upload-exists', total: d.total }); continue; }
+  // a report for an earlier day (e.g. a schedule stuck on a fixed date): never replace that day's history
+  if (!isToday && ups.length) {
+    const last = [...ups].sort((a, b) => a.at.localeCompare(b.at)).pop();
+    if (Math.abs((last.total || 0) - d.total) < 0.01) { summary.days.push({ date: k, status: 'old-report-same-numbers', total: d.total }); continue; }
+  }
   const up = { at, total: d.total, groups: d.groups, areas: d.areas, tickets: d.tickets, tix: d.tix || null, file: p.file };
   if (d.emp) up.emp = d.emp;
   if (d.stk) up.stk = d.stk;
-  const out = { ...doc, date: k, uploads: isToday ? [...ups.map(u => ({ ...u, maxTkt: maxTix(u), tix: null })), up].slice(-60) : [up] };
+  const out = { ...doc, date: k, uploads: [...ups.map(u => ({ ...u, maxTkt: maxTix(u), tix: null })), up].slice(-60) };   // always keep the earlier uploads
   for (const u of out.uploads) if (u.maxTkt == null) delete u.maxTkt;
   fs.writeFileSync(path.join(outDir, 'day-' + k + '.json'), JSON.stringify(out));
   fs.writeFileSync(path.join(daysDir, k + '.json'), JSON.stringify(out));   // so the board below sees it
@@ -49,7 +54,8 @@ for (const k of keys) {
   await b.close();
   if (!board || !board.teams || board.today == null || !board.todayPeople) { console.log(JSON.stringify({ ...summary, board: 'failed', errs })); process.exit(3); }
   // remember the newest report even when it had no sales (an 8 AM report before the first sale), so the board shows it ran
-  if (fs.existsSync(metaF) && meta.sentAt && (!board.asOf || meta.sentAt > board.asOf)) board.lastReport = meta.sentAt;
+  if (fs.existsSync(metaF) && meta.sentAt && (!p.from || p.from === sentDay) && (!board.asOf || meta.sentAt > board.asOf)) board.lastReport = meta.sentAt;   // only a report for today counts
+  if (p.from && p.from !== sentDay) summary.staleReport = `report covers ${p.from}${p.to && p.to !== p.from ? '–' + p.to : ''}, sent ${sentDay}: check the schedule's date range in Clubessential`;
   fs.writeFileSync(path.join(outDir, 'board.json'), JSON.stringify({ ...board, savedAt: new Date().toISOString() }));
   fs.writeFileSync(path.join(outDir, 'data.json'), JSON.stringify(board, null, 1) + '\n');
   console.log(JSON.stringify({ ...summary, board: { today: board.today, sold: board.sold, asOf: board.asOf }, errs }));

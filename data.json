@@ -3,7 +3,7 @@
  "month": "October 2026",
  "goal": 150179,
  "sold": 14861,
- "pace": 30532,
+ "pace": 30539,
  "today": 0,
  "todayGoal": 3011,
  "todayLY": 2140,
@@ -137,7 +137,7 @@
    ]
   ]
  },
- "asOf": "2026-10-07T04:59:00.000Z",
+ "asOf": "2026-10-07T03:02:38.000Z",
  "todayPeople": [],
  "teams": [
   {
@@ -145,7 +145,7 @@
    "sold": 5880,
    "today": 0,
    "target": 66079,
-   "pace": 13434,
+   "pace": 13437,
    "people": [
     {
      "name": "Lucia N.",
@@ -165,7 +165,7 @@
       }
      ],
      "goal": 22026,
-     "byToday": 4478,
+     "byToday": 4479,
      "full": 0,
      "card": "shop",
      "sd": 4,
@@ -191,7 +191,7 @@
       }
      ],
      "goal": 22026,
-     "byToday": 4478,
+     "byToday": 4479,
      "full": 0,
      "card": "shop",
      "sd": 5,
@@ -217,7 +217,7 @@
       }
      ],
      "goal": 22026,
-     "byToday": 4478,
+     "byToday": 4479,
      "full": 0,
      "card": "shop",
      "sd": 2,
@@ -236,7 +236,7 @@
    "sold": 8373,
    "today": 0,
    "target": 79595,
-   "pace": 16182,
+   "pace": 16186,
    "people": [
     {
      "name": "Madison M.",
@@ -439,5 +439,5 @@
    "people": []
   }
  ],
- "lastReport": "2026-10-07T14:02:52.000Z"
+ "lastReport": "2026-10-07T13:02:49.000Z"
 }

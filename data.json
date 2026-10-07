@@ -6,6 +6,28 @@
  "today": 1604,
  "todayGoal": 2756,
  "asOf": "2026-10-06T23:34:39.111Z",
+ "todayPeople": [
+  {
+   "name": "Sara W.",
+   "team": "Pro Shop",
+   "today": 832
+  },
+  {
+   "name": "Ariana H.",
+   "team": "Range & Bar",
+   "today": 373
+  },
+  {
+   "name": "Campbell W.",
+   "team": "Range & Bar",
+   "today": 225
+  },
+  {
+   "name": "Madison M.",
+   "team": "Range & Bar",
+   "today": 174
+  }
+ ],
  "teams": [
   {
    "name": "Pro Shop",

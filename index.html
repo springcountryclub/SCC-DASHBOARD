@@ -117,6 +117,12 @@ header svg{width:40px;height:40px;color:#fff;flex:none}
 .bronze .sk.on{background:#A2693F}.silver .sk.on{background:#8A959A}.gold .sk.on{background:#B48E2A}
 .msk-done{font-weight:800;color:#4F7468}.msk-done.bronze{color:#A2693F}.msk-done.silver{color:#76838A}.msk-done.gold{color:#9C7A1F}
 .tier-chip{display:inline-block;padding:0 8px;border-radius:999px;color:#fff;background:#4F7468;font-size:12px;font-weight:700}.tier-chip.bronze{background:#A2693F}.tier-chip.silver{background:#8A959A}.tier-chip.gold{background:#B48E2A}
+.cbadge{display:inline-flex;align-items:center;gap:3px;margin-left:8px;vertical-align:middle;border-radius:999px;color:#fff;font-weight:800;line-height:1;white-space:nowrap}
+.cbadge svg{fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.cbadge.g{background:#4F7468;font-size:12px;padding:3px 8px 3px 6px}.cbadge.g svg{width:13px;height:13px}
+.cbadge.bronze{background:#A2693F;font-size:14px;padding:4px 10px 4px 7px}.cbadge.bronze svg{width:15px;height:15px}
+.cbadge.silver{background:linear-gradient(135deg,#9AA5AA,#6F7C82);font-size:16px;padding:5px 11px 5px 8px}.cbadge.silver svg{width:17px;height:17px}
+.cbadge.gold{background:linear-gradient(135deg,#D4B048,#A07E1C);font-size:18px;padding:6px 12px 6px 9px;box-shadow:0 0 0 3px rgba(212,176,72,.3),0 2px 8px rgba(160,126,28,.45)}.cbadge.gold svg{width:19px;height:19px}
 </style>
 </head>
 <body>
@@ -190,6 +196,8 @@ function monthStk(d, p) {
 }
 const STAR = '<svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.7 5.5 6 .9-4.35 4.25 1.03 6L12 17l-5.38 2.85 1.03-6L3.3 9.6l6-.9L12 3.2Z"/></svg>';
 const STARL = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.7 5.5 6 .9-4.35 4.25 1.03 6L12 17l-5.38 2.85 1.03-6L3.3 9.6l6-.9L12 3.2Z"/></svg>';
+const CARDI = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="3" width="13" height="16" rx="2"/><path d="M4 7v12a2 2 0 0 0 2 2h10"/></svg>';
+const cardBadge = n => n ? `<span class="cbadge ${tierOf(n) || 'g'}" title="${n} sticker card${n > 1 ? 's' : ''} complete">${CARDI}${n}</span>` : '';
 function render(d) {
   stamp(d);
   const pct = d.pace ? Math.round(d.sold / d.pace * 100) : 0;
@@ -207,7 +215,7 @@ function render(d) {
     <div class="leads">${(d.teams || []).filter(t => t.people.length).map(t => `<div class="lead"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4Z"/><path d="M7 6H4v2a3 3 0 0 0 3 3M17 6h3v2a3 3 0 0 1-3 3"/></svg><div><div class="lk">${esc(t.name)}</div><div class="ln">${esc(t.people[0].name)}</div><div class="ls">${fmt(t.people[0].all)} so far this month</div></div></div>`).join('')}${(d.teams || []).map(t => { const b = [...t.people].map(p => [p, p.cards || 0]).filter(([, n]) => n > 0).sort((x, y) => y[1] - x[1] || (y[0].full || 0) - (x[0].full || 0))[0];
       return b ? `<div class="lead">${STARL}<div><div class="lk">${esc(t.name)} · most cards</div><div class="ln">${esc(b[0].name)}</div><div class="ls">${b[1]} sticker card${b[1] > 1 ? 's' : ''} complete</div></div></div>` : ''; }).join('')}</div></div>${tday}</div>`;
   const tl = d.todayPeople || [], mx = tl[0] ? tl[0].today : 1;
-  $('todaylist').innerHTML = tl.length ? `<div class="team"><div class="tk">Today · who's adding</div></div><div class="tl">${tl.map((p, i) => `<div class="tl-row ${i === 0 ? 'lead1' : ''}"><span class="tl-r">${i + 1}</span><span class="tl-n">${esc(p.name)}</span><span class="tl-t">${esc(p.team)}</span><span class="tl-bar"><span style="width:${Math.max(3, p.today / mx * 100)}%"></span></span><span class="tl-v">+${fmt(p.today)}</span>${stkRow(d, p)}</div>`).join('')}</div>${legend(d)}` : '';
+  $('todaylist').innerHTML = tl.length ? `<div class="team"><div class="tk">Today · who's adding</div></div><div class="tl">${tl.map((p, i) => `<div class="tl-row ${i === 0 ? 'lead1' : ''}"><span class="tl-r">${i + 1}</span><span class="tl-n">${esc(p.name)}${cardBadge(p.cards)}</span><span class="tl-t">${esc(p.team)}</span><span class="tl-bar"><span style="width:${Math.max(3, p.today / mx * 100)}%"></span></span><span class="tl-v">+${fmt(p.today)}</span>${stkRow(d, p)}</div>`).join('')}</div>${legend(d)}` : '';
   $('teams').innerHTML = (d.teams || []).map(t => {
     const ps = t.people;
     return `<div class="team"><div class="tk">${esc(t.name)}</div>
@@ -218,7 +226,7 @@ function render(d) {
         const chase = i === 0 ? (ps[1] ? `<b>${fmt(p.all - ps[1].all)} ahead</b> of ${esc(ps[1].name.split(' ')[0])} — keep pushing` : 'Leading')
           : `<b>${fmt(up.all - p.all + 1)} to pass ${esc(up.name.split(' ')[0])}</b>${i > 1 ? ` · ${fmt(ps[0].all - p.all)} behind ${esc(first)}` : ''}`;
         return `<div class="rc ${i === 0 ? 'first' : ''}"><div class="rank ${i < 3 ? 'r' + (i + 1) : ''}">${i + 1}</div><div class="body">
-          <div class="top"><span class="name">${esc(p.name)}</span><span class="amt">${fmt(p.all)}</span></div>
+          <div class="top"><span class="name">${esc(p.name)}${cardBadge(p.cards)}</span><span class="amt">${fmt(p.all)}</span></div>
           ${p.today > 0 || (p.elsewhere || []).length ? `<div class="tags">${p.today > 0 ? `<span class="today">+${fmt(p.today)} today</span>` : ''}${(p.elsewhere || []).map(e => `<span class="${e.courts ? 'courts' : 'else'}">incl. ${fmt(e.amt)} ${e.label ? esc(e.label) : 'at ' + esc(e.team)}</span>`).join('')}</div>` : ''}
           <div class="track"><div class="fill ${p.all >= p.byToday ? 'ok' : ''}" style="width:${Math.min(100, p.all / p.goal * 100)}%"></div><div class="mark" style="left:${Math.min(100, p.byToday / p.goal * 100)}%"></div></div>
           <div class="sub"><b>${Math.round(p.all / p.goal * 100)}% of the ${fmt(p.goal)} goal</b> · should be at ${fmt(p.byToday)} by today</div>

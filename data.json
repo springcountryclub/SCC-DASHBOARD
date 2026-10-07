@@ -1,14 +1,6 @@
 {
- "asOf": "2026-10-07T01:03:36.975Z",
- "goal": 150179,
-<<<<<<< Updated upstream
  "month": "October 2026",
- "pace": 29872,
- "sold": 14686,
- "teams": [
-  {
-   "name": "Pro Shop",
-=======
+ "goal": 150179,
  "sold": 14686,
  "pace": 29872,
  "today": 1851,
@@ -47,69 +39,69 @@
    "sold": 5880,
    "today": 1104,
    "target": 66079,
->>>>>>> Stashed changes
    "pace": 13143,
    "people": [
     {
-     "all": 3029,
-     "byToday": 4381,
-     "goal": 22026,
-<<<<<<< Updated upstream
      "name": "Lucia N.",
+     "all": 3029,
      "today": 0,
-     "week": 0
-=======
+     "week": 0,
+     "elsewhere": [
+      {
+       "team": "Pickleball",
+       "amt": 30,
+       "courts": true
+      },
+      {
+       "team": "Range & Bar",
+       "amt": 43,
+       "courts": false
+      }
+     ],
+     "goal": 22026,
      "byToday": 4381
->>>>>>> Stashed changes
     },
     {
-     "all": 1667,
-     "byToday": 4381,
-     "goal": 22026,
-<<<<<<< Updated upstream
      "name": "Jim D.",
+     "all": 1667,
      "today": 0,
-     "week": 315
-=======
+     "week": 315,
+     "elsewhere": [
+      {
+       "team": "Pickleball",
+       "amt": 135,
+       "courts": true
+      }
+     ],
+     "goal": 22026,
      "byToday": 4381
->>>>>>> Stashed changes
     },
     {
-     "all": 1106,
-     "byToday": 4381,
-     "goal": 22026,
-<<<<<<< Updated upstream
      "name": "Sara W.",
+     "all": 1106,
      "today": 832,
-     "week": 1106
-=======
+     "week": 1106,
+     "elsewhere": [
+      {
+       "team": "Pickleball",
+       "amt": 20,
+       "courts": true
+      }
+     ],
+     "goal": 22026,
      "byToday": 4381
->>>>>>> Stashed changes
     }
-   ],
-   "sold": 5880,
-   "target": 66079
+   ]
   },
   {
    "name": "Range & Bar",
-<<<<<<< Updated upstream
-   "pace": 15742,
-=======
    "sold": 8198,
    "today": 727,
    "target": 79595,
    "pace": 15832,
->>>>>>> Stashed changes
    "people": [
     {
-     "all": 1943,
-     "byToday": 1968,
-     "goal": 9893,
      "name": "Madison M.",
-<<<<<<< Updated upstream
-     "today": 292,
-     "week": 750
-=======
      "all": 1943,
      "today": 292,
      "week": 750,
@@ -122,17 +114,9 @@
      ],
      "goal": 9949,
      "byToday": 1979
->>>>>>> Stashed changes
     },
     {
-     "all": 1570,
-     "byToday": 1968,
-     "goal": 9893,
      "name": "Ariana H.",
-<<<<<<< Updated upstream
-     "today": 490,
-     "week": 490
-=======
      "all": 1570,
      "today": 490,
      "week": 490,
@@ -145,32 +129,20 @@
      ],
      "goal": 9949,
      "byToday": 1979
->>>>>>> Stashed changes
     },
     {
-     "all": 1374,
-     "byToday": 1968,
-     "goal": 9893,
      "name": "Campbell W.",
+     "all": 1374,
      "today": 225,
-<<<<<<< Updated upstream
-     "week": 516
-=======
      "week": 516,
      "elsewhere": [],
      "goal": 9949,
      "byToday": 1979
->>>>>>> Stashed changes
     },
     {
-     "all": 1346,
-     "byToday": 1968,
-     "goal": 9893,
      "name": "Jalyn B.",
+     "all": 1346,
      "today": 0,
-<<<<<<< Updated upstream
-     "week": 0
-=======
      "week": 0,
      "elsewhere": [
       {
@@ -181,17 +153,11 @@
      ],
      "goal": 9949,
      "byToday": 1979
->>>>>>> Stashed changes
     },
     {
-     "all": 868,
-     "byToday": 1968,
-     "goal": 9893,
      "name": "Khrystin R.",
+     "all": 868,
      "today": 0,
-<<<<<<< Updated upstream
-     "week": 0
-=======
      "week": 0,
      "elsewhere": [
       {
@@ -202,32 +168,20 @@
      ],
      "goal": 9949,
      "byToday": 1979
->>>>>>> Stashed changes
     },
     {
-     "all": 838,
-     "byToday": 1968,
-     "goal": 9893,
      "name": "Chisom N.",
+     "all": 838,
      "today": 0,
-<<<<<<< Updated upstream
-     "week": 28
-=======
      "week": 28,
      "elsewhere": [],
      "goal": 9949,
      "byToday": 1979
->>>>>>> Stashed changes
     },
     {
-     "all": 616,
-     "byToday": 1968,
-     "goal": 9893,
      "name": "Manuela G.",
+     "all": 616,
      "today": 0,
-<<<<<<< Updated upstream
-     "week": 0
-=======
      "week": 0,
      "elsewhere": [
       {
@@ -238,21 +192,9 @@
      ],
      "goal": 9949,
      "byToday": 1979
->>>>>>> Stashed changes
     },
     {
-     "all": 330,
-     "byToday": 1968,
-     "goal": 9893,
      "name": "Sarah B.",
-<<<<<<< Updated upstream
-     "today": 12,
-     "week": 12
-    }
-   ],
-   "sold": 8198,
-   "target": 79144
-=======
      "all": 330,
      "today": 12,
      "week": 12,
@@ -269,7 +211,6 @@
    "target": 4505,
    "pace": 896,
    "people": []
->>>>>>> Stashed changes
   }
  ]
 }

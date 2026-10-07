@@ -66,12 +66,12 @@
   "shop": [
    [
     "golf",
-    "Golf round",
+    "Walking round",
     "<path d=\"M9 20.5V3l9 4-9 4\"/><path d=\"M4 20.5c0-1.1 2.2-2 5-2s5 .9 5 2-2.2 2-5 2-5-.9-5-2Z\"/>"
    ],
    [
     "cart",
-    "Cart",
+    "Cart round",
     "<path d=\"M4 5.5h15M6 5.5V14M17 5.5V14\"/><path d=\"M3 14h18v3.5H3z\"/><circle cx=\"7\" cy=\"19.5\" r=\"1.8\"/><circle cx=\"17\" cy=\"19.5\" r=\"1.8\"/>"
    ],
    [

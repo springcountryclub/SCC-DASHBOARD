@@ -44,7 +44,8 @@
      "elsewhere": [
       {
        "team": "Range & Bar",
-       "amt": 43
+       "amt": 43,
+       "courts": false
       }
      ],
      "goal": 23228,
@@ -85,7 +86,8 @@
      "elsewhere": [
       {
        "team": "Pro Shop",
-       "amt": 174
+       "amt": 174,
+       "courts": false
       }
      ],
      "goal": 9874,
@@ -99,7 +101,8 @@
      "elsewhere": [
       {
        "team": "Pickleball",
-       "amt": 213
+       "amt": 213,
+       "courts": true
       },
       {
        "label": "court rentals",
@@ -163,7 +166,8 @@
      "elsewhere": [
       {
        "team": "Pro Shop",
-       "amt": 14
+       "amt": 14,
+       "courts": false
       }
      ],
      "goal": 9874,

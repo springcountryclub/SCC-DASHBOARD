@@ -1,0 +1,5 @@
+{
+ "private": true,
+ "description": "Loads Clubessential report emails into the sales tracker and rebuilds data.json",
+ "dependencies": { "playwright": "1.63.0" }
+}

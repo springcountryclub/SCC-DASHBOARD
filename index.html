@@ -115,16 +115,16 @@ header svg{width:40px;height:40px;color:#fff;flex:none}
 .sk{position:relative}.sk b{position:absolute;right:-5px;top:-6px;min-width:17px;height:17px;padding:0 3px;border-radius:9px;background:#fff;color:#4F7468;border:1.5px solid #4F7468;font-size:10px;font-weight:800;line-height:14px;text-align:center}
 .sk.on:nth-child(even) b,.sk.on b{transform:none}
 .sk b.prog{background:var(--surface);color:var(--fg2);border-color:var(--border);right:-9px}
-.bronze .sk.on{background:#A2693F}.silver .sk.on{background:#8A959A}.gold .sk.on{background:#B48E2A}
-.msk-done{font-weight:800;color:#4F7468}.msk-done.bronze{color:#A2693F}.msk-done.silver{color:#76838A}.msk-done.gold{color:#9C7A1F}
-.tier-chip{display:inline-block;padding:0 8px;border-radius:999px;color:#fff;background:#4F7468;font-size:12px;font-weight:700}.tier-chip.bronze{background:#A2693F}.tier-chip.silver{background:#8A959A}.tier-chip.gold{background:#B48E2A}
+.msk-done{font-weight:800;color:#4F7468}.msk-done.lv1{color:#1F8A88}.msk-done.lv2{color:#2F68B0}.msk-done.lv3{color:#7A4FB0}
+.tier-chip{display:inline-block;padding:0 8px;border-radius:999px;color:#fff;background:#4F7468;font-size:12px;font-weight:700}.tier-chip.lv1{background:#1F8A88}.tier-chip.lv2{background:#2F68B0}.tier-chip.lv3{background:#7A4FB0}
+.lv1 .sk.on{background:#1F8A88}.lv2 .sk.on{background:#2F68B0}.lv3 .sk.on{background:#7A4FB0}
 .cbadge{display:inline-flex;align-items:center;gap:3px;margin-left:8px;vertical-align:middle;border-radius:999px;color:#fff;font-weight:800;line-height:1;white-space:nowrap}
 .cbadge svg{fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .cbadge{padding:.25em .7em .25em .5em}.cbadge svg{stroke-width:1.6}
 .cbadge.g{background:#4F7468}.cbadge.g rect{fill:#4F7468}
-.cbadge.bronze{background:#A2693F}.cbadge.bronze rect{fill:#A2693F}
-.cbadge.silver{background:linear-gradient(135deg,#9AA5AA,#6F7C82)}.cbadge.silver rect{fill:#7F8C92}
-.cbadge.gold{background:linear-gradient(135deg,#D4B048,#A07E1C);box-shadow:0 0 0 3px rgba(212,176,72,.3),0 2px 8px rgba(160,126,28,.45)}.cbadge.gold rect{fill:#B8952F}
+.cbadge.lv1{background:#1F8A88}.cbadge.lv1 rect{fill:#1F8A88}
+.cbadge.lv2{background:#2F68B0}.cbadge.lv2 rect{fill:#2F68B0}
+.cbadge.lv3{background:linear-gradient(135deg,#9467C9,#5E3596);box-shadow:0 0 0 3px rgba(148,103,201,.3),0 2px 8px rgba(94,53,150,.45)}.cbadge.lv3 rect{fill:#7A4FB0}
 .medal{flex:none;width:54px;height:65px;filter:drop-shadow(0 2px 3px rgba(0,0,0,.18))}.medal svg{width:100%;height:100%;display:block}
 @media (max-width:600px){.medal{width:42px;height:50px}}
 </style>
@@ -188,9 +188,9 @@ function stkRow(d, p) {
 function legend(d) {
   if (!d.cards) return '';
   const names = { rb: 'Range & Bar card', shop: 'Pro Shop card' };
-  return `<details class="legend"><summary><svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.7 5.5 6 .9-4.35 4.25 1.03 6L12 17l-5.38 2.85 1.03-6L3.3 9.6l6-.9L12 3.2Z"/></svg>How to collect stickers: sell one of each, every day</summary>${Object.entries(d.cards).map(([k, c]) => `<div class="lg-t">${names[k] || k}</div><div class="lg">${c.map(([, name, svg]) => `<span><i class="sk on"><svg viewBox="0 0 24 24" aria-hidden="true">${svg}</svg></i>${esc(name)}</span>`).join('')}</div>`).join('')}<div class="lg-t">${STAR}Perfect day</div><div style="font-size:14px">All 10 in one day. Today's card starts fresh every morning.</div><div class="lg-t">Cards</div><div style="font-size:14px">Your month card fills up as you earn each sticker. Fill all 10 and it's <b>complete</b>: you get a new empty card and start again. Complete cards change your sticker color: <span class="tier-chip">green</span> → <span class="tier-chip bronze">bronze</span> at 5 complete cards → <span class="tier-chip silver">silver</span> at 8 → <span class="tier-chip gold">gold</span> at 12.</div></details>`;
+  return `<details class="legend"><summary><svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.7 5.5 6 .9-4.35 4.25 1.03 6L12 17l-5.38 2.85 1.03-6L3.3 9.6l6-.9L12 3.2Z"/></svg>How to collect stickers: sell one of each, every day</summary>${Object.entries(d.cards).map(([k, c]) => `<div class="lg-t">${names[k] || k}</div><div class="lg">${c.map(([, name, svg]) => `<span><i class="sk on"><svg viewBox="0 0 24 24" aria-hidden="true">${svg}</svg></i>${esc(name)}</span>`).join('')}</div>`).join('')}<div class="lg-t">${STAR}Perfect day</div><div style="font-size:14px">All 10 in one day. Today's card starts fresh every morning.</div><div class="lg-t">Cards</div><div style="font-size:14px">Your month card fills up as you earn each sticker. Fill all 10 and it's <b>complete</b>: you get a new empty card and start again. Complete cards change your sticker color: <span class="tier-chip">green</span> → <span class="tier-chip lv1">teal</span> at 5 complete cards → <span class="tier-chip lv2">blue</span> at 8 → <span class="tier-chip lv3">purple</span> at 12.</div></details>`;
 }
-const tierOf = n => (n || 0) >= 12 ? 'gold' : n >= 8 ? 'silver' : n >= 5 ? 'bronze' : '';   // complete cards needed for each sticker color
+const tierOf = n => (n || 0) >= 12 ? 'lv3' : n >= 8 ? 'lv2' : n >= 5 ? 'lv1' : '';   // card levels: teal, blue, purple (gold/silver/bronze are the sales medals)   // complete cards needed for each sticker color
 function monthStk(d, p) {
   const c = d.cards && d.cards[p.card]; if (!c || !p.sd) return '';
   const cur = new Set(p.cur || []), n = c.filter(([k]) => cur.has(k)).length, done = p.cards || 0, t = tierOf(done);

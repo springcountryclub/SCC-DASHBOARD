@@ -1,211 +1,113 @@
 {
- "month": "October 2026",
+ "asOf": "2026-10-07T01:03:36.975Z",
  "goal": 150179,
- "sold": 14439,
- "pace": 29580,
- "today": 1604,
- "todayGoal": 2756,
- "asOf": "2026-10-06T23:34:39.111Z",
- "todayPeople": [
-  {
-   "name": "Sara W.",
-   "team": "Pro Shop",
-   "today": 832
-  },
-  {
-   "name": "Ariana H.",
-   "team": "Range & Bar",
-   "today": 373
-  },
-  {
-   "name": "Campbell W.",
-   "team": "Range & Bar",
-   "today": 225
-  },
-  {
-   "name": "Madison M.",
-   "team": "Range & Bar",
-   "today": 174
-  }
- ],
+ "month": "October 2026",
+ "pace": 29872,
+ "sold": 14686,
  "teams": [
   {
    "name": "Pro Shop",
-   "sold": 5762,
-   "today": 986,
-   "target": 66079,
-   "pace": 13015,
+   "pace": 13143,
    "people": [
     {
-     "name": "Lucia N.",
      "all": 3029,
-     "today": 0,
-     "week": 0,
-     "elsewhere": [
-      {
-       "team": "Pickleball",
-       "amt": 30,
-       "courts": true
-      },
-      {
-       "team": "Range & Bar",
-       "amt": 43,
-       "courts": false
-      }
-     ],
+     "byToday": 4381,
      "goal": 22026,
-     "byToday": 4338
+     "name": "Lucia N.",
+     "today": 0,
+     "week": 0
     },
     {
-     "name": "Jim D.",
      "all": 1667,
-     "today": 0,
-     "week": 315,
-     "elsewhere": [
-      {
-       "team": "Pickleball",
-       "amt": 135,
-       "courts": true
-      }
-     ],
+     "byToday": 4381,
      "goal": 22026,
-     "byToday": 4338
+     "name": "Jim D.",
+     "today": 0,
+     "week": 315
     },
     {
-     "name": "Sara W.",
      "all": 1106,
-     "today": 832,
-     "week": 1106,
-     "elsewhere": [
-      {
-       "team": "Pickleball",
-       "amt": 20,
-       "courts": true
-      }
-     ],
+     "byToday": 4381,
      "goal": 22026,
-     "byToday": 4338
+     "name": "Sara W.",
+     "today": 832,
+     "week": 1106
     }
-   ]
+   ],
+   "sold": 5880,
+   "target": 66079
   },
   {
    "name": "Range & Bar",
-   "sold": 8068,
-   "today": 598,
-   "target": 79595,
-   "pace": 15677,
+   "pace": 15742,
    "people": [
     {
+     "all": 1943,
+     "byToday": 1968,
+     "goal": 9893,
      "name": "Madison M.",
-     "all": 1825,
-     "today": 174,
-     "week": 632,
-     "elsewhere": [
-      {
-       "team": "Pro Shop",
-       "amt": 174,
-       "courts": false
-      }
-     ],
-     "goal": 9949,
-     "byToday": 1960
+     "today": 292,
+     "week": 750
     },
     {
+     "all": 1570,
+     "byToday": 1968,
+     "goal": 9893,
      "name": "Ariana H.",
-     "all": 1452,
-     "today": 373,
-     "week": 373,
-     "elsewhere": [
-      {
-       "team": "Pickleball",
-       "amt": 243,
-       "courts": true
-      }
-     ],
-     "goal": 9949,
-     "byToday": 1960
+     "today": 490,
+     "week": 490
     },
     {
-     "name": "Campbell W.",
      "all": 1374,
+     "byToday": 1968,
+     "goal": 9893,
+     "name": "Campbell W.",
      "today": 225,
-     "week": 516,
-     "elsewhere": [],
-     "goal": 9949,
-     "byToday": 1960
+     "week": 516
     },
     {
-     "name": "Jalyn B.",
      "all": 1346,
+     "byToday": 1968,
+     "goal": 9893,
+     "name": "Jalyn B.",
      "today": 0,
-     "week": 0,
-     "elsewhere": [
-      {
-       "team": "Pickleball",
-       "amt": 90,
-       "courts": true
-      }
-     ],
-     "goal": 9949,
-     "byToday": 1960
+     "week": 0
     },
     {
-     "name": "Khrystin R.",
      "all": 868,
+     "byToday": 1968,
+     "goal": 9893,
+     "name": "Khrystin R.",
      "today": 0,
-     "week": 0,
-     "elsewhere": [
-      {
-       "team": "Pickleball",
-       "amt": 90,
-       "courts": true
-      }
-     ],
-     "goal": 9949,
-     "byToday": 1960
+     "week": 0
     },
     {
-     "name": "Chisom N.",
      "all": 838,
+     "byToday": 1968,
+     "goal": 9893,
+     "name": "Chisom N.",
      "today": 0,
-     "week": 28,
-     "elsewhere": [],
-     "goal": 9949,
-     "byToday": 1960
+     "week": 28
     },
     {
-     "name": "Manuela G.",
      "all": 616,
+     "byToday": 1968,
+     "goal": 9893,
+     "name": "Manuela G.",
      "today": 0,
-     "week": 0,
-     "elsewhere": [
-      {
-       "team": "Pro Shop",
-       "amt": 14,
-       "courts": false
-      }
-     ],
-     "goal": 9949,
-     "byToday": 1960
+     "week": 0
     },
     {
+     "all": 330,
+     "byToday": 1968,
+     "goal": 9893,
      "name": "Sarah B.",
-     "all": 318,
-     "today": 0,
-     "week": 0,
-     "elsewhere": [],
-     "goal": 9949,
-     "byToday": 1960
+     "today": 12,
+     "week": 12
     }
-   ]
-  },
-  {
-   "name": "Pickleball",
-   "sold": 608,
-   "today": 20,
-   "target": 4505,
-   "pace": 887,
-   "people": []
+   ],
+   "sold": 8198,
+   "target": 79144
   }
  ]
 }

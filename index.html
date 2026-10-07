@@ -167,7 +167,7 @@ function stamp(d) {
 }
 function kpi(d) {
   // same traffic light as the manager tracker: where sales should be by now (7 AM open → 9 PM close) vs where they are
-  const tg = d.todayGoal || 0; if (!tg || d.today == null || !d.asOf) return '';
+  const tg = d.todayGoal || 0; if (!tg || !d.today || !d.asOf) return '';
   const a = new Date(d.asOf), frac = Math.max(0, Math.min(1, (a.getHours() + a.getMinutes() / 60 - 7) / 14));
   const usd = n => '$' + Math.round(n).toLocaleString('en-US');
   if (d.today >= tg) return `<div class="kpi g"><i></i>Goal hit · ${usd(d.today - tg)} over</div>`;
@@ -215,7 +215,7 @@ function render(d) {
   stamp(d);
   const pct = d.pace ? Math.round(d.sold / d.pace * 100) : 0;
   const tg = d.todayGoal || 0, tp = tg ? d.today / tg : 0;
-  $('hero-today').innerHTML = d.today != null ? `<div class="k">Today · ${new Date(d.asOf || Date.now()).toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' })}</div>
+  $('hero-today').innerHTML = d.today != null ? `<div class="k">Today · ${(d.day ? new Date(d.day + 'T12:00:00') : new Date(d.asOf || Date.now())).toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' })}</div>
     ${kpi(d)}
     <div class="big"><b>${fmt(d.today)}</b><span>sold today${tg ? ` · ${Math.round(tp * 100)}% of the ${fmt(tg)} day goal` : ''}</span></div>
     ${tg ? `<div class="htrack"><div class="hfill" style="width:${Math.min(100, tp * 100)}%"></div></div><div class="hsub">${d.today >= tg ? '<b>Day goal hit</b> — keep going' : `<b>${fmt(tg - d.today)}</b> to go today`}</div>` : ''}${lyLine(d)}` : '';
@@ -229,7 +229,7 @@ function render(d) {
       const ties = all.filter(p => (p.cards || 0) === top), names = ties.length > 2 ? `${ties.slice(0, 2).map(p => esc(p.name)).join(', ')} +${ties.length - 2}` : ties.map(p => esc(p.name)).join(' & ');
       return `<div class="lead">${STARL}<div><div class="lk">Most sticker cards${ties.length > 1 ? ' · tied' : ''}</div><div class="ln">${names}</div><div class="ls">${top} card${top > 1 ? 's' : ''} complete${ties.length > 1 ? ' each' : ''}</div></div></div>`; })()}</div></div>${tday}</div>`;
   const tl = d.todayPeople || [], mx = tl[0] ? tl[0].today : 1;
-  $('todaylist').innerHTML = tl.length ? `<div class="team"><div class="tk">Today · who's adding</div></div><div class="tl">${tl.map((p, i) => `<div class="tl-row ${i === 0 ? 'lead1' : ''}"><span class="tl-r">${i + 1}</span><span class="tl-n">${esc(p.name)}${cardBadge(p.cards)}</span><span class="tl-t">${esc(p.team)}</span><span class="tl-bar"><span style="width:${Math.max(3, p.today / mx * 100)}%"></span></span><span class="tl-v">+${fmt(p.today)}</span>${stkRow(d, p)}</div>`).join('')}</div>${legend(d)}` : '';
+  $('todaylist').innerHTML = tl.length ? `<div class="team"><div class="tk">Today · who's adding</div></div><div class="tl">${tl.map((p, i) => `<div class="tl-row ${i === 0 ? 'lead1' : ''}"><span class="tl-r">${i + 1}</span><span class="tl-n">${esc(p.name)}${cardBadge(p.cards)}</span><span class="tl-t">${esc(p.team)}</span><span class="tl-bar"><span style="width:${Math.max(3, p.today / mx * 100)}%"></span></span><span class="tl-v">+${fmt(p.today)}</span>${stkRow(d, p)}</div>`).join('')}</div>${legend(d)}` : `<div class="team"><div class="tk">Today · who's adding</div></div><p class="empty">No sales yet today. The first report arrives around 9 AM.</p>${legend(d)}`;
   $('teams').innerHTML = (d.teams || []).map(t => {
     const ps = t.people;
     return `<div class="team"><div class="tk">${esc(t.name)}</div>

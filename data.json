@@ -10,32 +10,177 @@
  "mtdLY": 27679,
  "monthLY": 120312,
  "lyFrom": "2025-10-02",
+ "cards": {
+  "rb": [
+   [
+    "coffee",
+    "Coffee",
+    "<path d=\"M5 9h11v5a5 5 0 0 1-5 5h-1a5 5 0 0 1-5-5V9Z\"/><path d=\"M16 10.5h1.5a2.5 2.5 0 0 1 0 5H16\"/><path d=\"M8.5 3.5c0 1.5 1 1.5 1 3M12.5 3.5c0 1.5 1 1.5 1 3\"/>"
+   ],
+   [
+    "nabev",
+    "Soft drink",
+    "<path d=\"M6.5 8h11l-1.4 12.5H7.9L6.5 8Z\"/><path d=\"M5.5 8h13\"/><path d=\"M12 8l2-5.5h3\"/><path d=\"M7.2 13h9.6\"/>"
+   ],
+   [
+    "beer",
+    "Beer",
+    "<path d=\"M5 8h10v11a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V8Z\"/><path d=\"M15 10.5h2a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-2\"/><path d=\"M5 8a2.5 2.5 0 0 1 2.6-3.1c.9-1.2 3-1.3 3.9-.1A2.5 2.5 0 0 1 15 8\"/><path d=\"M8.5 12v5.5M11.5 12v5.5\"/>"
+   ],
+   [
+    "liquor",
+    "Cocktail",
+    "<path d=\"M4 4.5h16l-8 9-8-9Z\"/><path d=\"M12 13.5V20M8 20.5h8\"/><path d=\"M16.5 4.5 19 2\"/><path d=\"M7.5 8.5h9\"/>"
+   ],
+   [
+    "wine",
+    "Wine",
+    "<path d=\"M8 3h8l.3 4.5a4.3 4.3 0 0 1-8.6 0L8 3Z\"/><path d=\"M7.9 7h8.2\"/><path d=\"M12 12v8.5M8.5 21h7\"/>"
+   ],
+   [
+    "breakfast",
+    "Breakfast",
+    "<circle cx=\"10\" cy=\"13\" r=\"6.5\"/><circle cx=\"10\" cy=\"13\" r=\"2.4\"/><path d=\"M16.5 13H22\"/>"
+   ],
+   [
+    "lunch",
+    "Lunch plate",
+    "<path d=\"M4 11a8 6 0 0 1 16 0H4Z\"/><path d=\"M3 14.5h18\"/><path d=\"M4 17.5h16v.5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-.5Z\"/><path d=\"M9 7.5h.01M12 6.5h.01M15 7.5h.01\"/>"
+   ],
+   [
+    "dinner",
+    "Dinner plate",
+    "<circle cx=\"12.5\" cy=\"12.5\" r=\"5.5\"/><circle cx=\"12.5\" cy=\"12.5\" r=\"2.5\"/><path d=\"M3 3.5v4.5a1.5 1.5 0 0 0 3 0V3.5M4.5 9.5v11\"/><path d=\"M21.5 3.5c-1.7.8-2.3 3.5-2.3 6.5h2.3v10.5\"/>"
+   ],
+   [
+    "apps",
+    "Appetizer",
+    "<path d=\"M14.5 3.5a6 6 0 0 1 4.2 10.3c-1.9 1.9-4.6 1.9-6 .5\"/><path d=\"M12.7 14.3c-1.4-1.4-1.4-4.1.5-6a6 6 0 0 1 1.3-4.8\"/><path d=\"M12.7 14.3 8.5 18.5\"/><path d=\"M8.5 18.5a1.8 1.8 0 1 1-2.4 2.4 1.8 1.8 0 1 1-2.6-2.6 1.8 1.8 0 1 1 2.4-2.4\"/>"
+   ],
+   [
+    "icecream",
+    "Ice cream",
+    "<path d=\"M7 11l5 10.5L17 11\"/><path d=\"M6.5 11a5.5 5.5 0 0 1 11 0Z\"/><path d=\"M8.5 14.5h7\"/>"
+   ]
+  ],
+  "shop": [
+   [
+    "golf",
+    "Golf round",
+    "<path d=\"M9 20.5V3l9 4-9 4\"/><path d=\"M4 20.5c0-1.1 2.2-2 5-2s5 .9 5 2-2.2 2-5 2-5-.9-5-2Z\"/>"
+   ],
+   [
+    "cart",
+    "Cart",
+    "<path d=\"M4 5.5h15M6 5.5V14M17 5.5V14\"/><path d=\"M3 14h18v3.5H3z\"/><circle cx=\"7\" cy=\"19.5\" r=\"1.8\"/><circle cx=\"17\" cy=\"19.5\" r=\"1.8\"/>"
+   ],
+   [
+    "range",
+    "Range",
+    "<path d=\"M5 11h14l-1.8 9.5H6.8L5 11Z\"/><circle cx=\"8.5\" cy=\"8\" r=\"2\"/><circle cx=\"15.5\" cy=\"8\" r=\"2\"/><circle cx=\"12\" cy=\"5.5\" r=\"2\"/>"
+   ],
+   [
+    "disc",
+    "Disc golf",
+    "<ellipse cx=\"12\" cy=\"12.5\" rx=\"9.5\" ry=\"4.5\"/><ellipse cx=\"12\" cy=\"11.5\" rx=\"4.5\" ry=\"1.6\"/>"
+   ],
+   [
+    "pickle",
+    "Pickleball",
+    "<path d=\"M9.5 2.5h1a5.5 5.5 0 0 1 5.5 5.5v2.5a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V8a5.5 5.5 0 0 1 5.5-5.5Z\"/><path d=\"M8.5 14.5l-4 6\"/><circle cx=\"18.5\" cy=\"18\" r=\"2.5\"/>"
+   ],
+   [
+    "merch",
+    "Merch",
+    "<path d=\"M4 15a8 8 0 0 1 16 0Z\"/><path d=\"M4 15h16.5l1.5 2.5H4\"/><path d=\"M12 7V5.5\"/>"
+   ],
+   [
+    "rental",
+    "Rental",
+    "<path d=\"M15 3 9.5 18.5\"/><path d=\"M9.5 18.5h5a2 2 0 0 0 0-3.5H10.6\"/><circle cx=\"18\" cy=\"6\" r=\"2.5\"/>"
+   ],
+   [
+    "nabev",
+    "Soft drink",
+    "<path d=\"M6.5 8h11l-1.4 12.5H7.9L6.5 8Z\"/><path d=\"M5.5 8h13\"/><path d=\"M12 8l2-5.5h3\"/><path d=\"M7.2 13h9.6\"/>"
+   ],
+   [
+    "beer",
+    "Beer",
+    "<path d=\"M5 8h10v11a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V8Z\"/><path d=\"M15 10.5h2a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-2\"/><path d=\"M5 8a2.5 2.5 0 0 1 2.6-3.1c.9-1.2 3-1.3 3.9-.1A2.5 2.5 0 0 1 15 8\"/><path d=\"M8.5 12v5.5M11.5 12v5.5\"/>"
+   ],
+   [
+    "snack",
+    "Snack",
+    "<rect x=\"5\" y=\"7\" width=\"14\" height=\"10\" rx=\"1.5\"/><path d=\"M5 9 2.5 6.5M5 15l-2.5 2.5M19 9l2.5-2.5M19 15l2.5 2.5M10 7v10M14 7v10\"/>"
+   ]
+  ]
+ },
  "asOf": "2026-10-07T03:02:38.000Z",
  "todayPeople": [
   {
    "name": "Sara W.",
    "team": "Pro Shop",
-   "today": 832
+   "today": 832,
+   "card": "shop",
+   "got": [
+    "golf",
+    "cart",
+    "range",
+    "pickle",
+    "merch",
+    "rental",
+    "nabev",
+    "beer",
+    "snack"
+   ]
   },
   {
    "name": "Ariana H.",
    "team": "Range & Bar",
-   "today": 490
+   "today": 490,
+   "card": "rb",
+   "got": [
+    "nabev",
+    "beer",
+    "lunch"
+   ]
   },
   {
    "name": "Madison M.",
    "team": "Range & Bar",
-   "today": 292
+   "today": 292,
+   "card": "rb",
+   "got": [
+    "nabev",
+    "beer"
+   ]
   },
   {
    "name": "Campbell W.",
    "team": "Range & Bar",
-   "today": 225
+   "today": 225,
+   "card": "rb",
+   "got": [
+    "nabev",
+    "beer",
+    "lunch",
+    "dinner",
+    "apps"
+   ]
   },
   {
    "name": "Sarah B.",
    "team": "Range & Bar",
-   "today": 187
+   "today": 187,
+   "card": "rb",
+   "got": [
+    "nabev",
+    "beer",
+    "liquor",
+    "lunch",
+    "dinner"
+   ]
   }
  ],
  "teams": [
@@ -64,7 +209,8 @@
       }
      ],
      "goal": 22026,
-     "byToday": 4409
+     "byToday": 4409,
+     "full": 0
     },
     {
      "name": "Jim D.",
@@ -79,7 +225,8 @@
       }
      ],
      "goal": 22026,
-     "byToday": 4409
+     "byToday": 4409,
+     "full": 0
     },
     {
      "name": "Sara W.",
@@ -94,7 +241,8 @@
       }
      ],
      "goal": 22026,
-     "byToday": 4409
+     "byToday": 4409,
+     "full": 0
     }
    ]
   },
@@ -118,7 +266,8 @@
       }
      ],
      "goal": 9949,
-     "byToday": 1991
+     "byToday": 1991,
+     "full": 0
     },
     {
      "name": "Ariana H.",
@@ -133,7 +282,8 @@
       }
      ],
      "goal": 9949,
-     "byToday": 1991
+     "byToday": 1991,
+     "full": 0
     },
     {
      "name": "Campbell W.",
@@ -142,7 +292,8 @@
      "week": 516,
      "elsewhere": [],
      "goal": 9949,
-     "byToday": 1991
+     "byToday": 1991,
+     "full": 0
     },
     {
      "name": "Jalyn B.",
@@ -157,7 +308,8 @@
       }
      ],
      "goal": 9949,
-     "byToday": 1991
+     "byToday": 1991,
+     "full": 0
     },
     {
      "name": "Khrystin R.",
@@ -172,7 +324,8 @@
       }
      ],
      "goal": 9949,
-     "byToday": 1991
+     "byToday": 1991,
+     "full": 0
     },
     {
      "name": "Chisom N.",
@@ -181,7 +334,8 @@
      "week": 28,
      "elsewhere": [],
      "goal": 9949,
-     "byToday": 1991
+     "byToday": 1991,
+     "full": 0
     },
     {
      "name": "Manuela G.",
@@ -196,7 +350,8 @@
       }
      ],
      "goal": 9949,
-     "byToday": 1991
+     "byToday": 1991,
+     "full": 0
     },
     {
      "name": "Sarah B.",
@@ -205,7 +360,8 @@
      "week": 187,
      "elsewhere": [],
      "goal": 9949,
-     "byToday": 1991
+     "byToday": 1991,
+     "full": 0
     }
    ]
   },

@@ -89,6 +89,20 @@ header svg{width:40px;height:40px;color:#fff;flex:none}
 .foot{margin:20px auto 40px;font-size:13px;color:var(--fg3);text-align:center}
 .empty{margin:40px 0;text-align:center;color:var(--fg2)}
 @media (max-width:600px){.big b{font-size:34px}.rc{padding:12px 14px;gap:12px}.rank{width:40px;height:40px;font-size:19px}.name{font-size:20px}.amt{font-size:26px}.track{height:14px}.upd{display:none}}
+.stk{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:6px;padding-left:38px}
+.sk{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;border:1.5px dashed var(--border);flex:none}
+.sk svg{width:20px;height:20px;fill:none;stroke:var(--fg3);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;opacity:.45}
+.sk.on{background:#4F7468;border:2px solid #F2D36B;box-shadow:0 2px 5px rgba(0,0,0,.2);transform:rotate(-7deg)}
+.sk.on:nth-child(even){transform:rotate(6deg)}
+.sk.on svg{stroke:#F2D36B;opacity:1}
+.stk-n{font-size:12px;font-weight:700;color:var(--fg2);margin-left:4px;white-space:nowrap}
+@media (max-width:600px){.stk{padding-left:0;gap:4px}.sk{width:27px;height:27px}.sk svg{width:16px;height:16px}}
+.legend{margin-top:10px;background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:12px 14px}
+.legend summary{cursor:pointer;font-weight:700;font-size:14px;color:var(--fg2)}
+.lg-t{font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);margin:12px 0 6px}
+.lg{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:6px 12px}
+.lg span{display:flex;align-items:center;gap:8px;font-size:14px}
+.lg .sk{width:30px;height:30px}
 </style>
 </head>
 <body>
@@ -142,6 +156,16 @@ function lyLine(d) {
   const day = d.lyDate ? new Date(d.lyDate + 'T12:00:00').toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' }) : 'same day';
   return `<div class="hly">Last year (${day}): <b>${fmt(d.todayLY)}</b> · ${d.today >= d.todayLY ? `<b>beat it by ${fmt(d.today - d.todayLY)}</b> 🎉` : `<b>${fmt(d.todayLY - d.today)}</b> to beat it`}</div>`;
 }
+function stkRow(d, p) {
+  const c = d.cards && d.cards[p.card]; if (!c) return '';
+  const g = new Set(p.got || []), n = c.filter(([k]) => g.has(k)).length;
+  return `<div class="stk">${c.map(([k, name, svg]) => `<span class="sk${g.has(k) ? ' on' : ''}" title="${esc(name)}"><svg viewBox="0 0 24 24" aria-hidden="true">${svg}</svg></span>`).join('')}<span class="stk-n">${n === c.length ? '🌟 Full card!' : `${n}/${c.length} stickers`}</span></div>`;
+}
+function legend(d) {
+  if (!d.cards) return '';
+  const names = { rb: 'Range & Bar card', shop: 'Pro Shop card' };
+  return `<details class="legend"><summary>⭐ How to collect stickers: sell one of each, every day</summary>${Object.entries(d.cards).map(([k, c]) => `<div class="lg-t">${names[k] || k}</div><div class="lg">${c.map(([, name, svg]) => `<span><i class="sk on"><svg viewBox="0 0 24 24" aria-hidden="true">${svg}</svg></i>${esc(name)}</span>`).join('')}</div>`).join('')}<div class="lg-t">Full card 🌟</div><div style="font-size:14px">Collect all 10 in one day. The card starts fresh every morning.</div></details>`;
+}
 function render(d) {
   stamp(d);
   const pct = d.pace ? Math.round(d.sold / d.pace * 100) : 0;
@@ -158,7 +182,7 @@ function render(d) {
     ${d.mtdLY ? `<div class="hly">Last year to this date: <b>${fmt(d.mtdLY)}</b> · ${d.sold >= d.mtdLY ? `<b>ahead by ${fmt(d.sold - d.mtdLY)}</b> 🎉` : `<b>${fmt(d.mtdLY - d.sold)}</b> behind`}${d.monthLY ? ` · whole month last year: <b>${fmt(d.monthLY)}</b>` : ''}</div>` : ''}
     <div class="leads">${(d.teams || []).filter(t => t.people.length).map(t => `<div class="lead"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4Z"/><path d="M7 6H4v2a3 3 0 0 0 3 3M17 6h3v2a3 3 0 0 1-3 3"/></svg><div><div class="lk">${esc(t.name)}</div><div class="ln">${esc(t.people[0].name)}</div><div class="ls">${fmt(t.people[0].all)} so far this month</div></div></div>`).join('')}</div></div>${tday}</div>`;
   const tl = d.todayPeople || [], mx = tl[0] ? tl[0].today : 1;
-  $('todaylist').innerHTML = tl.length ? `<div class="team"><div class="tk">Today · who's adding</div></div><div class="tl">${tl.map((p, i) => `<div class="tl-row ${i === 0 ? 'lead1' : ''}"><span class="tl-r">${i + 1}</span><span class="tl-n">${esc(p.name)}</span><span class="tl-t">${esc(p.team)}</span><span class="tl-bar"><span style="width:${Math.max(3, p.today / mx * 100)}%"></span></span><span class="tl-v">+${fmt(p.today)}</span></div>`).join('')}</div>` : '';
+  $('todaylist').innerHTML = tl.length ? `<div class="team"><div class="tk">Today · who's adding</div></div><div class="tl">${tl.map((p, i) => `<div class="tl-row ${i === 0 ? 'lead1' : ''}"><span class="tl-r">${i + 1}</span><span class="tl-n">${esc(p.name)}</span><span class="tl-t">${esc(p.team)}</span><span class="tl-bar"><span style="width:${Math.max(3, p.today / mx * 100)}%"></span></span><span class="tl-v">+${fmt(p.today)}</span>${stkRow(d, p)}</div>`).join('')}</div>${legend(d)}` : '';
   $('teams').innerHTML = (d.teams || []).map(t => {
     const ps = t.people;
     return `<div class="team"><div class="tk">${esc(t.name)}</div>

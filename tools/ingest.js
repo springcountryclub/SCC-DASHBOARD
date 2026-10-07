@@ -26,6 +26,7 @@ for (const k of keys) {
   if (isToday && latest && latest > at) { summary.days.push({ date: k, status: 'newer-upload-exists', total: d.total }); continue; }
   const up = { at, total: d.total, groups: d.groups, areas: d.areas, tickets: d.tickets, tix: d.tix || null, file: p.file };
   if (d.emp) up.emp = d.emp;
+  if (d.stk) up.stk = d.stk;
   const out = { ...doc, date: k, uploads: isToday ? [...ups.map(u => ({ ...u, maxTkt: maxTix(u), tix: null })), up].slice(-60) : [up] };
   for (const u of out.uploads) if (u.maxTkt == null) delete u.maxTkt;
   fs.writeFileSync(path.join(outDir, 'day-' + k + '.json'), JSON.stringify(out));

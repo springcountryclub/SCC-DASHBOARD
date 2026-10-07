@@ -130,7 +130,7 @@ function render(d) {
     const ps = t.people;
     return `<div class="team"><div class="tk">${esc(t.name)}</div>
       <div class="tt">${fmt(t.sold)} <span>of ${fmt(t.target)} this month · ${t.pace ? Math.round(t.sold / t.pace * 100) : 0}% of pace</span>${t.today >= 1 ? `<em class="tt-today">${fmt(t.today)} today</em>` : ''}</div>
-      <div class="ttrack"><div class="tfill" style="width:${Math.min(100, t.sold / t.target * 100)}%"></div><div class="tmark" style="left:${Math.min(100, t.pace / t.target * 100)}%"></div></div></div>${!ps.length ? `<div class="cta"><b>Players at the courts are on their own.</b> Go offer drinks, Gatorade and snacks — every sale there adds to your number and shows as a green “at the courts” badge on your card. ${t.today >= 1 ? `<b>${fmt(t.today)}</b> sold at the courts today.` : '<b>Nothing sold at the courts yet today.</b>'}</div>` : ''}
+      <div class="ttrack"><div class="tfill" style="width:${Math.min(100, t.sold / t.target * 100)}%"></div><div class="tmark" style="left:${Math.min(100, t.pace / t.target * 100)}%"></div></div></div>${!ps.length ? `<div class="cta"><b>Players at the courts are on their own.</b> Go offer drinks, Gatorade, snacks and rackets — every sale there adds to your number and shows as a green “at the courts” badge on your card. ${t.today >= 1 ? `<b>${fmt(t.today)}</b> sold at the courts today.` : '<b>Nothing sold at the courts yet today.</b>'}</div>` : ''}
       ${ps.map((p, i) => {
         const up = ps[i - 1], first = ps[0].name.split(' ')[0];
         const chase = i === 0 ? (ps[1] ? `<b>${fmt(p.all - ps[1].all)} ahead</b> of ${esc(ps[1].name.split(' ')[0])} — keep pushing` : 'Leading')

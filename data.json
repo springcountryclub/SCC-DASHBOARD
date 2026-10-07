@@ -31,10 +31,10 @@
  "teams": [
   {
    "name": "Pro Shop",
-   "sold": 6157,
-   "today": 1006,
-   "target": 69683,
-   "pace": 13725,
+   "sold": 5762,
+   "today": 986,
+   "target": 66079,
+   "pace": 13015,
    "people": [
     {
      "name": "Lucia N.",
@@ -43,31 +43,48 @@
      "week": 0,
      "elsewhere": [
       {
+       "team": "Pickleball",
+       "amt": 30,
+       "courts": true
+      },
+      {
        "team": "Range & Bar",
        "amt": 43,
        "courts": false
       }
      ],
-     "goal": 23228,
-     "byToday": 4575
+     "goal": 22026,
+     "byToday": 4338
     },
     {
      "name": "Jim D.",
      "all": 1667,
      "today": 0,
      "week": 315,
-     "elsewhere": [],
-     "goal": 23228,
-     "byToday": 4575
+     "elsewhere": [
+      {
+       "team": "Pickleball",
+       "amt": 135,
+       "courts": true
+      }
+     ],
+     "goal": 22026,
+     "byToday": 4338
     },
     {
      "name": "Sara W.",
      "all": 1106,
      "today": 832,
      "week": 1106,
-     "elsewhere": [],
-     "goal": 23228,
-     "byToday": 4575
+     "elsewhere": [
+      {
+       "team": "Pickleball",
+       "amt": 20,
+       "courts": true
+      }
+     ],
+     "goal": 22026,
+     "byToday": 4338
     }
    ]
   },
@@ -75,8 +92,8 @@
    "name": "Range & Bar",
    "sold": 8068,
    "today": 598,
-   "target": 78994,
-   "pace": 15559,
+   "target": 79595,
+   "pace": 15677,
    "people": [
     {
      "name": "Madison M.",
@@ -90,8 +107,8 @@
        "courts": false
       }
      ],
-     "goal": 9874,
-     "byToday": 1945
+     "goal": 9949,
+     "byToday": 1960
     },
     {
      "name": "Ariana H.",
@@ -101,16 +118,12 @@
      "elsewhere": [
       {
        "team": "Pickleball",
-       "amt": 213,
+       "amt": 243,
        "courts": true
-      },
-      {
-       "label": "court rentals",
-       "amt": 30
       }
      ],
-     "goal": 9874,
-     "byToday": 1945
+     "goal": 9949,
+     "byToday": 1960
     },
     {
      "name": "Campbell W.",
@@ -118,8 +131,8 @@
      "today": 225,
      "week": 516,
      "elsewhere": [],
-     "goal": 9874,
-     "byToday": 1945
+     "goal": 9949,
+     "byToday": 1960
     },
     {
      "name": "Jalyn B.",
@@ -128,12 +141,13 @@
      "week": 0,
      "elsewhere": [
       {
-       "label": "court rentals",
-       "amt": 90
+       "team": "Pickleball",
+       "amt": 90,
+       "courts": true
       }
      ],
-     "goal": 9874,
-     "byToday": 1945
+     "goal": 9949,
+     "byToday": 1960
     },
     {
      "name": "Khrystin R.",
@@ -142,12 +156,13 @@
      "week": 0,
      "elsewhere": [
       {
-       "label": "court rentals",
-       "amt": 90
+       "team": "Pickleball",
+       "amt": 90,
+       "courts": true
       }
      ],
-     "goal": 9874,
-     "byToday": 1945
+     "goal": 9949,
+     "byToday": 1960
     },
     {
      "name": "Chisom N.",
@@ -155,8 +170,8 @@
      "today": 0,
      "week": 28,
      "elsewhere": [],
-     "goal": 9874,
-     "byToday": 1945
+     "goal": 9949,
+     "byToday": 1960
     },
     {
      "name": "Manuela G.",
@@ -170,8 +185,8 @@
        "courts": false
       }
      ],
-     "goal": 9874,
-     "byToday": 1945
+     "goal": 9949,
+     "byToday": 1960
     },
     {
      "name": "Sarah B.",
@@ -179,17 +194,17 @@
      "today": 0,
      "week": 0,
      "elsewhere": [],
-     "goal": 9874,
-     "byToday": 1945
+     "goal": 9949,
+     "byToday": 1960
     }
    ]
   },
   {
    "name": "Pickleball",
-   "sold": 213,
-   "today": 0,
-   "target": 1502,
-   "pace": 296,
+   "sold": 608,
+   "today": 20,
+   "target": 4505,
+   "pace": 887,
    "people": []
   }
  ]

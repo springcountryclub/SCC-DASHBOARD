@@ -11,7 +11,18 @@
    "people": [
     {
      "all": 3029,
-     "byToday": 4338,
+     "today": 0,
+     "week": 0,
+     "elsewhere": [
+      {
+       "team": "Pickleball & Cart",
+       "amt": 30
+      },
+      {
+       "team": "Range & Bar",
+       "amt": 43
+      }
+     ],
      "goal": 22026,
      "name": "Lucia N.",
      "today": 0,
@@ -19,7 +30,14 @@
     },
     {
      "all": 1667,
-     "byToday": 4338,
+     "today": 0,
+     "week": 315,
+     "elsewhere": [
+      {
+       "team": "Pickleball & Cart",
+       "amt": 135
+      }
+     ],
      "goal": 22026,
      "name": "Jim D.",
      "today": 0,
@@ -27,7 +45,14 @@
     },
     {
      "all": 1106,
-     "byToday": 4338,
+     "today": 832,
+     "week": 1106,
+     "elsewhere": [
+      {
+       "team": "Pickleball & Cart",
+       "amt": 20
+      }
+     ],
      "goal": 22026,
      "name": "Sara W.",
      "today": 832,
@@ -48,7 +73,15 @@
      "goal": 9893,
      "name": "Madison M.",
      "today": 174,
-     "week": 632
+     "week": 632,
+     "elsewhere": [
+      {
+       "team": "Pro Shop",
+       "amt": 174
+      }
+     ],
+     "goal": 9893,
+     "byToday": 1949
     },
     {
      "all": 1452,
@@ -56,7 +89,15 @@
      "goal": 9893,
      "name": "Ariana H.",
      "today": 373,
-     "week": 373
+     "week": 373,
+     "elsewhere": [
+      {
+       "team": "Pickleball & Cart",
+       "amt": 243
+      }
+     ],
+     "goal": 9893,
+     "byToday": 1949
     },
     {
      "all": 1374,
@@ -64,11 +105,21 @@
      "goal": 9893,
      "name": "Campbell W.",
      "today": 225,
-     "week": 516
+     "week": 516,
+     "elsewhere": [],
+     "goal": 9893,
+     "byToday": 1949
     },
     {
      "all": 1346,
-     "byToday": 1949,
+     "today": 0,
+     "week": 0,
+     "elsewhere": [
+      {
+       "team": "Pickleball & Cart",
+       "amt": 90
+      }
+     ],
      "goal": 9893,
      "name": "Jalyn B.",
      "today": 0,
@@ -76,7 +127,14 @@
     },
     {
      "all": 868,
-     "byToday": 1949,
+     "today": 0,
+     "week": 0,
+     "elsewhere": [
+      {
+       "team": "Pickleball & Cart",
+       "amt": 90
+      }
+     ],
      "goal": 9893,
      "name": "Khrystin R.",
      "today": 0,
@@ -84,7 +142,9 @@
     },
     {
      "all": 838,
-     "byToday": 1949,
+     "today": 0,
+     "week": 28,
+     "elsewhere": [],
      "goal": 9893,
      "name": "Chisom N.",
      "today": 0,
@@ -92,7 +152,14 @@
     },
     {
      "all": 616,
-     "byToday": 1949,
+     "today": 0,
+     "week": 0,
+     "elsewhere": [
+      {
+       "team": "Pro Shop",
+       "amt": 14
+      }
+     ],
      "goal": 9893,
      "name": "Manuela G.",
      "today": 0,
@@ -100,7 +167,9 @@
     },
     {
      "all": 318,
-     "byToday": 1949,
+     "today": 0,
+     "week": 0,
+     "elsewhere": [],
      "goal": 9893,
      "name": "Sarah B.",
      "today": 0,

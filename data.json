@@ -133,7 +133,8 @@
     "nabev",
     "beer",
     "snack"
-   ]
+   ],
+   "cards": 0
   },
   {
    "name": "Ariana H.",
@@ -144,7 +145,8 @@
     "nabev",
     "beer",
     "lunch"
-   ]
+   ],
+   "cards": 0
   },
   {
    "name": "Madison M.",
@@ -154,7 +156,8 @@
    "got": [
     "nabev",
     "beer"
-   ]
+   ],
+   "cards": 0
   },
   {
    "name": "Campbell W.",
@@ -167,7 +170,8 @@
     "lunch",
     "dinner",
     "apps"
-   ]
+   ],
+   "cards": 0
   },
   {
    "name": "Sarah B.",
@@ -180,7 +184,8 @@
     "liquor",
     "lunch",
     "dinner"
-   ]
+   ],
+   "cards": 0
   }
  ],
  "teams": [
@@ -213,18 +218,15 @@
      "full": 1,
      "card": "shop",
      "sd": 4,
-     "sc": {
-      "golf": 4,
-      "cart": 4,
-      "range": 1,
-      "disc": 2,
-      "pickle": 1,
-      "merch": 3,
-      "rental": 2,
-      "nabev": 4,
-      "beer": 3,
-      "snack": 3
-     }
+     "cards": 1,
+     "cur": [
+      "golf",
+      "cart",
+      "disc",
+      "merch",
+      "nabev",
+      "snack"
+     ]
     },
     {
      "name": "Jim D.",
@@ -243,18 +245,15 @@
      "full": 0,
      "card": "shop",
      "sd": 5,
-     "sc": {
-      "golf": 2,
-      "cart": 4,
-      "range": 4,
-      "disc": 3,
-      "pickle": 2,
-      "merch": 3,
-      "rental": 1,
-      "nabev": 5,
-      "beer": 3,
-      "snack": 3
-     }
+     "cards": 1,
+     "cur": [
+      "golf",
+      "cart",
+      "range",
+      "pickle",
+      "nabev",
+      "snack"
+     ]
     },
     {
      "name": "Sara W.",
@@ -273,17 +272,18 @@
      "full": 0,
      "card": "shop",
      "sd": 2,
-     "sc": {
-      "golf": 2,
-      "cart": 2,
-      "range": 2,
-      "pickle": 1,
-      "merch": 1,
-      "rental": 1,
-      "nabev": 2,
-      "beer": 1,
-      "snack": 2
-     }
+     "cards": 0,
+     "cur": [
+      "golf",
+      "cart",
+      "range",
+      "pickle",
+      "merch",
+      "rental",
+      "nabev",
+      "beer",
+      "snack"
+     ]
     }
    ]
   },
@@ -311,15 +311,16 @@
      "full": 0,
      "card": "rb",
      "sd": 4,
-     "sc": {
-      "coffee": 3,
-      "nabev": 4,
-      "beer": 4,
-      "liquor": 3,
-      "lunch": 3,
-      "dinner": 3,
-      "apps": 3
-     }
+     "cards": 0,
+     "cur": [
+      "coffee",
+      "nabev",
+      "beer",
+      "liquor",
+      "lunch",
+      "dinner",
+      "apps"
+     ]
     },
     {
      "name": "Ariana H.",
@@ -338,15 +339,16 @@
      "full": 0,
      "card": "rb",
      "sd": 4,
-     "sc": {
-      "coffee": 1,
-      "nabev": 4,
-      "beer": 3,
-      "liquor": 2,
-      "lunch": 3,
-      "dinner": 1,
-      "apps": 3
-     }
+     "cards": 0,
+     "cur": [
+      "coffee",
+      "nabev",
+      "beer",
+      "liquor",
+      "lunch",
+      "dinner",
+      "apps"
+     ]
     },
     {
      "name": "Campbell W.",
@@ -359,14 +361,15 @@
      "full": 0,
      "card": "rb",
      "sd": 4,
-     "sc": {
-      "nabev": 4,
-      "beer": 4,
-      "liquor": 2,
-      "lunch": 4,
-      "dinner": 3,
-      "apps": 3
-     }
+     "cards": 0,
+     "cur": [
+      "nabev",
+      "beer",
+      "liquor",
+      "lunch",
+      "dinner",
+      "apps"
+     ]
     },
     {
      "name": "Jalyn B.",
@@ -385,15 +388,16 @@
      "full": 0,
      "card": "rb",
      "sd": 3,
-     "sc": {
-      "nabev": 3,
-      "beer": 3,
-      "liquor": 3,
-      "breakfast": 1,
-      "lunch": 2,
-      "dinner": 2,
-      "apps": 2
-     }
+     "cards": 0,
+     "cur": [
+      "nabev",
+      "beer",
+      "liquor",
+      "breakfast",
+      "lunch",
+      "dinner",
+      "apps"
+     ]
     },
     {
      "name": "Khrystin R.",
@@ -412,14 +416,15 @@
      "full": 0,
      "card": "rb",
      "sd": 2,
-     "sc": {
-      "nabev": 2,
-      "beer": 2,
-      "liquor": 2,
-      "lunch": 1,
-      "dinner": 1,
-      "apps": 1
-     }
+     "cards": 0,
+     "cur": [
+      "nabev",
+      "beer",
+      "liquor",
+      "lunch",
+      "dinner",
+      "apps"
+     ]
     },
     {
      "name": "Chisom N.",
@@ -432,16 +437,17 @@
      "full": 0,
      "card": "rb",
      "sd": 2,
-     "sc": {
-      "coffee": 1,
-      "nabev": 2,
-      "beer": 1,
-      "liquor": 1,
-      "wine": 1,
-      "lunch": 1,
-      "dinner": 1,
-      "icecream": 1
-     }
+     "cards": 0,
+     "cur": [
+      "coffee",
+      "nabev",
+      "beer",
+      "liquor",
+      "wine",
+      "lunch",
+      "dinner",
+      "icecream"
+     ]
     },
     {
      "name": "Manuela G.",
@@ -460,14 +466,15 @@
      "full": 0,
      "card": "rb",
      "sd": 2,
-     "sc": {
-      "coffee": 1,
-      "nabev": 2,
-      "beer": 1,
-      "liquor": 2,
-      "breakfast": 1,
-      "dinner": 1
-     }
+     "cards": 0,
+     "cur": [
+      "coffee",
+      "nabev",
+      "beer",
+      "liquor",
+      "breakfast",
+      "dinner"
+     ]
     },
     {
      "name": "Sarah B.",
@@ -480,15 +487,16 @@
      "full": 0,
      "card": "rb",
      "sd": 4,
-     "sc": {
-      "coffee": 2,
-      "nabev": 2,
-      "beer": 3,
-      "liquor": 3,
-      "breakfast": 2,
-      "lunch": 3,
-      "dinner": 3
-     }
+     "cards": 0,
+     "cur": [
+      "coffee",
+      "nabev",
+      "beer",
+      "liquor",
+      "breakfast",
+      "lunch",
+      "dinner"
+     ]
     }
    ]
   },

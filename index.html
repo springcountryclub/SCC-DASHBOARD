@@ -114,6 +114,9 @@ header svg{width:40px;height:40px;color:#fff;flex:none}
 .stk.m .sk b{min-width:15px;height:15px;font-size:9px;line-height:12px;right:-7px;top:-6px}
 .sk{position:relative}.sk b{position:absolute;right:-5px;top:-6px;min-width:17px;height:17px;padding:0 3px;border-radius:9px;background:#fff;color:#4F7468;border:1.5px solid #4F7468;font-size:10px;font-weight:800;line-height:14px;text-align:center}
 .sk.on:nth-child(even) b,.sk.on b{transform:none}
+.bronze .sk.on{background:#A2693F}.silver .sk.on{background:#8A959A}.gold .sk.on{background:#B48E2A}
+.msk-done{font-weight:800;color:#4F7468}.msk-done.bronze{color:#A2693F}.msk-done.silver{color:#76838A}.msk-done.gold{color:#9C7A1F}
+.tier-chip{display:inline-block;padding:0 8px;border-radius:999px;color:#fff;background:#4F7468;font-size:12px;font-weight:700}.tier-chip.bronze{background:#A2693F}.tier-chip.silver{background:#8A959A}.tier-chip.gold{background:#B48E2A}
 </style>
 </head>
 <body>
@@ -170,28 +173,23 @@ function lyLine(d) {
 function stkRow(d, p) {
   const c = d.cards && d.cards[p.card]; if (!c) return '';
   const g = new Set(p.got || []), n = c.filter(([k]) => g.has(k)).length;
-  return `<div class="stk">${c.map(([k, name, svg]) => `<span class="sk${g.has(k) ? ' on' : ''}" title="${esc(name)}"><svg viewBox="0 0 24 24" aria-hidden="true">${svg}</svg></span>`).join('')}<span class="stk-n${n === c.length ? ' full' : ''}">${n === c.length ? '<svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.7 5.5 6 .9-4.35 4.25 1.03 6L12 17l-5.38 2.85 1.03-6L3.3 9.6l6-.9L12 3.2Z"/></svg>Full card!' : `${n}/${c.length} stickers`}</span></div>`;
+  return `<div class="stk ${tierOf(p.cards)}">${c.map(([k, name, svg]) => `<span class="sk${g.has(k) ? ' on' : ''}" title="${esc(name)}"><svg viewBox="0 0 24 24" aria-hidden="true">${svg}</svg></span>`).join('')}<span class="stk-n${n === c.length ? ' full' : ''}">${n === c.length ? '<svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.7 5.5 6 .9-4.35 4.25 1.03 6L12 17l-5.38 2.85 1.03-6L3.3 9.6l6-.9L12 3.2Z"/></svg>Perfect day!' : `${n}/${c.length} stickers`}</span></div>`;
 }
 function legend(d) {
   if (!d.cards) return '';
   const names = { rb: 'Range & Bar card', shop: 'Pro Shop card' };
-  return `<details class="legend"><summary><svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.7 5.5 6 .9-4.35 4.25 1.03 6L12 17l-5.38 2.85 1.03-6L3.3 9.6l6-.9L12 3.2Z"/></svg>How to collect stickers: sell one of each, every day</summary>${Object.entries(d.cards).map(([k, c]) => `<div class="lg-t">${names[k] || k}</div><div class="lg">${c.map(([, name, svg]) => `<span><i class="sk on"><svg viewBox="0 0 24 24" aria-hidden="true">${svg}</svg></i>${esc(name)}</span>`).join('')}</div>`).join('')}<div class="lg-t"><svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.7 5.5 6 .9-4.35 4.25 1.03 6L12 17l-5.38 2.85 1.03-6L3.3 9.6l6-.9L12 3.2Z"/></svg>Full card</div><div style="font-size:14px">Collect all 10 in one day. The card starts fresh every morning.</div><div class="lg-t">${STAR}Sets</div><div style="font-size:14px">A set is one of each sticker. Sell all 10 at least once this month and you complete <b>Set 1</b>; your numbers unlock and show how many days you earned each sticker. Every sticker at 2 or more = <b>Set 2</b>, and so on. Your card tells you which stickers the next set needs.</div></details>`;
+  return `<details class="legend"><summary><svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.7 5.5 6 .9-4.35 4.25 1.03 6L12 17l-5.38 2.85 1.03-6L3.3 9.6l6-.9L12 3.2Z"/></svg>How to collect stickers: sell one of each, every day</summary>${Object.entries(d.cards).map(([k, c]) => `<div class="lg-t">${names[k] || k}</div><div class="lg">${c.map(([, name, svg]) => `<span><i class="sk on"><svg viewBox="0 0 24 24" aria-hidden="true">${svg}</svg></i>${esc(name)}</span>`).join('')}</div>`).join('')}<div class="lg-t">${STAR}Perfect day</div><div style="font-size:14px">All 10 in one day. Today's card starts fresh every morning.</div><div class="lg-t">Cards</div><div style="font-size:14px">Your month card fills up as you earn each sticker. Fill all 10 and it's <b>complete</b>: you get a new empty card and start again. Complete cards change your sticker color: <span class="tier-chip">green</span> → <span class="tier-chip bronze">bronze</span> after 1 card → <span class="tier-chip silver">silver</span> after 2 → <span class="tier-chip gold">gold</span> after 3.</div></details>`;
 }
+const TIERS = ['', 'bronze', 'silver', 'gold'], tierOf = n => TIERS[Math.min(3, n || 0)];
 function monthStk(d, p) {
   const c = d.cards && d.cards[p.card]; if (!c || !p.sd) return '';
-  const sc = p.sc || {}, have = c.filter(([k]) => sc[k]).length, done = have === c.length;
-  const sets = setsOf(d, p), next = done ? c.filter(([k]) => (sc[k] || 0) === sets).map(([, name]) => name) : [];
-  const fullTxt = p.full ? ` · <span class="msk-full">${STAR}${p.full} full card${p.full > 1 ? 's' : ''}</span>` : '';
-  const head = done ? `<span class="msk-sets">Sets: ${sets}</span> · numbers unlocked${fullTxt}` : `Stickers this month · ${have}/${c.length} collected${fullTxt}`;
-  const icons = c.map(([k, name, svg]) => `<span class="sk${sc[k] ? ' on' : ''}" title="${esc(name)}"><svg viewBox="0 0 24 24" aria-hidden="true">${svg}</svg>${done ? `<b>${sc[k]}</b>` : ''}</span>`).join('');
-  const foot = done ? `<div class="msk-miss">Set ${sets + 1} needs: ${next.map(n => `<b>${esc(n)}</b>`).join(' · ')}</div>`
-    : `<div class="msk-miss">Still to collect: ${c.filter(([k]) => !sc[k]).map(([, name]) => `<b>${esc(name)}</b>`).join(' · ')}</div>`;
-  return `<div class="msk"><div class="msk-h">${head}</div><div class="stk m">${icons}</div>${foot}</div>`;
+  const cur = new Set(p.cur || []), n = c.filter(([k]) => cur.has(k)).length, done = p.cards || 0, t = tierOf(done);
+  const head = `<span class="msk-sets">Card ${done + 1} · ${n}/${c.length}</span>${done ? ` · <span class="msk-done ${t}">${done} card${done > 1 ? 's' : ''} complete</span>` : ''}${p.full ? ` · <span class="msk-full">${STAR}${p.full} perfect day${p.full > 1 ? 's' : ''}</span>` : ''}`;
+  const icons = c.map(([k, name, svg]) => `<span class="sk${cur.has(k) ? ' on' : ''}" title="${esc(name)}"><svg viewBox="0 0 24 24" aria-hidden="true">${svg}</svg></span>`).join('');
+  return `<div class="msk ${t}"><div class="msk-h">${head}</div><div class="stk m">${icons}</div><div class="msk-miss">${n === c.length ? 'Card complete!' : `Card ${done + 1} still needs: ${c.filter(([k]) => !cur.has(k)).map(([, name]) => `<b>${esc(name)}</b>`).join(' · ')}`}</div></div>`;
 }
-// complete sets of the card: the sticker earned on the fewest days decides it
-const STARL = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.7 5.5 6 .9-4.35 4.25 1.03 6L12 17l-5.38 2.85 1.03-6L3.3 9.6l6-.9L12 3.2Z"/></svg>';
-function setsOf(d, p) { const c = d.cards && d.cards[p.card], sc = p.sc || {}; return c && p.sd ? Math.min(...c.map(([k]) => sc[k] || 0)) : 0; }
 const STAR = '<svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.7 5.5 6 .9-4.35 4.25 1.03 6L12 17l-5.38 2.85 1.03-6L3.3 9.6l6-.9L12 3.2Z"/></svg>';
+const STARL = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.7 5.5 6 .9-4.35 4.25 1.03 6L12 17l-5.38 2.85 1.03-6L3.3 9.6l6-.9L12 3.2Z"/></svg>';
 function render(d) {
   stamp(d);
   const pct = d.pace ? Math.round(d.sold / d.pace * 100) : 0;
@@ -206,8 +204,8 @@ function render(d) {
     <div class="htrack"><div class="hfill" style="width:${Math.min(100, d.sold / d.goal * 100)}%"></div><div class="hmark" style="left:${Math.min(100, d.pace / d.goal * 100)}%"></div></div>
     <div class="hsub">We should be at <b>${fmt(d.pace)}</b> by now · the club is at <b>${pct}%</b> of pace</div>
     ${d.mtdLY ? `<div class="hly">Last year to this date: <b>${fmt(d.mtdLY)}</b> · ${d.sold >= d.mtdLY ? `<b>ahead by ${fmt(d.sold - d.mtdLY)}</b> 🎉` : `<b>${fmt(d.mtdLY - d.sold)}</b> behind`}${d.monthLY ? ` · whole month last year: <b>${fmt(d.monthLY)}</b>` : ''}</div>` : ''}
-    <div class="leads">${(d.teams || []).filter(t => t.people.length).map(t => `<div class="lead"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4Z"/><path d="M7 6H4v2a3 3 0 0 0 3 3M17 6h3v2a3 3 0 0 1-3 3"/></svg><div><div class="lk">${esc(t.name)}</div><div class="ln">${esc(t.people[0].name)}</div><div class="ls">${fmt(t.people[0].all)} so far this month</div></div></div>`).join('')}${(d.teams || []).map(t => { const b = [...t.people].map(p => [p, setsOf(d, p)]).filter(([, n]) => n > 0).sort((x, y) => y[1] - x[1] || (y[0].full || 0) - (x[0].full || 0))[0];
-      return b ? `<div class="lead">${STARL}<div><div class="lk">${esc(t.name)} · most sets</div><div class="ln">${esc(b[0].name)}</div><div class="ls">${b[1]} sticker set${b[1] > 1 ? 's' : ''} this month</div></div></div>` : ''; }).join('')}</div></div>${tday}</div>`;
+    <div class="leads">${(d.teams || []).filter(t => t.people.length).map(t => `<div class="lead"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4Z"/><path d="M7 6H4v2a3 3 0 0 0 3 3M17 6h3v2a3 3 0 0 1-3 3"/></svg><div><div class="lk">${esc(t.name)}</div><div class="ln">${esc(t.people[0].name)}</div><div class="ls">${fmt(t.people[0].all)} so far this month</div></div></div>`).join('')}${(d.teams || []).map(t => { const b = [...t.people].map(p => [p, p.cards || 0]).filter(([, n]) => n > 0).sort((x, y) => y[1] - x[1] || (y[0].full || 0) - (x[0].full || 0))[0];
+      return b ? `<div class="lead">${STARL}<div><div class="lk">${esc(t.name)} · most cards</div><div class="ln">${esc(b[0].name)}</div><div class="ls">${b[1]} sticker card${b[1] > 1 ? 's' : ''} complete</div></div></div>` : ''; }).join('')}</div></div>${tday}</div>`;
   const tl = d.todayPeople || [], mx = tl[0] ? tl[0].today : 1;
   $('todaylist').innerHTML = tl.length ? `<div class="team"><div class="tk">Today · who's adding</div></div><div class="tl">${tl.map((p, i) => `<div class="tl-row ${i === 0 ? 'lead1' : ''}"><span class="tl-r">${i + 1}</span><span class="tl-n">${esc(p.name)}</span><span class="tl-t">${esc(p.team)}</span><span class="tl-bar"><span style="width:${Math.max(3, p.today / mx * 100)}%"></span></span><span class="tl-v">+${fmt(p.today)}</span>${stkRow(d, p)}</div>`).join('')}</div>${legend(d)}` : '';
   $('teams').innerHTML = (d.teams || []).map(t => {

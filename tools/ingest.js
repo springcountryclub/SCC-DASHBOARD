@@ -48,6 +48,8 @@ for (const k of keys) {
   const board = await page.evaluate(() => typeof boardData === 'function' ? boardData() : null);
   await b.close();
   if (!board || !board.teams || board.today == null || !board.todayPeople) { console.log(JSON.stringify({ ...summary, board: 'failed', errs })); process.exit(3); }
+  // remember the newest report even when it had no sales (an 8 AM report before the first sale), so the board shows it ran
+  if (fs.existsSync(metaF) && meta.sentAt && (!board.asOf || meta.sentAt > board.asOf)) board.lastReport = meta.sentAt;
   fs.writeFileSync(path.join(outDir, 'board.json'), JSON.stringify({ ...board, savedAt: new Date().toISOString() }));
   fs.writeFileSync(path.join(outDir, 'data.json'), JSON.stringify(board, null, 1) + '\n');
   console.log(JSON.stringify({ ...summary, board: { today: board.today, sold: board.sold, asOf: board.asOf }, errs }));

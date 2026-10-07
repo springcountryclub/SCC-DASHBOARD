@@ -26,10 +26,10 @@
     15
    ],
    [
-    "beer6",
-    "6 beers",
-    "<path d=\"M5 8h10v11a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V8Z\"/><path d=\"M15 10.5h2a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-2\"/><path d=\"M5 8a2.5 2.5 0 0 1 2.6-3.1c.9-1.2 3-1.3 3.9-.1A2.5 2.5 0 0 1 15 8\"/><path d=\"M8.5 12v5.5M11.5 12v5.5\"/>",
-    6
+    "bucket",
+    "Beer bucket",
+    "<path d=\"M4 10h16l-2 10.5H6L4 10Z\"/><path d=\"M8 10V5.5l1-1.5M12 10V4l1-1.5M16 10V6l1-1.5\"/><path d=\"M5 14h14\"/>",
+    1
    ],
    [
     "liquor3",
@@ -257,7 +257,7 @@
      "cur": [
       "coffee",
       "nabev15",
-      "beer6",
+      "bucket",
       "liquor3",
       "lunch3",
       "dinner2",
@@ -303,7 +303,7 @@
      "sd": 4,
      "cards": 0,
      "cur": [
-      "beer6",
+      "bucket",
       "liquor3",
       "lunch3",
       "dinner2",
@@ -355,7 +355,6 @@
      "cards": 0,
      "cur": [
       "nabev15",
-      "beer6",
       "liquor3",
       "lunch3",
       "apps"

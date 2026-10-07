@@ -21,8 +21,8 @@
      "week": 0,
      "elsewhere": [
       {
-       "team": "Range, Bar & Pickleball",
-       "amt": 73
+       "team": "Range & Bar",
+       "amt": 43
       }
      ],
      "goal": 22026,
@@ -33,12 +33,7 @@
      "all": 1667,
      "today": 0,
      "week": 315,
-     "elsewhere": [
-      {
-       "team": "Range, Bar & Pickleball",
-       "amt": 135
-      }
-     ],
+     "elsewhere": [],
      "goal": 22026,
      "byToday": 4338
     },
@@ -47,23 +42,18 @@
      "all": 1106,
      "today": 832,
      "week": 1106,
-     "elsewhere": [
-      {
-       "team": "Range, Bar & Pickleball",
-       "amt": 20
-      }
-     ],
+     "elsewhere": [],
      "goal": 22026,
      "byToday": 4338
     }
    ]
   },
   {
-   "name": "Range, Bar & Pickleball",
-   "sold": 8676,
-   "today": 618,
-   "target": 84100,
-   "pace": 16565,
+   "name": "Range & Bar",
+   "sold": 8068,
+   "today": 598,
+   "target": 79595,
+   "pace": 15677,
    "people": [
     {
      "name": "Madison M.",
@@ -76,8 +66,8 @@
        "amt": 174
       }
      ],
-     "goal": 10513,
-     "byToday": 2071
+     "goal": 9949,
+     "byToday": 1960
     },
     {
      "name": "Ariana H.",
@@ -85,8 +75,8 @@
      "today": 373,
      "week": 373,
      "elsewhere": [],
-     "goal": 10513,
-     "byToday": 2071
+     "goal": 9949,
+     "byToday": 1960
     },
     {
      "name": "Campbell W.",
@@ -94,8 +84,8 @@
      "today": 225,
      "week": 516,
      "elsewhere": [],
-     "goal": 10513,
-     "byToday": 2071
+     "goal": 9949,
+     "byToday": 1960
     },
     {
      "name": "Jalyn B.",
@@ -103,8 +93,8 @@
      "today": 0,
      "week": 0,
      "elsewhere": [],
-     "goal": 10513,
-     "byToday": 2071
+     "goal": 9949,
+     "byToday": 1960
     },
     {
      "name": "Khrystin R.",
@@ -112,8 +102,8 @@
      "today": 0,
      "week": 0,
      "elsewhere": [],
-     "goal": 10513,
-     "byToday": 2071
+     "goal": 9949,
+     "byToday": 1960
     },
     {
      "name": "Chisom N.",
@@ -121,8 +111,8 @@
      "today": 0,
      "week": 28,
      "elsewhere": [],
-     "goal": 10513,
-     "byToday": 2071
+     "goal": 9949,
+     "byToday": 1960
     },
     {
      "name": "Manuela G.",
@@ -135,8 +125,8 @@
        "amt": 14
       }
      ],
-     "goal": 10513,
-     "byToday": 2071
+     "goal": 9949,
+     "byToday": 1960
     },
     {
      "name": "Sarah B.",
@@ -144,8 +134,71 @@
      "today": 0,
      "week": 0,
      "elsewhere": [],
-     "goal": 10513,
-     "byToday": 2071
+     "goal": 9949,
+     "byToday": 1960
+    }
+   ]
+  },
+  {
+   "name": "Pickleball",
+   "sold": 608,
+   "today": 20,
+   "target": 4505,
+   "pace": 887,
+   "people": [
+    {
+     "name": "Ariana H.",
+     "all": 243,
+     "today": 0,
+     "week": 0,
+     "elsewhere": [],
+     "goal": 751,
+     "byToday": 148
+    },
+    {
+     "name": "Jim D.",
+     "all": 135,
+     "today": 0,
+     "week": 0,
+     "elsewhere": [],
+     "goal": 751,
+     "byToday": 148
+    },
+    {
+     "name": "Jalyn B.",
+     "all": 90,
+     "today": 0,
+     "week": 0,
+     "elsewhere": [],
+     "goal": 751,
+     "byToday": 148
+    },
+    {
+     "name": "Khrystin R.",
+     "all": 90,
+     "today": 0,
+     "week": 0,
+     "elsewhere": [],
+     "goal": 751,
+     "byToday": 148
+    },
+    {
+     "name": "Lucia N.",
+     "all": 30,
+     "today": 0,
+     "week": 0,
+     "elsewhere": [],
+     "goal": 751,
+     "byToday": 148
+    },
+    {
+     "name": "Sara W.",
+     "all": 20,
+     "today": 20,
+     "week": 20,
+     "elsewhere": [],
+     "goal": 751,
+     "byToday": 148
     }
    ]
   }

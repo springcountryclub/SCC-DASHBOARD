@@ -15,104 +15,124 @@
    [
     "coffee",
     "Coffee",
-    "<path d=\"M5 9h11v5a5 5 0 0 1-5 5h-1a5 5 0 0 1-5-5V9Z\"/><path d=\"M16 10.5h1.5a2.5 2.5 0 0 1 0 5H16\"/><path d=\"M8.5 3.5c0 1.5 1 1.5 1 3M12.5 3.5c0 1.5 1 1.5 1 3\"/>"
+    "<path d=\"M5 9h11v5a5 5 0 0 1-5 5h-1a5 5 0 0 1-5-5V9Z\"/><path d=\"M16 10.5h1.5a2.5 2.5 0 0 1 0 5H16\"/><path d=\"M8.5 3.5c0 1.5 1 1.5 1 3M12.5 3.5c0 1.5 1 1.5 1 3\"/>",
+    1
    ],
    [
     "nabev",
     "Soft drink",
-    "<path d=\"M6.5 8h11l-1.4 12.5H7.9L6.5 8Z\"/><path d=\"M5.5 8h13\"/><path d=\"M12 8l2-5.5h3\"/><path d=\"M7.2 13h9.6\"/>"
+    "<path d=\"M6.5 8h11l-1.4 12.5H7.9L6.5 8Z\"/><path d=\"M5.5 8h13\"/><path d=\"M12 8l2-5.5h3\"/><path d=\"M7.2 13h9.6\"/>",
+    1
    ],
    [
     "beer",
     "Beer",
-    "<path d=\"M5 8h10v11a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V8Z\"/><path d=\"M15 10.5h2a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-2\"/><path d=\"M5 8a2.5 2.5 0 0 1 2.6-3.1c.9-1.2 3-1.3 3.9-.1A2.5 2.5 0 0 1 15 8\"/><path d=\"M8.5 12v5.5M11.5 12v5.5\"/>"
+    "<path d=\"M5 8h10v11a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V8Z\"/><path d=\"M15 10.5h2a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-2\"/><path d=\"M5 8a2.5 2.5 0 0 1 2.6-3.1c.9-1.2 3-1.3 3.9-.1A2.5 2.5 0 0 1 15 8\"/><path d=\"M8.5 12v5.5M11.5 12v5.5\"/>",
+    1
    ],
    [
     "liquor",
     "Cocktail",
-    "<path d=\"M4 4.5h16l-8 9-8-9Z\"/><path d=\"M12 13.5V20M8 20.5h8\"/><path d=\"M16.5 4.5 19 2\"/><path d=\"M7.5 8.5h9\"/>"
+    "<path d=\"M4 4.5h16l-8 9-8-9Z\"/><path d=\"M12 13.5V20M8 20.5h8\"/><path d=\"M16.5 4.5 19 2\"/><path d=\"M7.5 8.5h9\"/>",
+    1
    ],
    [
     "wine",
     "Wine",
-    "<path d=\"M8 3h8l.3 4.5a4.3 4.3 0 0 1-8.6 0L8 3Z\"/><path d=\"M7.9 7h8.2\"/><path d=\"M12 12v8.5M8.5 21h7\"/>"
+    "<path d=\"M8 3h8l.3 4.5a4.3 4.3 0 0 1-8.6 0L8 3Z\"/><path d=\"M7.9 7h8.2\"/><path d=\"M12 12v8.5M8.5 21h7\"/>",
+    1
    ],
    [
     "breakfast",
     "Breakfast",
-    "<circle cx=\"10\" cy=\"13\" r=\"6.5\"/><circle cx=\"10\" cy=\"13\" r=\"2.4\"/><path d=\"M16.5 13H22\"/>"
+    "<circle cx=\"10\" cy=\"13\" r=\"6.5\"/><circle cx=\"10\" cy=\"13\" r=\"2.4\"/><path d=\"M16.5 13H22\"/>",
+    1
    ],
    [
     "lunch",
     "Lunch plate",
-    "<path d=\"M4 11a8 6 0 0 1 16 0H4Z\"/><path d=\"M3 14.5h18\"/><path d=\"M4 17.5h16v.5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-.5Z\"/><path d=\"M9 7.5h.01M12 6.5h.01M15 7.5h.01\"/>"
+    "<path d=\"M4 11a8 6 0 0 1 16 0H4Z\"/><path d=\"M3 14.5h18\"/><path d=\"M4 17.5h16v.5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-.5Z\"/><path d=\"M9 7.5h.01M12 6.5h.01M15 7.5h.01\"/>",
+    1
    ],
    [
     "dinner",
     "Dinner plate",
-    "<circle cx=\"12.5\" cy=\"12.5\" r=\"5.5\"/><circle cx=\"12.5\" cy=\"12.5\" r=\"2.5\"/><path d=\"M3 3.5v4.5a1.5 1.5 0 0 0 3 0V3.5M4.5 9.5v11\"/><path d=\"M21.5 3.5c-1.7.8-2.3 3.5-2.3 6.5h2.3v10.5\"/>"
+    "<circle cx=\"12.5\" cy=\"12.5\" r=\"5.5\"/><circle cx=\"12.5\" cy=\"12.5\" r=\"2.5\"/><path d=\"M3 3.5v4.5a1.5 1.5 0 0 0 3 0V3.5M4.5 9.5v11\"/><path d=\"M21.5 3.5c-1.7.8-2.3 3.5-2.3 6.5h2.3v10.5\"/>",
+    1
    ],
    [
     "apps",
     "Appetizer",
-    "<path d=\"M14.5 3.5a6 6 0 0 1 4.2 10.3c-1.9 1.9-4.6 1.9-6 .5\"/><path d=\"M12.7 14.3c-1.4-1.4-1.4-4.1.5-6a6 6 0 0 1 1.3-4.8\"/><path d=\"M12.7 14.3 8.5 18.5\"/><path d=\"M8.5 18.5a1.8 1.8 0 1 1-2.4 2.4 1.8 1.8 0 1 1-2.6-2.6 1.8 1.8 0 1 1 2.4-2.4\"/>"
+    "<path d=\"M14.5 3.5a6 6 0 0 1 4.2 10.3c-1.9 1.9-4.6 1.9-6 .5\"/><path d=\"M12.7 14.3c-1.4-1.4-1.4-4.1.5-6a6 6 0 0 1 1.3-4.8\"/><path d=\"M12.7 14.3 8.5 18.5\"/><path d=\"M8.5 18.5a1.8 1.8 0 1 1-2.4 2.4 1.8 1.8 0 1 1-2.6-2.6 1.8 1.8 0 1 1 2.4-2.4\"/>",
+    1
    ],
    [
     "icecream",
     "Ice cream",
-    "<path d=\"M7 11l5 10.5L17 11\"/><path d=\"M6.5 11a5.5 5.5 0 0 1 11 0Z\"/><path d=\"M8.5 14.5h7\"/>"
+    "<path d=\"M7 11l5 10.5L17 11\"/><path d=\"M6.5 11a5.5 5.5 0 0 1 11 0Z\"/><path d=\"M8.5 14.5h7\"/>",
+    1
    ]
   ],
   "shop": [
    [
-    "golf",
-    "Walking round",
-    "<circle cx=\"13.5\" cy=\"4\" r=\"2\"/><path d=\"M12.8 7.5 10.8 13.5l3.2 2.7 1.3 5.3\"/><path d=\"M10.8 13.5 8.6 21.5\"/><path d=\"M12.2 9.2 8.4 11.2l-.6 3.3\"/><path d=\"M12.6 9.8l2.2 2.6 3.2.6\"/>"
+    "gmerch",
+    "Golf merch",
+    "<circle cx=\"12\" cy=\"9.5\" r=\"6.5\"/><path d=\"M9.5 7.5h.01M12.5 6.5h.01M14.5 9h.01M10 10.5h.01M13 12h.01\"/><path d=\"M10 20.5h4M12 16v4.5\"/>",
+    1
    ],
    [
-    "cart",
-    "Cart round",
-    "<path d=\"M4 4h13\"/><path d=\"M6 4v8M15.5 4l2.5 8\"/><path d=\"M8 12V9h4\"/><path d=\"M3 12h16l2 2.5V17H3z\"/><circle cx=\"7\" cy=\"18\" r=\"2\"/><circle cx=\"17\" cy=\"18\" r=\"2\"/>"
+    "dmerch",
+    "Disc merch",
+    "<ellipse cx=\"12\" cy=\"12.5\" rx=\"9.5\" ry=\"4.5\"/><ellipse cx=\"12\" cy=\"11.5\" rx=\"4.5\" ry=\"1.6\"/>",
+    1
    ],
    [
-    "range",
-    "Range",
-    "<path d=\"M5 11h14l-1.8 9.5H6.8L5 11Z\"/><circle cx=\"8.5\" cy=\"8\" r=\"2\"/><circle cx=\"15.5\" cy=\"8\" r=\"2\"/><circle cx=\"12\" cy=\"5.5\" r=\"2\"/>"
+    "pmerch",
+    "Pickleball merch",
+    "<path d=\"M9.5 2.5h1a5.5 5.5 0 0 1 5.5 5.5v2.5a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V8a5.5 5.5 0 0 1 5.5-5.5Z\"/><path d=\"M8.5 14.5l-4 6\"/><circle cx=\"18.5\" cy=\"18\" r=\"2.5\"/>",
+    1
    ],
    [
-    "disc",
-    "Disc golf",
-    "<ellipse cx=\"12\" cy=\"12.5\" rx=\"9.5\" ry=\"4.5\"/><ellipse cx=\"12\" cy=\"11.5\" rx=\"4.5\" ry=\"1.6\"/>"
+    "lesson",
+    "Lesson",
+    "<rect x=\"3\" y=\"3.5\" width=\"18\" height=\"11.5\" rx=\"1.5\"/><path d=\"M7 7.5h7M7 11h4\"/><path d=\"M8 20.5l4-5.5 4 5.5\"/>",
+    1
    ],
    [
-    "pickle",
-    "Pickleball",
-    "<path d=\"M9.5 2.5h1a5.5 5.5 0 0 1 5.5 5.5v2.5a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V8a5.5 5.5 0 0 1 5.5-5.5Z\"/><path d=\"M8.5 14.5l-4 6\"/><circle cx=\"18.5\" cy=\"18\" r=\"2.5\"/>"
+    "liquor",
+    "Cocktail",
+    "<path d=\"M4 4.5h16l-8 9-8-9Z\"/><path d=\"M12 13.5V20M8 20.5h8\"/><path d=\"M16.5 4.5 19 2\"/><path d=\"M7.5 8.5h9\"/>",
+    1
    ],
    [
-    "merch",
-    "Merch",
-    "<path d=\"M4 15a8 8 0 0 1 16 0Z\"/><path d=\"M4 15h16.5l1.5 2.5H4\"/><path d=\"M12 7V5.5\"/>"
+    "bucket",
+    "Beer bucket",
+    "<path d=\"M4 10h16l-2 10.5H6L4 10Z\"/><path d=\"M8 10V5.5l1-1.5M12 10V4l1-1.5M16 10V6l1-1.5\"/><path d=\"M5 14h14\"/>",
+    1
    ],
    [
-    "rental",
-    "Rental",
-    "<path d=\"M15 3 9.5 18.5\"/><path d=\"M9.5 18.5h5a2 2 0 0 0 0-3.5H10.6\"/><circle cx=\"18\" cy=\"6\" r=\"2.5\"/>"
+    "nabev10",
+    "10 soft drinks",
+    "<path d=\"M6.5 8h11l-1.4 12.5H7.9L6.5 8Z\"/><path d=\"M5.5 8h13\"/><path d=\"M12 8l2-5.5h3\"/><path d=\"M7.2 13h9.6\"/>",
+    10
    ],
    [
-    "nabev",
-    "Soft drink",
-    "<path d=\"M6.5 8h11l-1.4 12.5H7.9L6.5 8Z\"/><path d=\"M5.5 8h13\"/><path d=\"M12 8l2-5.5h3\"/><path d=\"M7.2 13h9.6\"/>"
+    "snack5",
+    "5 snacks",
+    "<rect x=\"5\" y=\"7\" width=\"14\" height=\"10\" rx=\"1.5\"/><path d=\"M5 9 2.5 6.5M5 15l-2.5 2.5M19 9l2.5-2.5M19 15l2.5 2.5M10 7v10M14 7v10\"/>",
+    5
    ],
    [
-    "beer",
-    "Beer",
-    "<path d=\"M5 8h10v11a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V8Z\"/><path d=\"M15 10.5h2a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-2\"/><path d=\"M5 8a2.5 2.5 0 0 1 2.6-3.1c.9-1.2 3-1.3 3.9-.1A2.5 2.5 0 0 1 15 8\"/><path d=\"M8.5 12v5.5M11.5 12v5.5\"/>"
+    "more9r",
+    "9 more · ride",
+    "<g transform=\"translate(0 3) scale(.86)\"><path d=\"M4 5.5h13\"/><path d=\"M6 5.5v8M15.5 5.5l2.5 8\"/><path d=\"M8 13.5V10.5h4\"/><path d=\"M3 13.5h16l2 2.5v2.5H3z\"/><circle cx=\"7\" cy=\"19.5\" r=\"1.8\"/><circle cx=\"17\" cy=\"19.5\" r=\"1.8\"/></g><circle cx=\"19\" cy=\"3.6\" r=\"1.9\"/><path d=\"M20.9 3.6v2.2a2.1 2.1 0 0 1-2.1 2.1h-.9\"/>",
+    1
    ],
    [
-    "snack",
-    "Snack",
-    "<rect x=\"5\" y=\"7\" width=\"14\" height=\"10\" rx=\"1.5\"/><path d=\"M5 9 2.5 6.5M5 15l-2.5 2.5M19 9l2.5-2.5M19 15l2.5 2.5M10 7v10M14 7v10\"/>"
+    "more9w",
+    "9 more · walk",
+    "<g transform=\"translate(1 3) scale(.86)\"><circle cx=\"13.5\" cy=\"4\" r=\"2\"/><path d=\"M12.8 7.5 10.8 13.5l3.2 2.7 1.3 5.3\"/><path d=\"M10.8 13.5 8.6 21.5\"/><path d=\"M12.2 9.2 8.4 11.2l-.6 3.3\"/><path d=\"M12.6 9.8l2.2 2.6 3.2.6\"/></g><circle cx=\"19\" cy=\"3.6\" r=\"1.9\"/><path d=\"M20.9 3.6v2.2a2.1 2.1 0 0 1-2.1 2.1h-.9\"/>",
+    1
    ]
   ]
  },
@@ -124,17 +144,15 @@
    "today": 832,
    "card": "shop",
    "got": [
-    "golf",
-    "cart",
-    "range",
-    "pickle",
-    "merch",
-    "rental",
-    "nabev",
-    "beer",
-    "snack"
+    "gmerch",
+    "liquor",
+    "more9r"
    ],
-   "cards": 0
+   "cards": 0,
+   "prog": {
+    "nabev10": 2,
+    "snack5": 1
+   }
   },
   {
    "name": "Ariana H.",
@@ -146,7 +164,8 @@
     "beer",
     "lunch"
    ],
-   "cards": 0
+   "cards": 0,
+   "prog": {}
   },
   {
    "name": "Madison M.",
@@ -157,7 +176,8 @@
     "nabev",
     "beer"
    ],
-   "cards": 0
+   "cards": 0,
+   "prog": {}
   },
   {
    "name": "Campbell W.",
@@ -171,7 +191,8 @@
     "dinner",
     "apps"
    ],
-   "cards": 0
+   "cards": 0,
+   "prog": {}
   },
   {
    "name": "Sarah B.",
@@ -185,7 +206,8 @@
     "lunch",
     "dinner"
    ],
-   "cards": 0
+   "cards": 0,
+   "prog": {}
   }
  ],
  "teams": [
@@ -219,14 +241,7 @@
      "card": "shop",
      "sd": 4,
      "cards": 1,
-     "cur": [
-      "golf",
-      "cart",
-      "disc",
-      "merch",
-      "nabev",
-      "snack"
-     ]
+     "cur": []
     },
     {
      "name": "Jim D.",
@@ -246,14 +261,7 @@
      "card": "shop",
      "sd": 5,
      "cards": 1,
-     "cur": [
-      "golf",
-      "cart",
-      "range",
-      "pickle",
-      "nabev",
-      "snack"
-     ]
+     "cur": []
     },
     {
      "name": "Sara W.",
@@ -273,17 +281,7 @@
      "card": "shop",
      "sd": 2,
      "cards": 0,
-     "cur": [
-      "golf",
-      "cart",
-      "range",
-      "pickle",
-      "merch",
-      "rental",
-      "nabev",
-      "beer",
-      "snack"
-     ]
+     "cur": []
     }
    ]
   },

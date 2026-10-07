@@ -114,6 +114,7 @@ header svg{width:40px;height:40px;color:#fff;flex:none}
 .stk.m .sk b{min-width:15px;height:15px;font-size:9px;line-height:12px;right:-7px;top:-6px}
 .sk{position:relative}.sk b{position:absolute;right:-5px;top:-6px;min-width:17px;height:17px;padding:0 3px;border-radius:9px;background:#fff;color:#4F7468;border:1.5px solid #4F7468;font-size:10px;font-weight:800;line-height:14px;text-align:center}
 .sk.on:nth-child(even) b,.sk.on b{transform:none}
+.sk b.prog{background:var(--surface);color:var(--fg2);border-color:var(--border);right:-9px}
 .bronze .sk.on{background:#A2693F}.silver .sk.on{background:#8A959A}.gold .sk.on{background:#B48E2A}
 .msk-done{font-weight:800;color:#4F7468}.msk-done.bronze{color:#A2693F}.msk-done.silver{color:#76838A}.msk-done.gold{color:#9C7A1F}
 .tier-chip{display:inline-block;padding:0 8px;border-radius:999px;color:#fff;background:#4F7468;font-size:12px;font-weight:700}.tier-chip.bronze{background:#A2693F}.tier-chip.silver{background:#8A959A}.tier-chip.gold{background:#B48E2A}
@@ -180,7 +181,7 @@ function lyLine(d) {
 function stkRow(d, p) {
   const c = d.cards && d.cards[p.card]; if (!c) return '';
   const g = new Set(p.got || []), n = c.filter(([k]) => g.has(k)).length;
-  return `<div class="stk ${tierOf(p.cards)}">${c.map(([k, name, svg]) => `<span class="sk${g.has(k) ? ' on' : ''}" title="${esc(name)}"><svg viewBox="0 0 24 24" aria-hidden="true">${svg}</svg></span>`).join('')}<span class="stk-n${n === c.length ? ' full' : ''}">${n === c.length ? '<svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.7 5.5 6 .9-4.35 4.25 1.03 6L12 17l-5.38 2.85 1.03-6L3.3 9.6l6-.9L12 3.2Z"/></svg>Perfect day!' : `${n}/${c.length} stickers`}</span></div>`;
+  return `<div class="stk ${tierOf(p.cards)}">${c.map(([k, name, svg, need]) => `<span class="sk${g.has(k) ? ' on' : ''}" title="${esc(name)}"><svg viewBox="0 0 24 24" aria-hidden="true">${svg}</svg>${!g.has(k) && need > 1 && p.prog && p.prog[k] ? `<b class="prog">${p.prog[k]}/${need}</b>` : ''}</span>`).join('')}<span class="stk-n${n === c.length ? ' full' : ''}">${n === c.length ? '<svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.7 5.5 6 .9-4.35 4.25 1.03 6L12 17l-5.38 2.85 1.03-6L3.3 9.6l6-.9L12 3.2Z"/></svg>Perfect day!' : `${n}/${c.length} stickers`}</span></div>`;
 }
 function legend(d) {
   if (!d.cards) return '';

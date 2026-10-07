@@ -103,6 +103,8 @@ header svg{width:40px;height:40px;color:#fff;flex:none}
 .lg{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:6px 12px}
 .lg span{display:flex;align-items:center;gap:8px;font-size:14px}
 .lg .sk{width:30px;height:30px}
+.star{width:15px;height:15px;fill:#4F7468;vertical-align:-2px;margin-right:4px}
+.stk-n.full{color:#4F7468}
 </style>
 </head>
 <body>
@@ -159,12 +161,12 @@ function lyLine(d) {
 function stkRow(d, p) {
   const c = d.cards && d.cards[p.card]; if (!c) return '';
   const g = new Set(p.got || []), n = c.filter(([k]) => g.has(k)).length;
-  return `<div class="stk">${c.map(([k, name, svg]) => `<span class="sk${g.has(k) ? ' on' : ''}" title="${esc(name)}"><svg viewBox="0 0 24 24" aria-hidden="true">${svg}</svg></span>`).join('')}<span class="stk-n">${n === c.length ? '🌟 Full card!' : `${n}/${c.length} stickers`}</span></div>`;
+  return `<div class="stk">${c.map(([k, name, svg]) => `<span class="sk${g.has(k) ? ' on' : ''}" title="${esc(name)}"><svg viewBox="0 0 24 24" aria-hidden="true">${svg}</svg></span>`).join('')}<span class="stk-n${n === c.length ? ' full' : ''}">${n === c.length ? '<svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.7 5.5 6 .9-4.35 4.25 1.03 6L12 17l-5.38 2.85 1.03-6L3.3 9.6l6-.9L12 3.2Z"/></svg>Full card!' : `${n}/${c.length} stickers`}</span></div>`;
 }
 function legend(d) {
   if (!d.cards) return '';
   const names = { rb: 'Range & Bar card', shop: 'Pro Shop card' };
-  return `<details class="legend"><summary>⭐ How to collect stickers: sell one of each, every day</summary>${Object.entries(d.cards).map(([k, c]) => `<div class="lg-t">${names[k] || k}</div><div class="lg">${c.map(([, name, svg]) => `<span><i class="sk on"><svg viewBox="0 0 24 24" aria-hidden="true">${svg}</svg></i>${esc(name)}</span>`).join('')}</div>`).join('')}<div class="lg-t">Full card 🌟</div><div style="font-size:14px">Collect all 10 in one day. The card starts fresh every morning.</div></details>`;
+  return `<details class="legend"><summary><svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.7 5.5 6 .9-4.35 4.25 1.03 6L12 17l-5.38 2.85 1.03-6L3.3 9.6l6-.9L12 3.2Z"/></svg>How to collect stickers: sell one of each, every day</summary>${Object.entries(d.cards).map(([k, c]) => `<div class="lg-t">${names[k] || k}</div><div class="lg">${c.map(([, name, svg]) => `<span><i class="sk on"><svg viewBox="0 0 24 24" aria-hidden="true">${svg}</svg></i>${esc(name)}</span>`).join('')}</div>`).join('')}<div class="lg-t"><svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.7 5.5 6 .9-4.35 4.25 1.03 6L12 17l-5.38 2.85 1.03-6L3.3 9.6l6-.9L12 3.2Z"/></svg>Full card</div><div style="font-size:14px">Collect all 10 in one day. The card starts fresh every morning.</div></details>`;
 }
 function render(d) {
   stamp(d);

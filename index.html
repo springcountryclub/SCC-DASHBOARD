@@ -107,6 +107,7 @@ header svg{width:40px;height:40px;color:#fff;flex:none}
 .stk-n.full{color:#4F7468}
 .msk{margin-top:10px;padding-top:10px;border-top:1px solid var(--border)}
 .msk-miss{margin-top:8px;font-size:13px;color:var(--fg2)}.msk-miss b{color:#4F7468}.msk-miss b{font-weight:700}
+.msk-sets{color:#4F7468;font-size:14px;font-weight:800}
 .msk-h{font-size:12px;font-weight:700;color:var(--fg2);margin-bottom:6px}.msk-full{color:#4F7468}
 .stk.m{padding-left:0;gap:9px 10px;padding-top:4px}
 .stk.m .sk{width:28px;height:28px}.stk.m .sk svg{width:16px;height:16px}.stk.m .sk.on,.stk.m .sk.on:nth-child(even){transform:none}
@@ -178,9 +179,18 @@ function legend(d) {
 }
 function monthStk(d, p) {
   const c = d.cards && d.cards[p.card]; if (!c || !p.sd) return '';
-  const sc = p.sc || {}, have = c.filter(([k]) => sc[k]).length;
-  return `<div class="msk"><div class="msk-h">Stickers this month · ${have}/${c.length} collected${p.full ? ` · <span class="msk-full">${STAR}${p.full} full card${p.full > 1 ? 's' : ''}</span>` : ''}</div><div class="stk m">${c.map(([k, name, svg]) => `<span class="sk${sc[k] ? ' on' : ''}" title="${esc(name)}: ${sc[k] || 0} of ${p.sd} days"><svg viewBox="0 0 24 24" aria-hidden="true">${svg}</svg>${sc[k] ? `<b>${sc[k]}</b>` : ''}</span>`).join('')}</div>${c.some(([k]) => !sc[k]) ? `<div class="msk-miss">Still to collect: ${c.filter(([k]) => !sc[k]).map(([, name]) => `<b>${esc(name)}</b>`).join(' · ')}</div>` : ''}</div>`;
+  const sc = p.sc || {}, have = c.filter(([k]) => sc[k]).length, done = have === c.length;
+  const sets = setsOf(d, p), next = done ? c.filter(([k]) => (sc[k] || 0) === sets).map(([, name]) => name) : [];
+  const fullTxt = p.full ? ` · <span class="msk-full">${STAR}${p.full} full card${p.full > 1 ? 's' : ''}</span>` : '';
+  const head = done ? `<span class="msk-sets">Sets: ${sets}</span> · numbers unlocked${fullTxt}` : `Stickers this month · ${have}/${c.length} collected${fullTxt}`;
+  const icons = c.map(([k, name, svg]) => `<span class="sk${sc[k] ? ' on' : ''}" title="${esc(name)}"><svg viewBox="0 0 24 24" aria-hidden="true">${svg}</svg>${done ? `<b>${sc[k]}</b>` : ''}</span>`).join('');
+  const foot = done ? `<div class="msk-miss">Set ${sets + 1} needs: ${next.map(n => `<b>${esc(n)}</b>`).join(' · ')}</div>`
+    : `<div class="msk-miss">Still to collect: ${c.filter(([k]) => !sc[k]).map(([, name]) => `<b>${esc(name)}</b>`).join(' · ')}</div>`;
+  return `<div class="msk"><div class="msk-h">${head}</div><div class="stk m">${icons}</div>${foot}</div>`;
 }
+// complete sets of the card: the sticker earned on the fewest days decides it
+const STARL = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.7 5.5 6 .9-4.35 4.25 1.03 6L12 17l-5.38 2.85 1.03-6L3.3 9.6l6-.9L12 3.2Z"/></svg>';
+function setsOf(d, p) { const c = d.cards && d.cards[p.card], sc = p.sc || {}; return c && p.sd ? Math.min(...c.map(([k]) => sc[k] || 0)) : 0; }
 const STAR = '<svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.7 5.5 6 .9-4.35 4.25 1.03 6L12 17l-5.38 2.85 1.03-6L3.3 9.6l6-.9L12 3.2Z"/></svg>';
 function render(d) {
   stamp(d);
@@ -196,7 +206,8 @@ function render(d) {
     <div class="htrack"><div class="hfill" style="width:${Math.min(100, d.sold / d.goal * 100)}%"></div><div class="hmark" style="left:${Math.min(100, d.pace / d.goal * 100)}%"></div></div>
     <div class="hsub">We should be at <b>${fmt(d.pace)}</b> by now · the club is at <b>${pct}%</b> of pace</div>
     ${d.mtdLY ? `<div class="hly">Last year to this date: <b>${fmt(d.mtdLY)}</b> · ${d.sold >= d.mtdLY ? `<b>ahead by ${fmt(d.sold - d.mtdLY)}</b> 🎉` : `<b>${fmt(d.mtdLY - d.sold)}</b> behind`}${d.monthLY ? ` · whole month last year: <b>${fmt(d.monthLY)}</b>` : ''}</div>` : ''}
-    <div class="leads">${(d.teams || []).filter(t => t.people.length).map(t => `<div class="lead"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4Z"/><path d="M7 6H4v2a3 3 0 0 0 3 3M17 6h3v2a3 3 0 0 1-3 3"/></svg><div><div class="lk">${esc(t.name)}</div><div class="ln">${esc(t.people[0].name)}</div><div class="ls">${fmt(t.people[0].all)} so far this month</div></div></div>`).join('')}</div></div>${tday}</div>`;
+    <div class="leads">${(d.teams || []).filter(t => t.people.length).map(t => `<div class="lead"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4Z"/><path d="M7 6H4v2a3 3 0 0 0 3 3M17 6h3v2a3 3 0 0 1-3 3"/></svg><div><div class="lk">${esc(t.name)}</div><div class="ln">${esc(t.people[0].name)}</div><div class="ls">${fmt(t.people[0].all)} so far this month</div></div></div>`).join('')}${(d.teams || []).map(t => { const b = [...t.people].map(p => [p, setsOf(d, p)]).filter(([, n]) => n > 0).sort((x, y) => y[1] - x[1] || (y[0].full || 0) - (x[0].full || 0))[0];
+      return b ? `<div class="lead">${STARL}<div><div class="lk">${esc(t.name)} · most sets</div><div class="ln">${esc(b[0].name)}</div><div class="ls">${b[1]} sticker set${b[1] > 1 ? 's' : ''} this month</div></div></div>` : ''; }).join('')}</div></div>${tday}</div>`;
   const tl = d.todayPeople || [], mx = tl[0] ? tl[0].today : 1;
   $('todaylist').innerHTML = tl.length ? `<div class="team"><div class="tk">Today · who's adding</div></div><div class="tl">${tl.map((p, i) => `<div class="tl-row ${i === 0 ? 'lead1' : ''}"><span class="tl-r">${i + 1}</span><span class="tl-n">${esc(p.name)}</span><span class="tl-t">${esc(p.team)}</span><span class="tl-bar"><span style="width:${Math.max(3, p.today / mx * 100)}%"></span></span><span class="tl-v">+${fmt(p.today)}</span>${stkRow(d, p)}</div>`).join('')}</div>${legend(d)}` : '';
   $('teams').innerHTML = (d.teams || []).map(t => {

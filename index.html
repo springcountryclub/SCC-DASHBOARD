@@ -119,10 +119,11 @@ header svg{width:40px;height:40px;color:#fff;flex:none}
 .tier-chip{display:inline-block;padding:0 8px;border-radius:999px;color:#fff;background:#4F7468;font-size:12px;font-weight:700}.tier-chip.bronze{background:#A2693F}.tier-chip.silver{background:#8A959A}.tier-chip.gold{background:#B48E2A}
 .cbadge{display:inline-flex;align-items:center;gap:3px;margin-left:8px;vertical-align:middle;border-radius:999px;color:#fff;font-weight:800;line-height:1;white-space:nowrap}
 .cbadge svg{fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.cbadge.g{background:#4F7468;font-size:12px;padding:3px 8px 3px 6px}.cbadge.g svg{width:13px;height:13px}
-.cbadge.bronze{background:#A2693F;font-size:14px;padding:4px 10px 4px 7px}.cbadge.bronze svg{width:15px;height:15px}
-.cbadge.silver{background:linear-gradient(135deg,#9AA5AA,#6F7C82);font-size:16px;padding:5px 11px 5px 8px}.cbadge.silver svg{width:17px;height:17px}
-.cbadge.gold{background:linear-gradient(135deg,#D4B048,#A07E1C);font-size:18px;padding:6px 12px 6px 9px;box-shadow:0 0 0 3px rgba(212,176,72,.3),0 2px 8px rgba(160,126,28,.45)}.cbadge.gold svg{width:19px;height:19px}
+.cbadge{padding:.25em .7em .25em .5em}.cbadge svg{stroke-width:1.6}
+.cbadge.g{background:#4F7468}.cbadge.g rect{fill:#4F7468}
+.cbadge.bronze{background:#A2693F}.cbadge.bronze rect{fill:#A2693F}
+.cbadge.silver{background:linear-gradient(135deg,#9AA5AA,#6F7C82)}.cbadge.silver rect{fill:#7F8C92}
+.cbadge.gold{background:linear-gradient(135deg,#D4B048,#A07E1C);box-shadow:0 0 0 3px rgba(212,176,72,.3),0 2px 8px rgba(160,126,28,.45)}.cbadge.gold rect{fill:#B8952F}
 </style>
 </head>
 <body>
@@ -196,8 +197,10 @@ function monthStk(d, p) {
 }
 const STAR = '<svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.7 5.5 6 .9-4.35 4.25 1.03 6L12 17l-5.38 2.85 1.03-6L3.3 9.6l6-.9L12 3.2Z"/></svg>';
 const STARL = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.7 5.5 6 .9-4.35 4.25 1.03 6L12 17l-5.38 2.85 1.03-6L3.3 9.6l6-.9L12 3.2Z"/></svg>';
-const CARDI = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="3" width="13" height="16" rx="2"/><path d="M4 7v12a2 2 0 0 0 2 2h10"/></svg>';
-const cardBadge = n => n ? `<span class="cbadge ${tierOf(n) || 'g'}" title="${n} sticker card${n > 1 ? 's' : ''} complete">${CARDI}${n}</span>` : '';
+// stack of cards: one more card drawn per completed card (up to 4), and the badge grows a step with every card
+const cardStack = n => { const k = Math.min(4, n), w = 14 + (k - 1) * 4;
+  return `<svg viewBox="0 0 ${w} 20" style="width:${w * 0.075}em;height:1.15em" aria-hidden="true">${Array.from({ length: k }, (_, i) => `<rect x="${1 + i * 4}" y="${1 + (k - 1 - i) * 1.5}" width="11" height="${17 - (k - 1) * 1.5}" rx="2"/>`).join('')}</svg>`; };
+const cardBadge = n => n ? `<span class="cbadge ${tierOf(n) || 'g'}" style="font-size:${Math.min(20, 12 + (n - 1))}px" title="${n} sticker card${n > 1 ? 's' : ''} complete">${cardStack(n)}${n}</span>` : '';
 function render(d) {
   stamp(d);
   const pct = d.pace ? Math.round(d.sold / d.pace * 100) : 0;

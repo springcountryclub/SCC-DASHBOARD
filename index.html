@@ -33,6 +33,12 @@ header svg{width:40px;height:40px;color:#fff;flex:none}
 .hfill{height:100%;border-radius:7px;background:#F2D36B}
 .hmark{position:absolute;top:-5px;bottom:-5px;width:3px;background:#fff;border-radius:2px}
 .hsub{font-size:14px;opacity:.95}
+.kpi{display:inline-flex;align-items:center;gap:8px;margin:2px 0 12px;padding:6px 14px 6px 8px;border-radius:999px;background:#fff;font-size:15px;font-weight:700;white-space:nowrap}
+.kpi i{width:18px;height:18px;border-radius:50%;flex:none}
+.kpi.g{color:#3F7A57}.kpi.g i{background:#3F7A57}
+.kpi.y{color:#7E6A00;background:#FBF3D2}.kpi.y i{background:#E2B714}
+.kpi.r{color:#B5483F;background:#F8EBE9}.kpi.r i{background:#B5483F}
+.kpi.g{background:#EAF1EE}
 .today-hero{margin-bottom:12px}
 .sec-title{margin:30px 0 -6px;font-size:13px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
 .hero-grid{display:flex;gap:18px;align-items:stretch;flex-wrap:wrap}.hero-main{flex:1;min-width:260px}
@@ -120,11 +126,22 @@ function stamp(d) {
   $('lastupd').innerHTML = `<span class="dot"></span>Last update: <b>${sameDay ? 'today' : a.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' })} at ${a.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' })}</b> · ${ago}`;
   $('upd').textContent = 'Sales as of ' + a.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' }) + (a.toDateString() !== new Date().toDateString() ? ' · ' + a.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) : '');
 }
+function kpi(d) {
+  // same traffic light as the manager tracker: where sales should be by now (7 AM open → 9 PM close) vs where they are
+  const tg = d.todayGoal || 0; if (!tg || d.today == null || !d.asOf) return '';
+  const a = new Date(d.asOf), frac = Math.max(0, Math.min(1, (a.getHours() + a.getMinutes() / 60 - 7) / 14));
+  const usd = n => '$' + Math.round(n).toLocaleString('en-US');
+  if (d.today >= tg) return `<div class="kpi g"><i></i>Goal hit · ${usd(d.today - tg)} over</div>`;
+  if (frac <= 0) return '';
+  const exp = tg * frac, r = d.today / exp, c = r >= 1 ? 'g' : r >= 0.85 ? 'y' : 'r';
+  return `<div class="kpi ${c}"><i></i>${r >= 1 ? `On pace · ${usd(d.today - exp)} ahead` : `${c === 'y' ? 'Close' : 'Behind'} · ${usd(exp - d.today)} short`}</div>`;
+}
 function render(d) {
   stamp(d);
   const pct = d.pace ? Math.round(d.sold / d.pace * 100) : 0;
   const tg = d.todayGoal || 0, tp = tg ? d.today / tg : 0;
   $('hero-today').innerHTML = d.today != null ? `<div class="k">Today · ${new Date(d.asOf || Date.now()).toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' })}</div>
+    ${kpi(d)}
     <div class="big"><b>${fmt(d.today)}</b><span>sold today${tg ? ` · ${Math.round(tp * 100)}% of the ${fmt(tg)} day goal` : ''}</span></div>
     ${tg ? `<div class="htrack"><div class="hfill" style="width:${Math.min(100, tp * 100)}%"></div></div><div class="hsub">${d.today >= tg ? '<b>Day goal hit</b> — keep going' : `<b>${fmt(tg - d.today)}</b> to go today`}</div>` : ''}` : '';
   const tday = '';

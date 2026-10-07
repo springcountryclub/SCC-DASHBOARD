@@ -37,7 +37,7 @@ header svg{width:40px;height:40px;color:#fff;flex:none}
 .today-box{flex:none;min-width:200px;background:rgba(255,255,255,.14);border-radius:12px;padding:14px 18px;display:flex;flex-direction:column;justify-content:center}
 .tb-n{font-size:40px;font-weight:800;line-height:1.05;margin-top:4px}.tb-s{font-size:13px;opacity:.9;margin-top:2px}
 .tb-track{height:8px;border-radius:4px;background:rgba(255,255,255,.2);margin-top:8px}.tb-fill{height:100%;border-radius:4px;background:#F2D36B}
-.tt-today{font-style:normal;font-size:14px;font-weight:700;color:var(--green);background:var(--ltgreen);padding:3px 10px;border-radius:999px;margin-left:8px;vertical-align:3px}
+.tt-today{white-space:nowrap;display:inline-block;margin-top:4px;font-style:normal;font-size:14px;font-weight:700;color:var(--green);background:var(--ltgreen);padding:3px 10px;border-radius:999px;margin-left:8px;vertical-align:3px}
 @media (max-width:600px){.today-box{width:100%}.tb-n{font-size:32px}}
 .leads{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
 .lead{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.14);border-radius:12px;padding:10px 16px}
@@ -64,7 +64,8 @@ header svg{width:40px;height:40px;color:#fff;flex:none}
 .rank{flex:none;width:54px;height:54px;border-radius:50%;display:grid;place-items:center;font-size:24px;font-weight:800;background:var(--bg);color:var(--fg3)}
 .rank.r1{background:#E2B714;color:#fff}.rank.r2{background:#A9B1AE;color:#fff}.rank.r3{background:#B07A4A;color:#fff}
 .body{flex:1;min-width:0;display:flex;flex-direction:column;gap:7px}
-.top{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.top{display:flex;align-items:baseline;gap:8px;justify-content:space-between}.top .name{min-width:0}.top .amt{flex:none}
+.tags{display:flex;gap:6px;flex-wrap:wrap}.tags span{white-space:nowrap}
 .name{font-size:26px;font-weight:700;line-height:1.1}
 .amt{margin-left:auto;font-size:34px;font-weight:800;font-variant-numeric:tabular-nums;line-height:1}
 .today{font-size:13px;font-weight:700;color:var(--green);background:var(--ltgreen);padding:3px 9px;border-radius:999px}
@@ -136,7 +137,8 @@ function render(d) {
         const chase = i === 0 ? (ps[1] ? `<b>${fmt(p.all - ps[1].all)} ahead</b> of ${esc(ps[1].name.split(' ')[0])} — keep pushing` : 'Leading')
           : `<b>${fmt(up.all - p.all + 1)} to pass ${esc(up.name.split(' ')[0])}</b>${i > 1 ? ` · ${fmt(ps[0].all - p.all)} behind ${esc(first)}` : ''}`;
         return `<div class="rc ${i === 0 ? 'first' : ''}"><div class="rank ${i < 3 ? 'r' + (i + 1) : ''}">${i + 1}</div><div class="body">
-          <div class="top"><span class="name">${esc(p.name)}</span>${p.today > 0 ? `<span class="today">+${fmt(p.today)} today</span>` : ''}${(p.elsewhere || []).map(e => `<span class="${e.courts ? 'courts' : 'else'}">including ${fmt(e.amt)} ${e.label ? esc(e.label) : 'at ' + esc(e.team)}</span>`).join('')}<span class="amt">${fmt(p.all)}</span></div>
+          <div class="top"><span class="name">${esc(p.name)}</span><span class="amt">${fmt(p.all)}</span></div>
+          ${p.today > 0 || (p.elsewhere || []).length ? `<div class="tags">${p.today > 0 ? `<span class="today">+${fmt(p.today)} today</span>` : ''}${(p.elsewhere || []).map(e => `<span class="${e.courts ? 'courts' : 'else'}">including ${fmt(e.amt)} ${e.label ? esc(e.label) : 'at ' + esc(e.team)}</span>`).join('')}</div>` : ''}
           <div class="track"><div class="fill ${p.all >= p.byToday ? 'ok' : ''}" style="width:${Math.min(100, p.all / p.goal * 100)}%"></div><div class="mark" style="left:${Math.min(100, p.byToday / p.goal * 100)}%"></div></div>
           <div class="sub"><b>${Math.round(p.all / p.goal * 100)}% of the ${fmt(p.goal)} goal</b> · should be at ${fmt(p.byToday)} by today</div>
           <div class="sub">${chase} · this week ${fmt(p.week)}</div></div></div>`; }).join('')}`;

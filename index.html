@@ -128,7 +128,7 @@ function render(d) {
     const ps = t.people;
     return `<div class="team"><div class="tk">${esc(t.name)}</div>
       <div class="tt">${fmt(t.sold)} <span>of ${fmt(t.target)} this month · ${t.pace ? Math.round(t.sold / t.pace * 100) : 0}% of pace</span>${t.today != null ? `<em class="tt-today">${fmt(t.today)} today</em>` : ''}</div>
-      <div class="ttrack"><div class="tfill" style="width:${Math.min(100, t.sold / t.target * 100)}%"></div><div class="tmark" style="left:${Math.min(100, t.pace / t.target * 100)}%"></div></div></div>
+      <div class="ttrack"><div class="tfill" style="width:${Math.min(100, t.sold / t.target * 100)}%"></div><div class="tmark" style="left:${Math.min(100, t.pace / t.target * 100)}%"></div></div></div>${!ps.length ? `<p class="sub" style="margin:-4px 0 6px">Food, drinks and merch sold to players at the courts. Anyone can add here — look for “incl. … at ${esc(t.name)}” on each card.</p>` : ''}
       ${ps.map((p, i) => {
         const up = ps[i - 1], first = ps[0].name.split(' ')[0];
         const chase = i === 0 ? (ps[1] ? `<b>${fmt(p.all - ps[1].all)} ahead</b> of ${esc(ps[1].name.split(' ')[0])} — keep pushing` : 'Leading')

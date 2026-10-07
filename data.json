@@ -98,6 +98,10 @@
      "week": 373,
      "elsewhere": [
       {
+       "team": "Pickleball",
+       "amt": 213
+      },
+      {
        "label": "court rentals",
        "amt": 30
       }
@@ -182,17 +186,7 @@
    "today": 0,
    "target": 1502,
    "pace": 296,
-   "people": [
-    {
-     "name": "Ariana H.",
-     "all": 213,
-     "today": 0,
-     "week": 0,
-     "elsewhere": [],
-     "goal": 1502,
-     "byToday": 296
-    }
-   ]
+   "people": []
   }
  ]
 }

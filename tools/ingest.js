@@ -22,7 +22,8 @@ for (const k of keys) {
   const isToday = k === sentDay;
   const at = isToday ? meta.sentAt : new Date(api.fromKey(k).getTime() + (23 * 60 + 59) * 6e4).toISOString();
   const latest = ups.map(u => u.at).sort().pop();
-  if (ups.some(u => Math.abs(new Date(u.at) - new Date(at)) < 120000))   // same report (manual loads are stamped to the second) { summary.days.push({ date: k, status: 'already-loaded', total: d.total }); continue; }
+  // same report already loaded (a manual load of the same email is stamped a second apart)
+  if (ups.some(u => Math.abs(new Date(u.at) - new Date(at)) < 120000)) { summary.days.push({ date: k, status: 'already-loaded', total: d.total }); continue; }
   if (isToday && latest && latest > at) { summary.days.push({ date: k, status: 'newer-upload-exists', total: d.total }); continue; }
   const up = { at, total: d.total, groups: d.groups, areas: d.areas, tickets: d.tickets, tix: d.tix || null, file: p.file };
   if (d.emp) up.emp = d.emp;

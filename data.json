@@ -3,7 +3,6 @@
  "goal": 150179,
  "month": "October 2026",
  "pace": 30059,
- "savedAt": "2026-10-07T02:09:54.880Z",
  "sold": 14793,
  "teams": [
   {
@@ -213,5 +212,7 @@
    "team": "Range & Bar",
    "today": 119
   }
- ]
+ ],
+ "todayLY": 3151,
+ "lyDate": "2025-10-07"
 }

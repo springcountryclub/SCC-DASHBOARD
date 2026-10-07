@@ -125,6 +125,8 @@ header svg{width:40px;height:40px;color:#fff;flex:none}
 .cbadge.bronze{background:#A2693F}.cbadge.bronze rect{fill:#A2693F}
 .cbadge.silver{background:linear-gradient(135deg,#9AA5AA,#6F7C82)}.cbadge.silver rect{fill:#7F8C92}
 .cbadge.gold{background:linear-gradient(135deg,#D4B048,#A07E1C);box-shadow:0 0 0 3px rgba(212,176,72,.3),0 2px 8px rgba(160,126,28,.45)}.cbadge.gold rect{fill:#B8952F}
+.medal{flex:none;width:54px;height:65px;filter:drop-shadow(0 2px 3px rgba(0,0,0,.18))}.medal svg{width:100%;height:100%;display:block}
+@media (max-width:600px){.medal{width:42px;height:50px}}
 </style>
 </head>
 <body>
@@ -202,6 +204,13 @@ const STARL = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.7 
 const cardStack = n => { const k = Math.min(4, n), w = 14 + (k - 1) * 4;
   return `<svg viewBox="0 0 ${w} 20" style="width:${w * 0.075}em;height:1.15em" aria-hidden="true">${Array.from({ length: k }, (_, i) => `<rect x="${1 + i * 4}" y="${1 + (k - 1 - i) * 1.5}" width="11" height="${17 - (k - 1) * 1.5}" rx="2"/>`).join('')}</svg>`; };
 const cardBadge = n => n ? `<span class="cbadge ${tierOf(n) || 'g'}" style="font-size:${Math.min(20, 12 + (n - 1))}px" title="${n} sticker card${n > 1 ? 's' : ''} complete">${cardStack(n)}${n}</span>` : '';
+// podium medals: ribbon + metal disc with a raised rim and the place number
+const MEDAL = { 1: ['#F6DE7A', '#D9A916', '#9C7410'], 2: ['#F1F4F5', '#B8C1C5', '#7E8A90'], 3: ['#EBB688', '#B4733F', '#7A4520'] };
+const medal = n => { const [hi, mid, lo] = MEDAL[n];
+  return `<div class="medal" aria-label="Place ${n}"><svg viewBox="0 0 60 72" aria-hidden="true"><defs><radialGradient id="mg${n}" cx="35%" cy="30%" r="75%"><stop offset="0" stop-color="${hi}"/><stop offset=".55" stop-color="${mid}"/><stop offset="1" stop-color="${lo}"/></radialGradient></defs>
+    <path d="M14 2h12l8 22H22Z" fill="#4F7468"/><path d="M34 2h12L38 24H26Z" fill="#3B5C52"/><path d="M26 2h8l-2 6h-4Z" fill="#fff" opacity=".35"/>
+    <circle cx="30" cy="46" r="22" fill="url(#mg${n})"/><circle cx="30" cy="46" r="17" fill="none" stroke="${lo}" stroke-width="1.6" opacity=".55"/><circle cx="30" cy="46" r="20.5" fill="none" stroke="#fff" stroke-width="1.2" opacity=".45"/>
+    <text x="30" y="53.5" text-anchor="middle" font-size="21" font-weight="800" fill="#fff" stroke="${lo}" stroke-width=".6" style="paint-order:stroke">${n}</text></svg></div>`; };
 function render(d) {
   stamp(d);
   const pct = d.pace ? Math.round(d.sold / d.pace * 100) : 0;
@@ -230,7 +239,7 @@ function render(d) {
         const up = ps[i - 1], first = ps[0].name.split(' ')[0];
         const chase = i === 0 ? (ps[1] ? `<b>${fmt(p.all - ps[1].all)} ahead</b> of ${esc(ps[1].name.split(' ')[0])} — keep pushing` : 'Leading')
           : `<b>${fmt(up.all - p.all + 1)} to pass ${esc(up.name.split(' ')[0])}</b>${i > 1 ? ` · ${fmt(ps[0].all - p.all)} behind ${esc(first)}` : ''}`;
-        return `<div class="rc ${i === 0 ? 'first' : ''}"><div class="rank ${i < 3 ? 'r' + (i + 1) : ''}">${i + 1}</div><div class="body">
+        return `<div class="rc ${i === 0 ? 'first' : ''}">${i < 3 ? medal(i + 1) : `<div class="rank">${i + 1}</div>`}<div class="body">
           <div class="top"><span class="name">${esc(p.name)}${cardBadge(p.cards)}</span><span class="amt">${fmt(p.all)}</span></div>
           ${p.today > 0 || (p.elsewhere || []).length ? `<div class="tags">${p.today > 0 ? `<span class="today">+${fmt(p.today)} today</span>` : ''}${(p.elsewhere || []).map(e => `<span class="${e.courts ? 'courts' : 'else'}">incl. ${fmt(e.amt)} ${e.label ? esc(e.label) : 'at ' + esc(e.team)}</span>`).join('')}</div>` : ''}
           <div class="track"><div class="fill ${p.all >= p.byToday ? 'ok' : ''}" style="width:${Math.min(100, p.all / p.goal * 100)}%"></div><div class="mark" style="left:${Math.min(100, p.byToday / p.goal * 100)}%"></div></div>

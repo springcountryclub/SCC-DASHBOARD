@@ -33,6 +33,8 @@ header svg{width:40px;height:40px;color:#fff;flex:none}
 .hfill{height:100%;border-radius:7px;background:#F2D36B}
 .hmark{position:absolute;top:-5px;bottom:-5px;width:3px;background:#fff;border-radius:2px}
 .hsub{font-size:14px;opacity:.95}
+.today-hero{margin-bottom:12px}
+.sec-title{margin:30px 0 -6px;font-size:13px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
 .hero-grid{display:flex;gap:18px;align-items:stretch;flex-wrap:wrap}.hero-main{flex:1;min-width:260px}
 .today-box{flex:none;min-width:200px;background:rgba(255,255,255,.14);border-radius:12px;padding:14px 18px;display:flex;flex-direction:column;justify-content:center}
 .tb-n{font-size:40px;font-weight:800;line-height:1.05;margin-top:4px}.tb-s{font-size:13px;opacity:.9;margin-top:2px}
@@ -90,8 +92,10 @@ header svg{width:40px;height:40px;color:#fff;flex:none}
 </div></header>
 <main class="wrap">
   <div class="lastupd" id="lastupd"></div>
-  <section class="hero" id="hero"></section>
+  <section class="hero today-hero" id="hero-today"></section>
   <div id="todaylist"></div>
+  <div class="sec-title">The month · road to $150k</div>
+  <section class="hero" id="hero"></section>
   <div id="teams"></div>
   <p class="foot">Updates automatically. Every guest: offer one more thing — a cart, a bucket, a drink, food with the drink.</p>
 </main>
@@ -119,7 +123,11 @@ function stamp(d) {
 function render(d) {
   stamp(d);
   const pct = d.pace ? Math.round(d.sold / d.pace * 100) : 0;
-  const tday = d.today != null ? `<div class="today-box"><div class="k">Today</div><div class="tb-n">${fmt(d.today)}</div>${d.todayGoal ? `<div class="tb-s">of ${fmt(d.todayGoal)} · ${Math.round(d.today / d.todayGoal * 100)}%</div><div class="tb-track"><div class="tb-fill" style="width:${Math.min(100, d.today / d.todayGoal * 100)}%"></div></div>` : ''}</div>` : '';
+  const tg = d.todayGoal || 0, tp = tg ? d.today / tg : 0;
+  $('hero-today').innerHTML = d.today != null ? `<div class="k">Today · ${new Date(d.asOf || Date.now()).toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' })}</div>
+    <div class="big"><b>${fmt(d.today)}</b><span>sold today${tg ? ` · ${Math.round(tp * 100)}% of the ${fmt(tg)} day goal` : ''}</span></div>
+    ${tg ? `<div class="htrack"><div class="hfill" style="width:${Math.min(100, tp * 100)}%"></div></div><div class="hsub">${d.today >= tg ? '<b>Day goal hit</b> — keep going' : `<b>${fmt(tg - d.today)}</b> to go today`}</div>` : ''}` : '';
+  const tday = '';
   $('hero').innerHTML = `<div class="hero-grid"><div class="hero-main"><div class="k">Road to ${fmt(d.goal)} · ${esc(d.month)}</div>
     <div class="big"><b>${fmt(d.sold)}</b><span>sold this month · ${Math.round(d.sold / d.goal * 100)}% of the goal</span></div>
     <div class="htrack"><div class="hfill" style="width:${Math.min(100, d.sold / d.goal * 100)}%"></div><div class="hmark" style="left:${Math.min(100, d.pace / d.goal * 100)}%"></div></div>

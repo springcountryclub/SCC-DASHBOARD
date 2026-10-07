@@ -11,12 +11,12 @@ const head = js.split('// ═══ STATE')[0];
 const parser = js.split('// ═══ PARSER ═')[1].replace(/^═*/, '').split('function readXLSX')[0];
 const api = new Function('const state={month:{}};' + head + '\n' + parser + ';return {parseRows,dayKey,fromKey};')();
 const maxTix = u => u && u.tix && u.tix.length ? u.tix[u.tix.length - 1][0] : (u && u.maxTkt) || null;
-const meta = JSON.parse(fs.readFileSync(metaF));
-const p = api.parseRows(JSON.parse(fs.readFileSync(rowsF)), 'Clubessential email ' + new Date(meta.sentAt).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' }) + '.pdf');
-const keys = Object.keys(p.days).sort();
-if (!keys.length) { console.log(JSON.stringify({ status: 'empty-report' })); process.exit(2); }
+const meta = fs.existsSync(metaF) ? JSON.parse(fs.readFileSync(metaF)) : { sentAt: new Date().toISOString() };
+const p = api.parseRows(fs.existsSync(rowsF) ? JSON.parse(fs.readFileSync(rowsF)) : [], 'Clubessential email ' + new Date(meta.sentAt).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' }) + '.pdf');
+const keys = Object.keys(p.days).sort(); let summary0 = null;
+if (!keys.length) summary0 = 'no-report';   // still rebuild the board from what the database holds
 const readDoc = k => { const f = path.join(daysDir, k + '.json'); if (!fs.existsSync(f)) return null; const d = JSON.parse(fs.readFileSync(f)); return d.data && d.data.uploads ? d.data : d; };
-const sentDay = api.dayKey(new Date(meta.sentAt)), summary = { sentAt: meta.sentAt, days: [] };
+const sentDay = api.dayKey(new Date(meta.sentAt)), summary = { sentAt: meta.sentAt, report: summary0 || 'ok', days: [] };
 for (const k of keys) {
   const d = p.days[k], doc = readDoc(k) || { date: k, uploads: [] }, ups = doc.uploads || [];
   const isToday = k === sentDay;

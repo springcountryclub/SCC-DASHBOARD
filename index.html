@@ -105,6 +105,13 @@ header svg{width:40px;height:40px;color:#fff;flex:none}
 .lg .sk{width:30px;height:30px}
 .star{width:15px;height:15px;fill:#4F7468;vertical-align:-2px;margin-right:4px}
 .stk-n.full{color:#4F7468}
+.msk{margin-top:10px;padding-top:10px;border-top:1px solid var(--border)}
+.msk-h{font-size:12px;font-weight:700;color:var(--fg2);margin-bottom:6px}.msk-full{color:#4F7468}
+.stk.m{padding-left:0;gap:9px 10px;padding-top:4px}
+.stk.m .sk{width:28px;height:28px}.stk.m .sk svg{width:16px;height:16px}.stk.m .sk.on,.stk.m .sk.on:nth-child(even){transform:none}
+.stk.m .sk b{min-width:15px;height:15px;font-size:9px;line-height:12px;right:-7px;top:-6px}
+.sk{position:relative}.sk b{position:absolute;right:-5px;top:-6px;min-width:17px;height:17px;padding:0 3px;border-radius:9px;background:#fff;color:#4F7468;border:1.5px solid #4F7468;font-size:10px;font-weight:800;line-height:14px;text-align:center}
+.sk.on:nth-child(even) b,.sk.on b{transform:none}
 </style>
 </head>
 <body>
@@ -168,6 +175,12 @@ function legend(d) {
   const names = { rb: 'Range & Bar card', shop: 'Pro Shop card' };
   return `<details class="legend"><summary><svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.7 5.5 6 .9-4.35 4.25 1.03 6L12 17l-5.38 2.85 1.03-6L3.3 9.6l6-.9L12 3.2Z"/></svg>How to collect stickers: sell one of each, every day</summary>${Object.entries(d.cards).map(([k, c]) => `<div class="lg-t">${names[k] || k}</div><div class="lg">${c.map(([, name, svg]) => `<span><i class="sk on"><svg viewBox="0 0 24 24" aria-hidden="true">${svg}</svg></i>${esc(name)}</span>`).join('')}</div>`).join('')}<div class="lg-t"><svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.7 5.5 6 .9-4.35 4.25 1.03 6L12 17l-5.38 2.85 1.03-6L3.3 9.6l6-.9L12 3.2Z"/></svg>Full card</div><div style="font-size:14px">Collect all 10 in one day. The card starts fresh every morning.</div></details>`;
 }
+function monthStk(d, p) {
+  const c = d.cards && d.cards[p.card]; if (!c || !p.sd) return '';
+  const sc = p.sc || {}, have = c.filter(([k]) => sc[k]).length;
+  return `<div class="msk"><div class="msk-h">Stickers this month · ${have}/${c.length} collected${p.full ? ` · <span class="msk-full">${STAR}${p.full} full card${p.full > 1 ? 's' : ''}</span>` : ''}</div><div class="stk m">${c.map(([k, name, svg]) => `<span class="sk${sc[k] ? ' on' : ''}" title="${esc(name)}: ${sc[k] || 0} of ${p.sd} days"><svg viewBox="0 0 24 24" aria-hidden="true">${svg}</svg>${sc[k] ? `<b>${sc[k]}</b>` : ''}</span>`).join('')}</div></div>`;
+}
+const STAR = '<svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.7 5.5 6 .9-4.35 4.25 1.03 6L12 17l-5.38 2.85 1.03-6L3.3 9.6l6-.9L12 3.2Z"/></svg>';
 function render(d) {
   stamp(d);
   const pct = d.pace ? Math.round(d.sold / d.pace * 100) : 0;
@@ -199,7 +212,7 @@ function render(d) {
           ${p.today > 0 || (p.elsewhere || []).length ? `<div class="tags">${p.today > 0 ? `<span class="today">+${fmt(p.today)} today</span>` : ''}${(p.elsewhere || []).map(e => `<span class="${e.courts ? 'courts' : 'else'}">incl. ${fmt(e.amt)} ${e.label ? esc(e.label) : 'at ' + esc(e.team)}</span>`).join('')}</div>` : ''}
           <div class="track"><div class="fill ${p.all >= p.byToday ? 'ok' : ''}" style="width:${Math.min(100, p.all / p.goal * 100)}%"></div><div class="mark" style="left:${Math.min(100, p.byToday / p.goal * 100)}%"></div></div>
           <div class="sub"><b>${Math.round(p.all / p.goal * 100)}% of the ${fmt(p.goal)} goal</b> · should be at ${fmt(p.byToday)} by today</div>
-          <div class="sub">${chase} · this week ${fmt(p.week)}</div></div></div>`; }).join('')}`;
+          <div class="sub">${chase} · this week ${fmt(p.week)}</div>${monthStk(d, p)}</div></div>`; }).join('')}`;
   }).join('') || '<p class="empty">No sales by person yet this month.</p>';
 }
 load(); setInterval(load, 2 * 60 * 1000); setInterval(() => { try { stamp(JSON.parse(last)); } catch {} }, 60 * 1000);

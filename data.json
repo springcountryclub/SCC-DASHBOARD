@@ -210,7 +210,21 @@
      ],
      "goal": 22026,
      "byToday": 4409,
-     "full": 0
+     "full": 1,
+     "card": "shop",
+     "sd": 4,
+     "sc": {
+      "golf": 4,
+      "cart": 4,
+      "range": 1,
+      "disc": 2,
+      "pickle": 1,
+      "merch": 3,
+      "rental": 2,
+      "nabev": 4,
+      "beer": 3,
+      "snack": 3
+     }
     },
     {
      "name": "Jim D.",
@@ -226,7 +240,21 @@
      ],
      "goal": 22026,
      "byToday": 4409,
-     "full": 0
+     "full": 0,
+     "card": "shop",
+     "sd": 5,
+     "sc": {
+      "golf": 2,
+      "cart": 4,
+      "range": 4,
+      "disc": 3,
+      "pickle": 2,
+      "merch": 3,
+      "rental": 1,
+      "nabev": 5,
+      "beer": 3,
+      "snack": 3
+     }
     },
     {
      "name": "Sara W.",
@@ -242,7 +270,20 @@
      ],
      "goal": 22026,
      "byToday": 4409,
-     "full": 0
+     "full": 0,
+     "card": "shop",
+     "sd": 2,
+     "sc": {
+      "golf": 2,
+      "cart": 2,
+      "range": 2,
+      "pickle": 1,
+      "merch": 1,
+      "rental": 1,
+      "nabev": 2,
+      "beer": 1,
+      "snack": 2
+     }
     }
    ]
   },
@@ -267,7 +308,18 @@
      ],
      "goal": 9949,
      "byToday": 1991,
-     "full": 0
+     "full": 0,
+     "card": "rb",
+     "sd": 4,
+     "sc": {
+      "coffee": 3,
+      "nabev": 4,
+      "beer": 4,
+      "liquor": 3,
+      "lunch": 3,
+      "dinner": 3,
+      "apps": 3
+     }
     },
     {
      "name": "Ariana H.",
@@ -283,7 +335,18 @@
      ],
      "goal": 9949,
      "byToday": 1991,
-     "full": 0
+     "full": 0,
+     "card": "rb",
+     "sd": 4,
+     "sc": {
+      "coffee": 1,
+      "nabev": 4,
+      "beer": 3,
+      "liquor": 2,
+      "lunch": 3,
+      "dinner": 1,
+      "apps": 3
+     }
     },
     {
      "name": "Campbell W.",
@@ -293,7 +356,17 @@
      "elsewhere": [],
      "goal": 9949,
      "byToday": 1991,
-     "full": 0
+     "full": 0,
+     "card": "rb",
+     "sd": 4,
+     "sc": {
+      "nabev": 4,
+      "beer": 4,
+      "liquor": 2,
+      "lunch": 4,
+      "dinner": 3,
+      "apps": 3
+     }
     },
     {
      "name": "Jalyn B.",
@@ -309,7 +382,18 @@
      ],
      "goal": 9949,
      "byToday": 1991,
-     "full": 0
+     "full": 0,
+     "card": "rb",
+     "sd": 3,
+     "sc": {
+      "nabev": 3,
+      "beer": 3,
+      "liquor": 3,
+      "breakfast": 1,
+      "lunch": 2,
+      "dinner": 2,
+      "apps": 2
+     }
     },
     {
      "name": "Khrystin R.",
@@ -325,7 +409,17 @@
      ],
      "goal": 9949,
      "byToday": 1991,
-     "full": 0
+     "full": 0,
+     "card": "rb",
+     "sd": 2,
+     "sc": {
+      "nabev": 2,
+      "beer": 2,
+      "liquor": 2,
+      "lunch": 1,
+      "dinner": 1,
+      "apps": 1
+     }
     },
     {
      "name": "Chisom N.",
@@ -335,7 +429,19 @@
      "elsewhere": [],
      "goal": 9949,
      "byToday": 1991,
-     "full": 0
+     "full": 0,
+     "card": "rb",
+     "sd": 2,
+     "sc": {
+      "coffee": 1,
+      "nabev": 2,
+      "beer": 1,
+      "liquor": 1,
+      "wine": 1,
+      "lunch": 1,
+      "dinner": 1,
+      "icecream": 1
+     }
     },
     {
      "name": "Manuela G.",
@@ -351,7 +457,17 @@
      ],
      "goal": 9949,
      "byToday": 1991,
-     "full": 0
+     "full": 0,
+     "card": "rb",
+     "sd": 2,
+     "sc": {
+      "coffee": 1,
+      "nabev": 2,
+      "beer": 1,
+      "liquor": 2,
+      "breakfast": 1,
+      "dinner": 1
+     }
     },
     {
      "name": "Sarah B.",
@@ -361,7 +477,18 @@
      "elsewhere": [],
      "goal": 9949,
      "byToday": 1991,
-     "full": 0
+     "full": 0,
+     "card": "rb",
+     "sd": 4,
+     "sc": {
+      "coffee": 2,
+      "nabev": 2,
+      "beer": 3,
+      "liquor": 3,
+      "breakfast": 2,
+      "lunch": 3,
+      "dinner": 3
+     }
     }
    ]
   },

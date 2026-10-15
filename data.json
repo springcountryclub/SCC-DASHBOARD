@@ -2,9 +2,9 @@
  "day": "2026-10-15",
  "month": "October 2026",
  "goal": 150179,
- "sold": 42879,
- "pace": 67969,
- "today": 302,
+ "sold": 43080,
+ "pace": 68135,
+ "today": 503,
  "todayGoal": 4644,
  "todayLY": 5165,
  "lyDate": "2025-10-16",
@@ -137,12 +137,12 @@
    ]
   ]
  },
- "asOf": "2026-10-15T17:31:47.000Z",
+ "asOf": "2026-10-15T18:01:51.000Z",
  "todayPeople": [
   {
    "name": "Lucia N.",
    "team": "Pro Shop",
-   "today": 265,
+   "today": 274,
    "card": "shop",
    "got": [],
    "cards": 0,
@@ -154,26 +154,29 @@
   {
    "name": "Campbell W.",
    "team": "Range & Bar",
-   "today": 20,
+   "today": 197,
    "card": "rb",
-   "got": [],
+   "got": [
+    "dinner2",
+    "apps"
+   ],
    "cards": 0,
    "prog": {
-    "nabev15": 0,
-    "liquor3": 0,
+    "nabev15": 3,
+    "liquor3": 1,
     "lunch3": 0,
-    "dinner2": 0
+    "dinner2": 2
    }
   },
   {
    "name": "Jalyn B.",
    "team": "Range & Bar",
-   "today": 17,
+   "today": 32,
    "card": "rb",
    "got": [],
    "cards": 0,
    "prog": {
-    "nabev15": 1,
+    "nabev15": 3,
     "liquor3": 0,
     "lunch3": 0,
     "dinner2": 0
@@ -183,16 +186,16 @@
  "teams": [
   {
    "name": "Pro Shop",
-   "sold": 17892,
-   "today": 265,
+   "sold": 17901,
+   "today": 274,
    "target": 66079,
-   "pace": 29906,
+   "pace": 29979,
    "people": [
     {
      "name": "Lucia N.",
-     "all": 10012,
-     "today": 265,
-     "week": 593,
+     "all": 10021,
+     "today": 274,
+     "week": 603,
      "elsewhere": [
       {
        "team": "Pickleball",
@@ -206,7 +209,7 @@
       }
      ],
      "goal": 22026,
-     "byToday": 9969,
+     "byToday": 9993,
      "full": 0,
      "card": "shop",
      "sd": 11,
@@ -236,7 +239,7 @@
       }
      ],
      "goal": 22026,
-     "byToday": 9969,
+     "byToday": 9993,
      "full": 0,
      "card": "shop",
      "sd": 11,
@@ -264,7 +267,7 @@
       }
      ],
      "goal": 22026,
-     "byToday": 9969,
+     "byToday": 9993,
      "full": 0,
      "card": "shop",
      "sd": 6,
@@ -283,25 +286,25 @@
   },
   {
    "name": "Range & Bar",
-   "sold": 23751,
-   "today": 20,
+   "sold": 23928,
+   "today": 197,
    "target": 79595,
-   "pace": 36024,
+   "pace": 36111,
    "people": [
     {
      "name": "Jalyn B.",
-     "all": 5213,
-     "today": 17,
-     "week": 229,
+     "all": 5228,
+     "today": 32,
+     "week": 244,
      "elsewhere": [
       {
        "team": "Pickleball",
-       "amt": 242,
+       "amt": 257,
        "courts": true
       }
      ],
      "goal": 9949,
-     "byToday": 4503,
+     "byToday": 4514,
      "full": 0,
      "card": "rb",
      "sd": 9,
@@ -329,7 +332,7 @@
       }
      ],
      "goal": 9949,
-     "byToday": 4503,
+     "byToday": 4514,
      "full": 0,
      "card": "rb",
      "sd": 7,
@@ -363,7 +366,7 @@
       }
      ],
      "goal": 9949,
-     "byToday": 4503,
+     "byToday": 4514,
      "full": 0,
      "card": "rb",
      "sd": 9,
@@ -396,7 +399,7 @@
       }
      ],
      "goal": 9949,
-     "byToday": 4503,
+     "byToday": 4514,
      "full": 0,
      "card": "rb",
      "sd": 8,
@@ -419,7 +422,7 @@
      "week": 269,
      "elsewhere": [],
      "goal": 9949,
-     "byToday": 4503,
+     "byToday": 4514,
      "full": 0,
      "card": "rb",
      "sd": 7,
@@ -428,12 +431,12 @@
     },
     {
      "name": "Campbell W.",
-     "all": 2278,
-     "today": 20,
-     "week": 204,
+     "all": 2455,
+     "today": 197,
+     "week": 381,
      "elsewhere": [],
      "goal": 9949,
-     "byToday": 4503,
+     "byToday": 4514,
      "full": 0,
      "card": "rb",
      "sd": 8,
@@ -461,7 +464,7 @@
       }
      ],
      "goal": 9949,
-     "byToday": 4503,
+     "byToday": 4514,
      "full": 0,
      "card": "rb",
      "sd": 7,
@@ -482,7 +485,7 @@
      "week": 498,
      "elsewhere": [],
      "goal": 9949,
-     "byToday": 4503,
+     "byToday": 4514,
      "full": 0,
      "card": "rb",
      "sd": 8,
@@ -502,10 +505,10 @@
   },
   {
    "name": "Pickleball",
-   "sold": 1237,
-   "today": 17,
+   "sold": 1251,
+   "today": 32,
    "target": 4505,
-   "pace": 2039,
+   "pace": 2044,
    "people": []
   }
  ]

@@ -2,9 +2,9 @@
  "day": "2026-10-17",
  "month": "October 2026",
  "goal": 150179,
- "sold": 55285,
- "pace": 83209,
- "today": 5570,
+ "sold": 55361,
+ "pace": 83486,
+ "today": 5646,
  "todayGoal": 7757,
  "todayLY": 4888,
  "lyDate": "2025-10-18",
@@ -137,7 +137,7 @@
    ]
   ]
  },
- "asOf": "2026-10-18T00:30:23.000Z",
+ "asOf": "2026-10-18T01:00:32.000Z",
  "todayPeople": [
   {
    "name": "Lucia N.",
@@ -180,7 +180,7 @@
   {
    "name": "Jim D.",
    "team": "Pro Shop",
-   "today": 754,
+   "today": 763,
    "card": "shop",
    "got": [
     "gmerch",
@@ -250,6 +250,22 @@
    }
   },
   {
+   "name": "Jalyn B.",
+   "team": "Range & Bar",
+   "today": 235,
+   "card": "rb",
+   "got": [
+    "dinner2"
+   ],
+   "cards": 0,
+   "prog": {
+    "nabev15": 3,
+    "liquor3": 0,
+    "lunch3": 0,
+    "dinner2": 2
+   }
+  },
+  {
    "name": "Chisom N.",
    "team": "Range & Bar",
    "today": 186,
@@ -263,20 +279,6 @@
     "nabev15": 2,
     "liquor3": 1,
     "lunch3": 1,
-    "dinner2": 0
-   }
-  },
-  {
-   "name": "Jalyn B.",
-   "team": "Range & Bar",
-   "today": 169,
-   "card": "rb",
-   "got": [],
-   "cards": 0,
-   "prog": {
-    "nabev15": 2,
-    "liquor3": 0,
-    "lunch3": 0,
     "dinner2": 0
    }
   },
@@ -300,10 +302,10 @@
  "teams": [
   {
    "name": "Pro Shop",
-   "sold": 23604,
-   "today": 3044,
+   "sold": 23614,
+   "today": 3053,
    "target": 66079,
-   "pace": 36612,
+   "pace": 36734,
    "people": [
     {
      "name": "Lucia N.",
@@ -323,7 +325,7 @@
       }
      ],
      "goal": 22026,
-     "byToday": 12204,
+     "byToday": 12245,
      "full": 0,
      "card": "shop",
      "sd": 13,
@@ -342,9 +344,9 @@
     },
     {
      "name": "Jim D.",
-     "all": 6491,
-     "today": 754,
-     "week": 2497,
+     "all": 6501,
+     "today": 763,
+     "week": 2506,
      "elsewhere": [
       {
        "team": "Pickleball",
@@ -353,7 +355,7 @@
       }
      ],
      "goal": 22026,
-     "byToday": 12204,
+     "byToday": 12245,
      "full": 0,
      "card": "shop",
      "sd": 14,
@@ -383,7 +385,7 @@
       }
      ],
      "goal": 22026,
-     "byToday": 12204,
+     "byToday": 12245,
      "full": 0,
      "card": "shop",
      "sd": 6,
@@ -402,16 +404,16 @@
   },
   {
    "name": "Range & Bar",
-   "sold": 30167,
-   "today": 2486,
+   "sold": 30233,
+   "today": 2552,
    "target": 79595,
-   "pace": 44101,
+   "pace": 44248,
    "people": [
     {
      "name": "Jalyn B.",
-     "all": 6231,
-     "today": 169,
-     "week": 1247,
+     "all": 6297,
+     "today": 235,
+     "week": 1313,
      "elsewhere": [
       {
        "team": "Pickleball",
@@ -420,7 +422,7 @@
       }
      ],
      "goal": 9949,
-     "byToday": 5513,
+     "byToday": 5531,
      "full": 0,
      "card": "rb",
      "sd": 11,
@@ -454,7 +456,7 @@
       }
      ],
      "goal": 9949,
-     "byToday": 5513,
+     "byToday": 5531,
      "full": 0,
      "card": "rb",
      "sd": 11,
@@ -482,7 +484,7 @@
       }
      ],
      "goal": 9949,
-     "byToday": 5513,
+     "byToday": 5531,
      "full": 0,
      "card": "rb",
      "sd": 10,
@@ -516,7 +518,7 @@
       }
      ],
      "goal": 9949,
-     "byToday": 5513,
+     "byToday": 5531,
      "full": 0,
      "card": "rb",
      "sd": 10,
@@ -539,7 +541,7 @@
      "week": 1495,
      "elsewhere": [],
      "goal": 9949,
-     "byToday": 5513,
+     "byToday": 5531,
      "full": 0,
      "card": "rb",
      "sd": 9,
@@ -560,7 +562,7 @@
      "week": 1220,
      "elsewhere": [],
      "goal": 9949,
-     "byToday": 5513,
+     "byToday": 5531,
      "full": 0,
      "card": "rb",
      "sd": 9,
@@ -588,7 +590,7 @@
       }
      ],
      "goal": 9949,
-     "byToday": 5513,
+     "byToday": 5531,
      "full": 0,
      "card": "rb",
      "sd": 8,
@@ -610,7 +612,7 @@
      "week": 566,
      "elsewhere": [],
      "goal": 9949,
-     "byToday": 5513,
+     "byToday": 5531,
      "full": 0,
      "card": "rb",
      "sd": 10,
@@ -633,7 +635,7 @@
    "sold": 1514,
    "today": 40,
    "target": 4505,
-   "pace": 2496,
+   "pace": 2505,
    "people": []
   }
  ]

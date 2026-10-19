@@ -2,9 +2,9 @@
  "day": "2026-10-19",
  "month": "October 2026",
  "goal": 150179,
- "sold": 64372,
- "pace": 92010,
- "today": 284,
+ "sold": 64476,
+ "pace": 92082,
+ "today": 387,
  "todayGoal": 2024,
  "todayLY": 1869,
  "lyDate": "2025-10-20",
@@ -137,42 +137,15 @@
    ]
   ]
  },
- "asOf": "2026-10-19T16:06:27.000Z",
- "todayPeople": [
-  {
-   "name": "Madison M.",
-   "team": "Range & Bar",
-   "today": 205,
-   "card": "rb",
-   "got": [],
-   "cards": 0,
-   "prog": {
-    "nabev15": 2,
-    "liquor3": 0,
-    "lunch3": 0,
-    "dinner2": 0
-   }
-  },
-  {
-   "name": "Jim D.",
-   "team": "Pro Shop",
-   "today": 79,
-   "card": "shop",
-   "got": [],
-   "cards": 0,
-   "prog": {
-    "nabev10": 0,
-    "snack5": 0
-   }
-  }
- ],
+ "asOf": "2026-10-19T16:36:35.000Z",
+ "todayPeople": [],
  "teams": [
   {
    "name": "Pro Shop",
-   "sold": 27150,
-   "today": 284,
+   "sold": 27215,
+   "today": 348,
    "target": 66079,
-   "pace": 40484,
+   "pace": 40516,
    "people": [
     {
      "name": "Lucia N.",
@@ -192,7 +165,7 @@
       }
      ],
      "goal": 22026,
-     "byToday": 13495,
+     "byToday": 13505,
      "full": 0,
      "card": "shop",
      "sd": 14,
@@ -211,9 +184,9 @@
     },
     {
      "name": "Jim D.",
-     "all": 7336,
-     "today": 79,
-     "week": 79,
+     "all": 7258,
+     "today": 0,
+     "week": 0,
      "elsewhere": [
       {
        "team": "Pickleball",
@@ -222,10 +195,10 @@
       }
      ],
      "goal": 22026,
-     "byToday": 13495,
+     "byToday": 13505,
      "full": 0,
      "card": "shop",
-     "sd": 16,
+     "sd": 15,
      "cards": 0,
      "cur": [
       "gmerch",
@@ -252,7 +225,7 @@
       }
      ],
      "goal": 22026,
-     "byToday": 13495,
+     "byToday": 13505,
      "full": 0,
      "card": "shop",
      "sd": 6,
@@ -271,10 +244,10 @@
   },
   {
    "name": "Range & Bar",
-   "sold": 35698,
-   "today": 0,
+   "sold": 35737,
+   "today": 39,
    "target": 79595,
-   "pace": 48765,
+   "pace": 48804,
    "people": [
     {
      "name": "Jalyn B.",
@@ -289,7 +262,7 @@
       }
      ],
      "goal": 9949,
-     "byToday": 6096,
+     "byToday": 6100,
      "full": 0,
      "card": "rb",
      "sd": 12,
@@ -308,13 +281,13 @@
     },
     {
      "name": "Madison M.",
-     "all": 6666,
-     "today": 205,
-     "week": 205,
+     "all": 6461,
+     "today": 0,
+     "week": 0,
      "elsewhere": [
       {
        "team": "Pro Shop",
-       "amt": 911,
+       "amt": 706,
        "courts": false
       },
       {
@@ -324,10 +297,10 @@
       }
      ],
      "goal": 9949,
-     "byToday": 6096,
+     "byToday": 6100,
      "full": 0,
      "card": "rb",
-     "sd": 13,
+     "sd": 12,
      "cards": 0,
      "cur": [
       "coffee",
@@ -352,7 +325,7 @@
       }
      ],
      "goal": 9949,
-     "byToday": 6096,
+     "byToday": 6100,
      "full": 0,
      "card": "rb",
      "sd": 11,
@@ -375,7 +348,7 @@
      "week": 0,
      "elsewhere": [],
      "goal": 9949,
-     "byToday": 6096,
+     "byToday": 6100,
      "full": 0,
      "card": "rb",
      "sd": 9,
@@ -398,7 +371,7 @@
      "week": 0,
      "elsewhere": [],
      "goal": 9949,
-     "byToday": 6096,
+     "byToday": 6100,
      "full": 0,
      "card": "rb",
      "sd": 10,
@@ -432,7 +405,7 @@
       }
      ],
      "goal": 9949,
-     "byToday": 6096,
+     "byToday": 6100,
      "full": 0,
      "card": "rb",
      "sd": 10,
@@ -461,7 +434,7 @@
       }
      ],
      "goal": 9949,
-     "byToday": 6096,
+     "byToday": 6100,
      "full": 0,
      "card": "rb",
      "sd": 8,
@@ -483,7 +456,7 @@
      "week": 0,
      "elsewhere": [],
      "goal": 9949,
-     "byToday": 6096,
+     "byToday": 6100,
      "full": 0,
      "card": "rb",
      "sd": 12,
@@ -506,7 +479,7 @@
    "sold": 1524,
    "today": 0,
    "target": 4505,
-   "pace": 2760,
+   "pace": 2762,
    "people": []
   }
  ]

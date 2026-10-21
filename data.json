@@ -2,9 +2,9 @@
  "day": "2026-10-21",
  "month": "October 2026",
  "goal": 150179,
- "sold": 67760,
- "pace": 97405,
- "today": 574,
+ "sold": 67935,
+ "pace": 97513,
+ "today": 750,
  "todayGoal": 3011,
  "todayLY": 3521,
  "lyDate": "2025-10-22",
@@ -137,12 +137,12 @@
    ]
   ]
  },
- "asOf": "2026-10-21T17:37:39.000Z",
+ "asOf": "2026-10-21T18:07:48.000Z",
  "todayPeople": [
   {
    "name": "Lucia N.",
    "team": "Pro Shop",
-   "today": 534,
+   "today": 608,
    "card": "shop",
    "got": [
     "dmerch",
@@ -158,7 +158,7 @@
   {
    "name": "Khrystin R.",
    "team": "Range & Bar",
-   "today": 40,
+   "today": 88,
    "card": "rb",
    "got": [],
    "cards": 0,
@@ -168,21 +168,35 @@
     "lunch3": 0,
     "dinner2": 0
    }
+  },
+  {
+   "name": "Manuela G.",
+   "team": "Range & Bar",
+   "today": 54,
+   "card": "rb",
+   "got": [],
+   "cards": 0,
+   "prog": {
+    "nabev15": 1,
+    "liquor3": 0,
+    "lunch3": 1,
+    "dinner2": 1
+   }
   }
  ],
  "teams": [
   {
    "name": "Pro Shop",
-   "sold": 28761,
-   "today": 504,
+   "sold": 28834,
+   "today": 578,
    "target": 66079,
-   "pace": 42858,
+   "pace": 42906,
    "people": [
     {
      "name": "Lucia N.",
-     "all": 16629,
-     "today": 534,
-     "week": 534,
+     "all": 16702,
+     "today": 608,
+     "week": 608,
      "elsewhere": [
       {
        "team": "Pickleball",
@@ -196,7 +210,7 @@
       }
      ],
      "goal": 22026,
-     "byToday": 14286,
+     "byToday": 14302,
      "full": 0,
      "card": "shop",
      "sd": 15,
@@ -226,7 +240,7 @@
       }
      ],
      "goal": 22026,
-     "byToday": 14286,
+     "byToday": 14302,
      "full": 0,
      "card": "shop",
      "sd": 17,
@@ -256,7 +270,7 @@
       }
      ],
      "goal": 22026,
-     "byToday": 14286,
+     "byToday": 14302,
      "full": 0,
      "card": "shop",
      "sd": 6,
@@ -275,10 +289,10 @@
   },
   {
    "name": "Range & Bar",
-   "sold": 37445,
-   "today": 40,
+   "sold": 37547,
+   "today": 142,
    "target": 79595,
-   "pace": 51625,
+   "pace": 51682,
    "people": [
     {
      "name": "Jalyn B.",
@@ -293,7 +307,7 @@
       }
      ],
      "goal": 9949,
-     "byToday": 6453,
+     "byToday": 6460,
      "full": 0,
      "card": "rb",
      "sd": 13,
@@ -328,7 +342,7 @@
       }
      ],
      "goal": 9949,
-     "byToday": 6453,
+     "byToday": 6460,
      "full": 0,
      "card": "rb",
      "sd": 14,
@@ -345,9 +359,9 @@
     },
     {
      "name": "Khrystin R.",
-     "all": 5376,
-     "today": 40,
-     "week": 40,
+     "all": 5424,
+     "today": 88,
+     "week": 88,
      "elsewhere": [
       {
        "team": "Pickleball",
@@ -356,7 +370,7 @@
       }
      ],
      "goal": 9949,
-     "byToday": 6453,
+     "byToday": 6460,
      "full": 0,
      "card": "rb",
      "sd": 12,
@@ -379,7 +393,7 @@
      "week": 0,
      "elsewhere": [],
      "goal": 9949,
-     "byToday": 6453,
+     "byToday": 6460,
      "full": 0,
      "card": "rb",
      "sd": 9,
@@ -402,7 +416,7 @@
      "week": 601,
      "elsewhere": [],
      "goal": 9949,
-     "byToday": 6453,
+     "byToday": 6460,
      "full": 0,
      "card": "rb",
      "sd": 12,
@@ -436,7 +450,7 @@
       }
      ],
      "goal": 9949,
-     "byToday": 6453,
+     "byToday": 6460,
      "full": 0,
      "card": "rb",
      "sd": 12,
@@ -454,9 +468,9 @@
     },
     {
      "name": "Manuela G.",
-     "all": 2390,
-     "today": 0,
-     "week": 0,
+     "all": 2444,
+     "today": 54,
+     "week": 54,
      "elsewhere": [
       {
        "team": "Pro Shop",
@@ -465,10 +479,10 @@
       }
      ],
      "goal": 9949,
-     "byToday": 6453,
+     "byToday": 6460,
      "full": 0,
      "card": "rb",
-     "sd": 8,
+     "sd": 9,
      "cards": 0,
      "cur": [
       "coffee",
@@ -487,7 +501,7 @@
      "week": 357,
      "elsewhere": [],
      "goal": 9949,
-     "byToday": 6453,
+     "byToday": 6460,
      "full": 0,
      "card": "rb",
      "sd": 13,
@@ -510,7 +524,7 @@
    "sold": 1554,
    "today": 30,
    "target": 4505,
-   "pace": 2922,
+   "pace": 2925,
    "people": []
   }
  ]

@@ -2,9 +2,9 @@
  "day": "2026-10-22",
  "month": "October 2026",
  "goal": 150179,
- "sold": 70326,
- "pace": 101547,
- "today": 900,
+ "sold": 70481,
+ "pace": 101713,
+ "today": 1055,
  "todayGoal": 4644,
  "todayLY": 3548,
  "lyDate": "2025-10-23",
@@ -137,12 +137,12 @@
    ]
   ]
  },
- "asOf": "2026-10-22T19:03:43.000Z",
+ "asOf": "2026-10-22T19:33:57.000Z",
  "todayPeople": [
   {
    "name": "Lucia N.",
    "team": "Pro Shop",
-   "today": 445,
+   "today": 482,
    "card": "shop",
    "got": [
     "gmerch",
@@ -158,15 +158,16 @@
   {
    "name": "Campbell W.",
    "team": "Range & Bar",
-   "today": 373,
+   "today": 456,
    "card": "rb",
    "got": [
     "coffee",
-    "dinner2"
+    "dinner2",
+    "apps"
    ],
    "cards": 0,
    "prog": {
-    "nabev15": 7,
+    "nabev15": 10,
     "liquor3": 0,
     "lunch3": 2,
     "dinner2": 2
@@ -175,16 +176,17 @@
   {
    "name": "Ariana H.",
    "team": "Range & Bar",
-   "today": 81,
+   "today": 116,
    "card": "rb",
    "got": [
+    "liquor3",
     "breakfast"
    ],
    "cards": 0,
    "prog": {
-    "nabev15": 4,
-    "liquor3": 2,
-    "lunch3": 0,
+    "nabev15": 5,
+    "liquor3": 3,
+    "lunch3": 1,
     "dinner2": 0
    }
   }
@@ -192,16 +194,16 @@
  "teams": [
   {
    "name": "Pro Shop",
-   "sold": 29595,
-   "today": 409,
+   "sold": 29632,
+   "today": 446,
    "target": 66079,
-   "pace": 44681,
+   "pace": 44754,
    "people": [
     {
      "name": "Lucia N.",
-     "all": 17158,
-     "today": 445,
-     "week": 1064,
+     "all": 17195,
+     "today": 482,
+     "week": 1101,
      "elsewhere": [
       {
        "team": "Pickleball",
@@ -215,7 +217,7 @@
       }
      ],
      "goal": 22026,
-     "byToday": 14894,
+     "byToday": 14918,
      "full": 0,
      "card": "shop",
      "sd": 16,
@@ -245,7 +247,7 @@
       }
      ],
      "goal": 22026,
-     "byToday": 14894,
+     "byToday": 14918,
      "full": 0,
      "card": "shop",
      "sd": 17,
@@ -275,7 +277,7 @@
       }
      ],
      "goal": 22026,
-     "byToday": 14894,
+     "byToday": 14918,
      "full": 0,
      "card": "shop",
      "sd": 6,
@@ -294,10 +296,10 @@
   },
   {
    "name": "Range & Bar",
-   "sold": 38855,
-   "today": 373,
+   "sold": 38938,
+   "today": 456,
    "target": 79595,
-   "pace": 53820,
+   "pace": 53908,
    "people": [
     {
      "name": "Jalyn B.",
@@ -312,7 +314,7 @@
       }
      ],
      "goal": 9949,
-     "byToday": 6727,
+     "byToday": 6738,
      "full": 0,
      "card": "rb",
      "sd": 14,
@@ -347,7 +349,7 @@
       }
      ],
      "goal": 9949,
-     "byToday": 6727,
+     "byToday": 6738,
      "full": 0,
      "card": "rb",
      "sd": 15,
@@ -375,7 +377,7 @@
       }
      ],
      "goal": 9949,
-     "byToday": 6727,
+     "byToday": 6738,
      "full": 0,
      "card": "rb",
      "sd": 12,
@@ -393,12 +395,12 @@
     },
     {
      "name": "Campbell W.",
-     "all": 5144,
-     "today": 373,
-     "week": 974,
+     "all": 5227,
+     "today": 456,
+     "week": 1057,
      "elsewhere": [],
      "goal": 9949,
-     "byToday": 6727,
+     "byToday": 6738,
      "full": 0,
      "card": "rb",
      "sd": 13,
@@ -421,7 +423,7 @@
      "week": 0,
      "elsewhere": [],
      "goal": 9949,
-     "byToday": 6727,
+     "byToday": 6738,
      "full": 0,
      "card": "rb",
      "sd": 9,
@@ -439,13 +441,13 @@
     },
     {
      "name": "Ariana H.",
-     "all": 4680,
-     "today": 81,
-     "week": 584,
+     "all": 4715,
+     "today": 116,
+     "week": 619,
      "elsewhere": [
       {
        "team": "Pickleball",
-       "amt": 527,
+       "amt": 562,
        "courts": true
       },
       {
@@ -455,7 +457,7 @@
       }
      ],
      "goal": 9949,
-     "byToday": 6727,
+     "byToday": 6738,
      "full": 0,
      "card": "rb",
      "sd": 13,
@@ -484,7 +486,7 @@
       }
      ],
      "goal": 9949,
-     "byToday": 6727,
+     "byToday": 6738,
      "full": 0,
      "card": "rb",
      "sd": 9,
@@ -512,7 +514,7 @@
       }
      ],
      "goal": 9949,
-     "byToday": 6727,
+     "byToday": 6738,
      "full": 0,
      "card": "rb",
      "sd": 14,
@@ -532,10 +534,10 @@
   },
   {
    "name": "Pickleball",
-   "sold": 1877,
-   "today": 117,
+   "sold": 1912,
+   "today": 152,
    "target": 4505,
-   "pace": 3046,
+   "pace": 3051,
    "people": []
   }
  ]

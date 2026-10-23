@@ -2,9 +2,9 @@
  "day": "2026-10-22",
  "month": "October 2026",
  "goal": 150179,
- "sold": 73349,
+ "sold": 73502,
  "pace": 103853,
- "today": 3922,
+ "today": 4076,
  "todayGoal": 4644,
  "todayLY": 3548,
  "lyDate": "2025-10-23",
@@ -137,12 +137,12 @@
    ]
   ]
  },
- "asOf": "2026-10-23T02:36:25.000Z",
+ "asOf": "2026-10-23T03:06:36.000Z",
  "todayPeople": [
   {
    "name": "Khrystin R.",
    "team": "Range & Bar",
-   "today": 1711,
+   "today": 1727,
    "card": "rb",
    "got": [
     "liquor3",
@@ -176,6 +176,22 @@
     "liquor3": 3,
     "lunch3": 3,
     "dinner2": 2
+   }
+  },
+  {
+   "name": "Jim D.",
+   "team": "Pro Shop",
+   "today": 533,
+   "card": "shop",
+   "got": [
+    "lesson",
+    "liquor",
+    "court"
+   ],
+   "cards": 0,
+   "prog": {
+    "nabev10": 6,
+    "snack5": 1
    }
   },
   {
@@ -214,22 +230,6 @@
    }
   },
   {
-   "name": "Jim D.",
-   "team": "Pro Shop",
-   "today": 395,
-   "card": "shop",
-   "got": [
-    "lesson",
-    "liquor",
-    "court"
-   ],
-   "cards": 0,
-   "prog": {
-    "nabev10": 6,
-    "snack5": 1
-   }
-  },
-  {
    "name": "Jalyn B.",
    "team": "Range & Bar",
    "today": 259,
@@ -249,8 +249,8 @@
  "teams": [
   {
    "name": "Pro Shop",
-   "sold": 29956,
-   "today": 771,
+   "sold": 30095,
+   "today": 909,
    "target": 66079,
    "pace": 45695,
    "people": [
@@ -291,9 +291,9 @@
     },
     {
      "name": "Jim D.",
-     "all": 8284,
-     "today": 395,
-     "week": 1026,
+     "all": 8423,
+     "today": 533,
+     "week": 1165,
      "elsewhere": [
       {
        "team": "Pickleball",
@@ -351,8 +351,8 @@
   },
   {
    "name": "Range & Bar",
-   "sold": 41278,
-   "today": 2796,
+   "sold": 41293,
+   "today": 2811,
    "target": 79595,
    "pace": 55042,
    "people": [
@@ -421,9 +421,9 @@
     },
     {
      "name": "Khrystin R.",
-     "all": 7192,
-     "today": 1711,
-     "week": 1855,
+     "all": 7207,
+     "today": 1727,
+     "week": 1871,
      "elsewhere": [
       {
        "team": "Pickleball",

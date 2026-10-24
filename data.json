@@ -2,9 +2,9 @@
  "day": "2026-10-23",
  "month": "October 2026",
  "goal": 150179,
- "sold": 80578,
- "pace": 108986,
- "today": 3841,
+ "sold": 80823,
+ "pace": 109183,
+ "today": 4086,
  "todayGoal": 5500,
  "todayLY": 4131,
  "lyDate": "2025-10-24",
@@ -137,7 +137,7 @@
    ]
   ]
  },
- "asOf": "2026-10-24T01:04:30.000Z",
+ "asOf": "2026-10-24T01:34:42.000Z",
  "todayPeople": [
   {
    "name": "Jim D.",
@@ -158,6 +158,25 @@
    }
   },
   {
+   "name": "Madison M.",
+   "team": "Range & Bar",
+   "today": 871,
+   "card": "rb",
+   "got": [
+    "bucket",
+    "liquor3",
+    "dinner2",
+    "apps"
+   ],
+   "cards": 0,
+   "prog": {
+    "nabev15": 10,
+    "liquor3": 3,
+    "lunch3": 2,
+    "dinner2": 2
+   }
+  },
+  {
    "name": "Lucia N.",
    "team": "Pro Shop",
    "today": 793,
@@ -170,25 +189,6 @@
    "prog": {
     "nabev10": 6,
     "snack5": 0
-   }
-  },
-  {
-   "name": "Madison M.",
-   "team": "Range & Bar",
-   "today": 711,
-   "card": "rb",
-   "got": [
-    "bucket",
-    "liquor3",
-    "dinner2",
-    "apps"
-   ],
-   "cards": 0,
-   "prog": {
-    "nabev15": 10,
-    "liquor3": 3,
-    "lunch3": 1,
-    "dinner2": 2
    }
   },
   {
@@ -212,7 +212,7 @@
   {
    "name": "Jalyn B.",
    "team": "Range & Bar",
-   "today": 303,
+   "today": 388,
    "card": "rb",
    "got": [
     "lunch3",
@@ -221,8 +221,8 @@
    ],
    "cards": 0,
    "prog": {
-    "nabev15": 6,
-    "liquor3": 1,
+    "nabev15": 7,
+    "liquor3": 2,
     "lunch3": 3,
     "dinner2": 2
    }
@@ -267,7 +267,7 @@
    "sold": 32223,
    "today": 2160,
    "target": 66079,
-   "pace": 47954,
+   "pace": 48040,
    "people": [
     {
      "name": "Lucia N.",
@@ -287,7 +287,7 @@
       }
      ],
      "goal": 22026,
-     "byToday": 15985,
+     "byToday": 16013,
      "full": 0,
      "card": "shop",
      "sd": 17,
@@ -317,7 +317,7 @@
       }
      ],
      "goal": 22026,
-     "byToday": 15985,
+     "byToday": 16013,
      "full": 0,
      "card": "shop",
      "sd": 19,
@@ -347,7 +347,7 @@
       }
      ],
      "goal": 22026,
-     "byToday": 15985,
+     "byToday": 16013,
      "full": 0,
      "card": "shop",
      "sd": 6,
@@ -366,10 +366,10 @@
   },
   {
    "name": "Range & Bar",
-   "sold": 46240,
-   "today": 1681,
+   "sold": 46486,
+   "today": 1927,
    "target": 79595,
-   "pace": 57763,
+   "pace": 57867,
    "people": [
     {
      "name": "Khrystin R.",
@@ -384,7 +384,7 @@
       }
      ],
      "goal": 9949,
-     "byToday": 7220,
+     "byToday": 7233,
      "full": 0,
      "card": "rb",
      "sd": 14,
@@ -402,9 +402,9 @@
     },
     {
      "name": "Jalyn B.",
-     "all": 9568,
-     "today": 303,
-     "week": 1627,
+     "all": 9653,
+     "today": 388,
+     "week": 1712,
      "elsewhere": [
       {
        "team": "Pickleball",
@@ -413,7 +413,7 @@
       }
      ],
      "goal": 9949,
-     "byToday": 7220,
+     "byToday": 7233,
      "full": 0,
      "card": "rb",
      "sd": 16,
@@ -432,9 +432,9 @@
     },
     {
      "name": "Madison M.",
-     "all": 8270,
-     "today": 711,
-     "week": 1809,
+     "all": 8430,
+     "today": 871,
+     "week": 1969,
      "elsewhere": [
       {
        "team": "Pro Shop",
@@ -448,7 +448,7 @@
       }
      ],
      "goal": 9949,
-     "byToday": 7220,
+     "byToday": 7233,
      "full": 0,
      "card": "rb",
      "sd": 16,
@@ -470,7 +470,7 @@
      "week": 1315,
      "elsewhere": [],
      "goal": 9949,
-     "byToday": 7220,
+     "byToday": 7233,
      "full": 0,
      "card": "rb",
      "sd": 14,
@@ -504,7 +504,7 @@
       }
      ],
      "goal": 9949,
-     "byToday": 7220,
+     "byToday": 7233,
      "full": 0,
      "card": "rb",
      "sd": 13,
@@ -527,7 +527,7 @@
      "week": 0,
      "elsewhere": [],
      "goal": 9949,
-     "byToday": 7220,
+     "byToday": 7233,
      "full": 0,
      "card": "rb",
      "sd": 9,
@@ -556,7 +556,7 @@
       }
      ],
      "goal": 9949,
-     "byToday": 7220,
+     "byToday": 7233,
      "full": 0,
      "card": "rb",
      "sd": 10,
@@ -584,7 +584,7 @@
       }
      ],
      "goal": 9949,
-     "byToday": 7220,
+     "byToday": 7233,
      "full": 0,
      "card": "rb",
      "sd": 14,
@@ -607,7 +607,7 @@
    "sold": 2114,
    "today": 0,
    "target": 4505,
-   "pace": 3270,
+   "pace": 3275,
    "people": []
   }
  ]

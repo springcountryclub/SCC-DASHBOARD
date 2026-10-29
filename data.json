@@ -2,9 +2,9 @@
  "day": "2026-10-29",
  "month": "October 2026",
  "goal": 150179,
- "sold": 97693,
- "pace": 134622,
- "today": 664,
+ "sold": 97869,
+ "pace": 134788,
+ "today": 841,
  "todayGoal": 4644,
  "todayLY": 3272,
  "lyDate": "2025-10-30",
@@ -137,7 +137,7 @@
    ]
   ]
  },
- "asOf": "2026-10-29T19:04:21.000Z",
+ "asOf": "2026-10-29T19:34:26.000Z",
  "todayPeople": [
   {
    "name": "Lucia N.",
@@ -156,35 +156,38 @@
    }
   },
   {
-   "name": "Ariana H.",
-   "team": "Range & Bar",
-   "today": 153,
-   "card": "rb",
-   "got": [
-    "coffee"
-   ],
-   "cards": 0,
-   "prog": {
-    "nabev15": 2,
-    "liquor3": 1,
-    "lunch3": 0,
-    "dinner2": 1
-   }
-  },
-  {
    "name": "Khrystin R.",
    "team": "Range & Bar",
-   "today": 151,
+   "today": 295,
    "card": "rb",
    "got": [
-    "coffee"
+    "coffee",
+    "breakfast",
+    "dinner2"
    ],
    "cards": 0,
    "prog": {
     "nabev15": 3,
     "liquor3": 0,
+    "lunch3": 1,
+    "dinner2": 2
+   }
+  },
+  {
+   "name": "Ariana H.",
+   "team": "Range & Bar",
+   "today": 185,
+   "card": "rb",
+   "got": [
+    "coffee",
+    "dinner2"
+   ],
+   "cards": 0,
+   "prog": {
+    "nabev15": 4,
+    "liquor3": 1,
     "lunch3": 0,
-    "dinner2": 0
+    "dinner2": 2
    }
   }
  ],
@@ -194,7 +197,7 @@
    "sold": 40939,
    "today": 360,
    "target": 66079,
-   "pace": 59234,
+   "pace": 59307,
    "people": [
     {
      "name": "Lucia N.",
@@ -214,7 +217,7 @@
       }
      ],
      "goal": 22026,
-     "byToday": 19745,
+     "byToday": 19769,
      "full": 0,
      "card": "shop",
      "sd": 21,
@@ -244,7 +247,7 @@
       }
      ],
      "goal": 22026,
-     "byToday": 19745,
+     "byToday": 19769,
      "full": 0,
      "card": "shop",
      "sd": 23,
@@ -274,7 +277,7 @@
       }
      ],
      "goal": 22026,
-     "byToday": 19745,
+     "byToday": 19769,
      "full": 0,
      "card": "shop",
      "sd": 6,
@@ -293,16 +296,16 @@
   },
   {
    "name": "Range & Bar",
-   "sold": 54204,
-   "today": 171,
+   "sold": 54348,
+   "today": 315,
    "target": 79595,
-   "pace": 71350,
+   "pace": 71437,
    "people": [
     {
      "name": "Khrystin R.",
-     "all": 11652,
-     "today": 151,
-     "week": 151,
+     "all": 11796,
+     "today": 295,
+     "week": 295,
      "elsewhere": [
       {
        "team": "Pickleball",
@@ -311,7 +314,7 @@
       }
      ],
      "goal": 9949,
-     "byToday": 8919,
+     "byToday": 8930,
      "full": 0,
      "card": "rb",
      "sd": 17,
@@ -341,7 +344,7 @@
       }
      ],
      "goal": 9949,
-     "byToday": 8919,
+     "byToday": 8930,
      "full": 0,
      "card": "rb",
      "sd": 19,
@@ -376,7 +379,7 @@
       }
      ],
      "goal": 9949,
-     "byToday": 8919,
+     "byToday": 8930,
      "full": 0,
      "card": "rb",
      "sd": 19,
@@ -398,7 +401,7 @@
      "week": 377,
      "elsewhere": [],
      "goal": 9949,
-     "byToday": 8919,
+     "byToday": 8930,
      "full": 0,
      "card": "rb",
      "sd": 12,
@@ -417,13 +420,13 @@
     },
     {
      "name": "Ariana H.",
-     "all": 6918,
-     "today": 153,
-     "week": 1041,
+     "all": 6950,
+     "today": 185,
+     "week": 1074,
      "elsewhere": [
       {
        "team": "Pickleball",
-       "amt": 828,
+       "amt": 861,
        "courts": true
       },
       {
@@ -433,7 +436,7 @@
       }
      ],
      "goal": 9949,
-     "byToday": 8919,
+     "byToday": 8930,
      "full": 0,
      "card": "rb",
      "sd": 16,
@@ -462,7 +465,7 @@
       }
      ],
      "goal": 9949,
-     "byToday": 8919,
+     "byToday": 8930,
      "full": 0,
      "card": "rb",
      "sd": 17,
@@ -491,7 +494,7 @@
       }
      ],
      "goal": 9949,
-     "byToday": 8919,
+     "byToday": 8930,
      "full": 0,
      "card": "rb",
      "sd": 14,
@@ -519,7 +522,7 @@
       }
      ],
      "goal": 9949,
-     "byToday": 8919,
+     "byToday": 8930,
      "full": 0,
      "card": "rb",
      "sd": 15,
@@ -539,10 +542,10 @@
   },
   {
    "name": "Pickleball",
-   "sold": 2549,
-   "today": 133,
+   "sold": 2582,
+   "today": 165,
    "target": 4505,
-   "pace": 4039,
+   "pace": 4044,
    "people": []
   }
  ]

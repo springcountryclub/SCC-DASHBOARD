@@ -2,9 +2,9 @@
  "day": "2026-10-29",
  "month": "October 2026",
  "goal": 150179,
- "sold": 100251,
+ "sold": 100385,
  "pace": 136922,
- "today": 3223,
+ "today": 3357,
  "todayGoal": 4644,
  "todayLY": 3272,
  "lyDate": "2025-10-30",
@@ -137,12 +137,12 @@
    ]
   ]
  },
- "asOf": "2026-10-30T02:35:26.000Z",
+ "asOf": "2026-10-30T03:05:30.000Z",
  "todayPeople": [
   {
    "name": "Sarah B.",
    "team": "Range & Bar",
-   "today": 1746,
+   "today": 1880,
    "card": "rb",
    "got": [
     "nabev15",
@@ -361,8 +361,8 @@
   },
   {
    "name": "Range & Bar",
-   "sold": 56298,
-   "today": 2265,
+   "sold": 56432,
+   "today": 2399,
    "target": 79595,
    "pace": 72569,
    "people": [
@@ -548,9 +548,9 @@
     },
     {
      "name": "Sarah B.",
-     "all": 4776,
-     "today": 1746,
-     "week": 1746,
+     "all": 4910,
+     "today": 1880,
+     "week": 1880,
      "elsewhere": [
       {
        "team": "Pickleball",

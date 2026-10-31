@@ -3,7 +3,7 @@
  "month": "October 2026",
  "goal": 150179,
  "sold": 104330,
- "pace": 142082,
+ "pace": 142278,
  "today": 3215,
  "todayGoal": 5500,
  "todayLY": 2049,
@@ -137,7 +137,7 @@
    ]
   ]
  },
- "asOf": "2026-10-31T01:08:08.000Z",
+ "asOf": "2026-10-31T01:38:14.000Z",
  "todayPeople": [
   {
    "name": "Campbell W.",
@@ -230,7 +230,7 @@
    "sold": 42946,
    "today": 1698,
    "target": 66079,
-   "pace": 62516,
+   "pace": 62602,
    "people": [
     {
      "name": "Lucia N.",
@@ -250,7 +250,7 @@
       }
      ],
      "goal": 22026,
-     "byToday": 20839,
+     "byToday": 20868,
      "full": 0,
      "card": "shop",
      "sd": 22,
@@ -280,7 +280,7 @@
       }
      ],
      "goal": 22026,
-     "byToday": 20839,
+     "byToday": 20868,
      "full": 0,
      "card": "shop",
      "sd": 25,
@@ -310,7 +310,7 @@
       }
      ],
      "goal": 22026,
-     "byToday": 20839,
+     "byToday": 20868,
      "full": 0,
      "card": "shop",
      "sd": 6,
@@ -332,7 +332,7 @@
    "sold": 58639,
    "today": 1477,
    "target": 79595,
-   "pace": 75303,
+   "pace": 75407,
    "people": [
     {
      "name": "Khrystin R.",
@@ -352,7 +352,7 @@
       }
      ],
      "goal": 9949,
-     "byToday": 9413,
+     "byToday": 9426,
      "full": 0,
      "card": "rb",
      "sd": 18,
@@ -382,7 +382,7 @@
       }
      ],
      "goal": 9949,
-     "byToday": 9413,
+     "byToday": 9426,
      "full": 0,
      "card": "rb",
      "sd": 20,
@@ -417,7 +417,7 @@
       }
      ],
      "goal": 9949,
-     "byToday": 9413,
+     "byToday": 9426,
      "full": 0,
      "card": "rb",
      "sd": 20,
@@ -446,7 +446,7 @@
       }
      ],
      "goal": 9949,
-     "byToday": 9413,
+     "byToday": 9426,
      "full": 0,
      "card": "rb",
      "sd": 18,
@@ -469,7 +469,7 @@
      "week": 459,
      "elsewhere": [],
      "goal": 9949,
-     "byToday": 9413,
+     "byToday": 9426,
      "full": 0,
      "card": "rb",
      "sd": 13,
@@ -504,7 +504,7 @@
       }
      ],
      "goal": 9949,
-     "byToday": 9413,
+     "byToday": 9426,
      "full": 0,
      "card": "rb",
      "sd": 16,
@@ -533,7 +533,7 @@
       }
      ],
      "goal": 9949,
-     "byToday": 9413,
+     "byToday": 9426,
      "full": 0,
      "card": "rb",
      "sd": 16,
@@ -563,7 +563,7 @@
       }
      ],
      "goal": 9949,
-     "byToday": 9413,
+     "byToday": 9426,
      "full": 0,
      "card": "rb",
      "sd": 14,
@@ -585,7 +585,7 @@
    "sold": 2746,
    "today": 40,
    "target": 4505,
-   "pace": 4262,
+   "pace": 4268,
    "people": []
   }
  ]

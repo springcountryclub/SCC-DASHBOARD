@@ -2,9 +2,9 @@
  "day": "2026-10-30",
  "month": "October 2026",
  "goal": 150179,
- "sold": 104330,
- "pace": 142278,
- "today": 3215,
+ "sold": 104561,
+ "pace": 142422,
+ "today": 3446,
  "todayGoal": 5500,
  "todayLY": 2049,
  "lyDate": "2025-10-31",
@@ -137,7 +137,7 @@
    ]
   ]
  },
- "asOf": "2026-10-31T01:38:14.000Z",
+ "asOf": "2026-10-31T02:38:26.000Z",
  "todayPeople": [
   {
    "name": "Campbell W.",
@@ -210,6 +210,24 @@
    }
   },
   {
+   "name": "Chisom N.",
+   "team": "Range & Bar",
+   "today": 231,
+   "card": "rb",
+   "got": [
+    "liquor3",
+    "dinner2",
+    "apps"
+   ],
+   "cards": 1,
+   "prog": {
+    "nabev15": 4,
+    "liquor3": 3,
+    "lunch3": 0,
+    "dinner2": 2
+   }
+  },
+  {
    "name": "Khrystin R.",
    "team": "Range & Bar",
    "today": 74,
@@ -230,7 +248,7 @@
    "sold": 42946,
    "today": 1698,
    "target": 66079,
-   "pace": 62602,
+   "pace": 62666,
    "people": [
     {
      "name": "Lucia N.",
@@ -250,7 +268,7 @@
       }
      ],
      "goal": 22026,
-     "byToday": 20868,
+     "byToday": 20889,
      "full": 0,
      "card": "shop",
      "sd": 22,
@@ -280,7 +298,7 @@
       }
      ],
      "goal": 22026,
-     "byToday": 20868,
+     "byToday": 20889,
      "full": 0,
      "card": "shop",
      "sd": 25,
@@ -310,7 +328,7 @@
       }
      ],
      "goal": 22026,
-     "byToday": 20868,
+     "byToday": 20889,
      "full": 0,
      "card": "shop",
      "sd": 6,
@@ -332,7 +350,7 @@
    "sold": 58639,
    "today": 1477,
    "target": 79595,
-   "pace": 75407,
+   "pace": 75484,
    "people": [
     {
      "name": "Khrystin R.",
@@ -352,7 +370,7 @@
       }
      ],
      "goal": 9949,
-     "byToday": 9426,
+     "byToday": 9435,
      "full": 0,
      "card": "rb",
      "sd": 18,
@@ -382,7 +400,7 @@
       }
      ],
      "goal": 9949,
-     "byToday": 9426,
+     "byToday": 9435,
      "full": 0,
      "card": "rb",
      "sd": 20,
@@ -417,7 +435,7 @@
       }
      ],
      "goal": 9949,
-     "byToday": 9426,
+     "byToday": 9435,
      "full": 0,
      "card": "rb",
      "sd": 20,
@@ -427,6 +445,36 @@
       "nabev15",
       "bucket",
       "liquor3",
+      "breakfast",
+      "lunch3",
+      "dinner2",
+      "apps"
+     ]
+    },
+    {
+     "name": "Chisom N.",
+     "all": 7491,
+     "today": 231,
+     "week": 690,
+     "elsewhere": [
+      {
+       "team": "Pickleball",
+       "amt": 231,
+       "courts": true
+      }
+     ],
+     "goal": 9949,
+     "byToday": 9435,
+     "full": 0,
+     "card": "rb",
+     "sd": 14,
+     "cards": 1,
+     "cur": [
+      "coffee",
+      "nabev15",
+      "bucket",
+      "liquor3",
+      "wbottle",
       "breakfast",
       "lunch3",
       "dinner2",
@@ -446,7 +494,7 @@
       }
      ],
      "goal": 9949,
-     "byToday": 9426,
+     "byToday": 9435,
      "full": 0,
      "card": "rb",
      "sd": 18,
@@ -456,30 +504,6 @@
       "nabev15",
       "bucket",
       "liquor3",
-      "breakfast",
-      "lunch3",
-      "dinner2",
-      "apps"
-     ]
-    },
-    {
-     "name": "Chisom N.",
-     "all": 7260,
-     "today": 0,
-     "week": 459,
-     "elsewhere": [],
-     "goal": 9949,
-     "byToday": 9426,
-     "full": 0,
-     "card": "rb",
-     "sd": 13,
-     "cards": 1,
-     "cur": [
-      "coffee",
-      "nabev15",
-      "bucket",
-      "liquor3",
-      "wbottle",
       "breakfast",
       "lunch3",
       "dinner2",
@@ -504,7 +528,7 @@
       }
      ],
      "goal": 9949,
-     "byToday": 9426,
+     "byToday": 9435,
      "full": 0,
      "card": "rb",
      "sd": 16,
@@ -533,7 +557,7 @@
       }
      ],
      "goal": 9949,
-     "byToday": 9426,
+     "byToday": 9435,
      "full": 0,
      "card": "rb",
      "sd": 16,
@@ -563,7 +587,7 @@
       }
      ],
      "goal": 9949,
-     "byToday": 9426,
+     "byToday": 9435,
      "full": 0,
      "card": "rb",
      "sd": 14,
@@ -582,10 +606,10 @@
   },
   {
    "name": "Pickleball",
-   "sold": 2746,
-   "today": 40,
+   "sold": 2977,
+   "today": 271,
    "target": 4505,
-   "pace": 4268,
+   "pace": 4273,
    "people": []
   }
  ]

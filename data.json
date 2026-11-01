@@ -2,9 +2,9 @@
  "day": "2026-11-01",
  "month": "November 2026",
  "goal": 153417,
- "sold": 2789,
- "pace": 4089,
- "today": 2789,
+ "sold": 2797,
+ "pace": 4379,
+ "today": 2797,
  "todayGoal": 8139,
  "todayLY": 6604,
  "lyDate": "2025-11-02",
@@ -137,7 +137,7 @@
    ]
   ]
  },
- "asOf": "2026-11-01T20:02:38.000Z",
+ "asOf": "2026-11-01T20:32:42.000Z",
  "todayPeople": [
   {
    "name": "Lucia N.",
@@ -191,15 +191,27 @@
     "lunch3": 3,
     "dinner2": 1
    }
+  },
+  {
+   "name": "Jim D.",
+   "team": "Pro Shop",
+   "today": 8,
+   "card": "shop",
+   "got": [],
+   "cards": 0,
+   "prog": {
+    "nabev10": 2,
+    "snack5": 0
+   }
   }
  ],
  "teams": [
   {
    "name": "Pro Shop",
-   "sold": 1583,
-   "today": 1583,
+   "sold": 1591,
+   "today": 1591,
    "target": 67503,
-   "pace": 1799,
+   "pace": 1927,
    "people": [
     {
      "name": "Lucia N.",
@@ -213,8 +225,8 @@
        "courts": true
       }
      ],
-     "goal": 67503,
-     "byToday": 1799,
+     "goal": 33752,
+     "byToday": 963,
      "full": 0,
      "card": "shop",
      "sd": 1,
@@ -225,6 +237,20 @@
       "nabev10",
       "more9"
      ]
+    },
+    {
+     "name": "Jim D.",
+     "all": 8,
+     "today": 8,
+     "week": 8,
+     "elsewhere": [],
+     "goal": 33752,
+     "byToday": 963,
+     "full": 0,
+     "card": "shop",
+     "sd": 1,
+     "cards": 0,
+     "cur": []
     }
    ]
   },
@@ -233,7 +259,7 @@
    "sold": 977,
    "today": 977,
    "target": 81311,
-   "pace": 2167,
+   "pace": 2321,
    "people": [
     {
      "name": "Khrystin R.",
@@ -248,7 +274,7 @@
       }
      ],
      "goal": 40656,
-     "byToday": 1083,
+     "byToday": 1161,
      "full": 0,
      "card": "rb",
      "sd": 1,
@@ -267,7 +293,7 @@
      "week": 186,
      "elsewhere": [],
      "goal": 40656,
-     "byToday": 1083,
+     "byToday": 1161,
      "full": 0,
      "card": "rb",
      "sd": 1,
@@ -284,7 +310,7 @@
    "sold": 229,
    "today": 229,
    "target": 4602,
-   "pace": 123,
+   "pace": 131,
    "people": []
   }
  ]

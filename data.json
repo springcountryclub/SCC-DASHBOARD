@@ -2,9 +2,9 @@
  "day": "2026-11-01",
  "month": "November 2026",
  "goal": 153417,
- "sold": 2617,
- "pace": 3798,
- "today": 2617,
+ "sold": 2789,
+ "pace": 4089,
+ "today": 2789,
  "todayGoal": 8139,
  "todayLY": 6604,
  "lyDate": "2025-11-02",
@@ -137,12 +137,12 @@
    ]
   ]
  },
- "asOf": "2026-11-01T19:32:34.000Z",
+ "asOf": "2026-11-01T20:02:38.000Z",
  "todayPeople": [
   {
    "name": "Lucia N.",
    "team": "Pro Shop",
-   "today": 1648,
+   "today": 1699,
    "card": "shop",
    "got": [
     "gmerch",
@@ -159,7 +159,7 @@
   {
    "name": "Khrystin R.",
    "team": "Range & Bar",
-   "today": 836,
+   "today": 904,
    "card": "rb",
    "got": [
     "nabev15",
@@ -178,7 +178,7 @@
   {
    "name": "Jalyn B.",
    "team": "Range & Bar",
-   "today": 133,
+   "today": 186,
    "card": "rb",
    "got": [
     "lunch3",
@@ -189,23 +189,23 @@
     "nabev15": 2,
     "liquor3": 0,
     "lunch3": 3,
-    "dinner2": 0
+    "dinner2": 1
    }
   }
  ],
  "teams": [
   {
    "name": "Pro Shop",
-   "sold": 1532,
-   "today": 1532,
+   "sold": 1583,
+   "today": 1583,
    "target": 67503,
-   "pace": 1671,
+   "pace": 1799,
    "people": [
     {
      "name": "Lucia N.",
-     "all": 1648,
-     "today": 1648,
-     "week": 1648,
+     "all": 1699,
+     "today": 1699,
+     "week": 1699,
      "elsewhere": [
       {
        "team": "Pickleball",
@@ -214,7 +214,7 @@
       }
      ],
      "goal": 67503,
-     "byToday": 1671,
+     "byToday": 1799,
      "full": 0,
      "card": "shop",
      "sd": 1,
@@ -230,16 +230,16 @@
   },
   {
    "name": "Range & Bar",
-   "sold": 856,
-   "today": 856,
+   "sold": 977,
+   "today": 977,
    "target": 81311,
-   "pace": 2013,
+   "pace": 2167,
    "people": [
     {
      "name": "Khrystin R.",
-     "all": 836,
-     "today": 836,
-     "week": 836,
+     "all": 904,
+     "today": 904,
+     "week": 904,
      "elsewhere": [
       {
        "team": "Pickleball",
@@ -248,7 +248,7 @@
       }
      ],
      "goal": 40656,
-     "byToday": 1006,
+     "byToday": 1083,
      "full": 0,
      "card": "rb",
      "sd": 1,
@@ -262,12 +262,12 @@
     },
     {
      "name": "Jalyn B.",
-     "all": 133,
-     "today": 133,
-     "week": 133,
+     "all": 186,
+     "today": 186,
+     "week": 186,
      "elsewhere": [],
      "goal": 40656,
-     "byToday": 1006,
+     "byToday": 1083,
      "full": 0,
      "card": "rb",
      "sd": 1,
@@ -284,7 +284,7 @@
    "sold": 229,
    "today": 229,
    "target": 4602,
-   "pace": 114,
+   "pace": 123,
    "people": []
   }
  ]

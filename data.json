@@ -2,9 +2,9 @@
  "day": "2026-11-01",
  "month": "November 2026",
  "goal": 153417,
- "sold": 3344,
- "pace": 5251,
- "today": 3344,
+ "sold": 3506,
+ "pace": 5542,
+ "today": 3506,
  "todayGoal": 8139,
  "todayLY": 6604,
  "lyDate": "2025-11-02",
@@ -137,7 +137,7 @@
    ]
   ]
  },
- "asOf": "2026-11-01T22:02:49.000Z",
+ "asOf": "2026-11-01T22:32:53.000Z",
  "todayPeople": [
   {
    "name": "Lucia N.",
@@ -178,25 +178,27 @@
   {
    "name": "Jalyn B.",
    "team": "Range & Bar",
-   "today": 426,
+   "today": 534,
    "card": "rb",
    "got": [
+    "nabev15",
     "liquor3",
     "lunch3",
+    "dinner2",
     "apps"
    ],
    "cards": 0,
    "prog": {
-    "nabev15": 14,
+    "nabev15": 15,
     "liquor3": 3,
     "lunch3": 3,
-    "dinner2": 1
+    "dinner2": 2
    }
   },
   {
    "name": "Jim D.",
    "team": "Pro Shop",
-   "today": 223,
+   "today": 252,
    "card": "shop",
    "got": [
     "nabev10",
@@ -205,13 +207,13 @@
    "cards": 0,
    "prog": {
     "nabev10": 10,
-    "snack5": 1
+    "snack5": 2
    }
   },
   {
    "name": "Chisom N.",
    "team": "Range & Bar",
-   "today": 83,
+   "today": 108,
    "card": "rb",
    "got": [
     "bucket"
@@ -244,10 +246,10 @@
  "teams": [
   {
    "name": "Pro Shop",
-   "sold": 1806,
-   "today": 1806,
+   "sold": 1835,
+   "today": 1835,
    "target": 67503,
-   "pace": 2311,
+   "pace": 2438,
    "people": [
     {
      "name": "Lucia N.",
@@ -262,7 +264,7 @@
       }
      ],
      "goal": 33752,
-     "byToday": 1155,
+     "byToday": 1219,
      "full": 0,
      "card": "shop",
      "sd": 1,
@@ -276,12 +278,12 @@
     },
     {
      "name": "Jim D.",
-     "all": 223,
-     "today": 223,
-     "week": 223,
+     "all": 252,
+     "today": 252,
+     "week": 252,
      "elsewhere": [],
      "goal": 33752,
-     "byToday": 1155,
+     "byToday": 1219,
      "full": 0,
      "card": "shop",
      "sd": 1,
@@ -295,10 +297,10 @@
   },
   {
    "name": "Range & Bar",
-   "sold": 1309,
-   "today": 1309,
+   "sold": 1442,
+   "today": 1442,
    "target": 81311,
-   "pace": 2783,
+   "pace": 2937,
    "people": [
     {
      "name": "Khrystin R.",
@@ -313,7 +315,7 @@
       }
      ],
      "goal": 20328,
-     "byToday": 696,
+     "byToday": 734,
      "full": 0,
      "card": "rb",
      "sd": 1,
@@ -327,30 +329,32 @@
     },
     {
      "name": "Jalyn B.",
-     "all": 426,
-     "today": 426,
-     "week": 426,
+     "all": 534,
+     "today": 534,
+     "week": 534,
      "elsewhere": [],
      "goal": 20328,
-     "byToday": 696,
+     "byToday": 734,
      "full": 0,
      "card": "rb",
      "sd": 1,
      "cards": 0,
      "cur": [
+      "nabev15",
       "liquor3",
       "lunch3",
+      "dinner2",
       "apps"
      ]
     },
     {
      "name": "Chisom N.",
-     "all": 83,
-     "today": 83,
-     "week": 83,
+     "all": 108,
+     "today": 108,
+     "week": 108,
      "elsewhere": [],
      "goal": 20328,
-     "byToday": 696,
+     "byToday": 734,
      "full": 0,
      "card": "rb",
      "sd": 1,
@@ -366,7 +370,7 @@
      "week": 9,
      "elsewhere": [],
      "goal": 20328,
-     "byToday": 696,
+     "byToday": 734,
      "full": 0,
      "card": "rb",
      "sd": 1,
@@ -382,7 +386,7 @@
    "sold": 229,
    "today": 229,
    "target": 4602,
-   "pace": 158,
+   "pace": 166,
    "people": []
   }
  ]

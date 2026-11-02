@@ -3,7 +3,7 @@
  "month": "November 2026",
  "goal": 153417,
  "sold": 4712,
- "pace": 7296,
+ "pace": 7586,
  "today": 4712,
  "todayGoal": 8139,
  "todayLY": 6604,
@@ -137,7 +137,7 @@
    ]
   ]
  },
- "asOf": "2026-11-02T01:33:12.000Z",
+ "asOf": "2026-11-02T02:03:15.000Z",
  "todayPeople": [
   {
    "name": "Lucia N.",
@@ -257,7 +257,7 @@
    "sold": 1835,
    "today": 1835,
    "target": 67503,
-   "pace": 3210,
+   "pace": 3338,
    "people": [
     {
      "name": "Lucia N.",
@@ -272,7 +272,7 @@
       }
      ],
      "goal": 33752,
-     "byToday": 1605,
+     "byToday": 1669,
      "full": 0,
      "card": "shop",
      "sd": 1,
@@ -297,7 +297,7 @@
       }
      ],
      "goal": 33752,
-     "byToday": 1605,
+     "byToday": 1669,
      "full": 0,
      "card": "shop",
      "sd": 1,
@@ -315,7 +315,7 @@
    "sold": 2589,
    "today": 2589,
    "target": 81311,
-   "pace": 3867,
+   "pace": 4021,
    "people": [
     {
      "name": "Jalyn B.",
@@ -324,7 +324,7 @@
      "week": 1070,
      "elsewhere": [],
      "goal": 20328,
-     "byToday": 967,
+     "byToday": 1005,
      "full": 0,
      "card": "rb",
      "sd": 1,
@@ -350,7 +350,7 @@
       }
      ],
      "goal": 20328,
-     "byToday": 967,
+     "byToday": 1005,
      "full": 0,
      "card": "rb",
      "sd": 1,
@@ -369,7 +369,7 @@
      "week": 719,
      "elsewhere": [],
      "goal": 20328,
-     "byToday": 967,
+     "byToday": 1005,
      "full": 0,
      "card": "rb",
      "sd": 1,
@@ -392,7 +392,7 @@
      "week": 9,
      "elsewhere": [],
      "goal": 20328,
-     "byToday": 967,
+     "byToday": 1005,
      "full": 0,
      "card": "rb",
      "sd": 1,
@@ -408,7 +408,7 @@
    "sold": 289,
    "today": 289,
    "target": 4602,
-   "pace": 219,
+   "pace": 228,
    "people": []
   }
  ]

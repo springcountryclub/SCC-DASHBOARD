@@ -2,9 +2,9 @@
  "day": "2026-11-02",
  "month": "November 2026",
  "goal": 153417,
- "sold": 6610,
- "pace": 10228,
- "today": 1664,
+ "sold": 6725,
+ "pace": 10308,
+ "today": 1780,
  "todayGoal": 2233,
  "todayLY": 2691,
  "lyDate": "2025-11-03",
@@ -137,7 +137,7 @@
    ]
   ]
  },
- "asOf": "2026-11-03T02:06:14.000Z",
+ "asOf": "2026-11-03T02:36:18.000Z",
  "todayPeople": [
   {
    "name": "Sara W.",
@@ -196,7 +196,7 @@
   {
    "name": "Jim D.",
    "team": "Pro Shop",
-   "today": 84,
+   "today": 200,
    "card": "shop",
    "got": [
     "gmerch",
@@ -228,10 +228,10 @@
  "teams": [
   {
    "name": "Pro Shop",
-   "sold": 2764,
-   "today": 929,
+   "sold": 2879,
+   "today": 1045,
    "target": 67503,
-   "pace": 4500,
+   "pace": 4536,
    "people": [
     {
      "name": "Lucia N.",
@@ -246,7 +246,7 @@
       }
      ],
      "goal": 22501,
-     "byToday": 1500,
+     "byToday": 1512,
      "full": 0,
      "card": "shop",
      "sd": 1,
@@ -265,7 +265,7 @@
      "week": 845,
      "elsewhere": [],
      "goal": 22501,
-     "byToday": 1500,
+     "byToday": 1512,
      "full": 0,
      "card": "shop",
      "sd": 1,
@@ -279,9 +279,9 @@
     },
     {
      "name": "Jim D.",
-     "all": 396,
-     "today": 84,
-     "week": 84,
+     "all": 511,
+     "today": 200,
+     "week": 200,
      "elsewhere": [
       {
        "team": "Pickleball",
@@ -290,7 +290,7 @@
       }
      ],
      "goal": 22501,
-     "byToday": 1500,
+     "byToday": 1512,
      "full": 0,
      "card": "shop",
      "sd": 2,
@@ -310,7 +310,7 @@
    "sold": 3557,
    "today": 735,
    "target": 81311,
-   "pace": 5421,
+   "pace": 5463,
    "people": [
     {
      "name": "Jalyn B.",
@@ -319,7 +319,7 @@
      "week": 0,
      "elsewhere": [],
      "goal": 13552,
-     "byToday": 903,
+     "byToday": 911,
      "full": 0,
      "card": "rb",
      "sd": 1,
@@ -339,7 +339,7 @@
      "week": 0,
      "elsewhere": [],
      "goal": 13552,
-     "byToday": 903,
+     "byToday": 911,
      "full": 0,
      "card": "rb",
      "sd": 1,
@@ -368,7 +368,7 @@
       }
      ],
      "goal": 13552,
-     "byToday": 903,
+     "byToday": 911,
      "full": 0,
      "card": "rb",
      "sd": 2,
@@ -388,7 +388,7 @@
      "week": 399,
      "elsewhere": [],
      "goal": 13552,
-     "byToday": 903,
+     "byToday": 911,
      "full": 0,
      "card": "rb",
      "sd": 1,
@@ -407,7 +407,7 @@
      "week": 315,
      "elsewhere": [],
      "goal": 13552,
-     "byToday": 903,
+     "byToday": 911,
      "full": 0,
      "card": "rb",
      "sd": 1,
@@ -425,7 +425,7 @@
      "week": 0,
      "elsewhere": [],
      "goal": 13552,
-     "byToday": 903,
+     "byToday": 911,
      "full": 0,
      "card": "rb",
      "sd": 1,
@@ -441,7 +441,7 @@
    "sold": 289,
    "today": 0,
    "target": 4602,
-   "pace": 307,
+   "pace": 309,
    "people": []
   }
  ]

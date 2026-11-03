@@ -2,9 +2,9 @@
  "day": "2026-11-03",
  "month": "November 2026",
  "goal": 153417,
- "sold": 7617,
- "pace": 11809,
- "today": 798,
+ "sold": 7690,
+ "pace": 11921,
+ "today": 870,
  "todayGoal": 3041,
  "todayLY": 3288,
  "lyDate": "2025-11-04",
@@ -137,12 +137,12 @@
    ]
   ]
  },
- "asOf": "2026-11-03T19:37:59.000Z",
+ "asOf": "2026-11-03T20:08:04.000Z",
  "todayPeople": [
   {
    "name": "Sara W.",
    "team": "Pro Shop",
-   "today": 568,
+   "today": 570,
    "card": "shop",
    "got": [
     "dmerch",
@@ -153,7 +153,7 @@
    "cards": 0,
    "prog": {
     "nabev10": 4,
-    "snack5": 0
+    "snack5": 1
    }
   },
   {
@@ -173,15 +173,32 @@
     "lunch3": 2,
     "dinner2": 0
    }
+  },
+  {
+   "name": "Ariana H.",
+   "team": "Range & Bar",
+   "today": 70,
+   "card": "rb",
+   "got": [
+    "coffee",
+    "apps"
+   ],
+   "cards": 0,
+   "prog": {
+    "nabev15": 5,
+    "liquor3": 1,
+    "lunch3": 0,
+    "dinner2": 1
+   }
   }
  ],
  "teams": [
   {
    "name": "Pro Shop",
-   "sold": 3417,
-   "today": 538,
+   "sold": 3419,
+   "today": 540,
    "target": 67503,
-   "pace": 5196,
+   "pace": 5245,
    "people": [
     {
      "name": "Lucia N.",
@@ -196,7 +213,7 @@
       }
      ],
      "goal": 22501,
-     "byToday": 1732,
+     "byToday": 1748,
      "full": 0,
      "card": "shop",
      "sd": 1,
@@ -210,9 +227,9 @@
     },
     {
      "name": "Sara W.",
-     "all": 1413,
-     "today": 568,
-     "week": 1413,
+     "all": 1415,
+     "today": 570,
+     "week": 1415,
      "elsewhere": [
       {
        "team": "Pickleball",
@@ -221,7 +238,7 @@
       }
      ],
      "goal": 22501,
-     "byToday": 1732,
+     "byToday": 1748,
      "full": 0,
      "card": "shop",
      "sd": 2,
@@ -249,7 +266,7 @@
       }
      ],
      "goal": 22501,
-     "byToday": 1732,
+     "byToday": 1748,
      "full": 0,
      "card": "shop",
      "sd": 2,
@@ -269,7 +286,7 @@
    "sold": 3882,
    "today": 230,
    "target": 81311,
-   "pace": 6259,
+   "pace": 6318,
    "people": [
     {
      "name": "Jalyn B.",
@@ -278,7 +295,7 @@
      "week": 0,
      "elsewhere": [],
      "goal": 13552,
-     "byToday": 1043,
+     "byToday": 1053,
      "full": 0,
      "card": "rb",
      "sd": 1,
@@ -298,7 +315,7 @@
      "week": 0,
      "elsewhere": [],
      "goal": 13552,
-     "byToday": 1043,
+     "byToday": 1053,
      "full": 0,
      "card": "rb",
      "sd": 1,
@@ -327,7 +344,7 @@
       }
      ],
      "goal": 13552,
-     "byToday": 1043,
+     "byToday": 1053,
      "full": 0,
      "card": "rb",
      "sd": 2,
@@ -342,17 +359,24 @@
     },
     {
      "name": "Ariana H.",
-     "all": 399,
-     "today": 0,
-     "week": 399,
-     "elsewhere": [],
+     "all": 469,
+     "today": 70,
+     "week": 469,
+     "elsewhere": [
+      {
+       "team": "Pickleball",
+       "amt": 70,
+       "courts": true
+      }
+     ],
      "goal": 13552,
-     "byToday": 1043,
+     "byToday": 1053,
      "full": 0,
      "card": "rb",
-     "sd": 1,
+     "sd": 2,
      "cards": 0,
      "cur": [
+      "coffee",
       "nabev15",
       "bucket",
       "lunch3",
@@ -366,7 +390,7 @@
      "week": 363,
      "elsewhere": [],
      "goal": 13552,
-     "byToday": 1043,
+     "byToday": 1053,
      "full": 0,
      "card": "rb",
      "sd": 1,
@@ -384,7 +408,7 @@
      "week": 230,
      "elsewhere": [],
      "goal": 13552,
-     "byToday": 1043,
+     "byToday": 1053,
      "full": 0,
      "card": "rb",
      "sd": 2,
@@ -399,10 +423,10 @@
   },
   {
    "name": "Pickleball",
-   "sold": 319,
-   "today": 30,
+   "sold": 389,
+   "today": 100,
    "target": 4602,
-   "pace": 354,
+   "pace": 358,
    "people": []
   }
  ]

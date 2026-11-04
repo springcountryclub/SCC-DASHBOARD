@@ -3,7 +3,7 @@
  "month": "November 2026",
  "goal": 153417,
  "sold": 8232,
- "pace": 13717,
+ "pace": 13820,
  "today": 0,
  "todayGoal": 3322,
  "todayLY": 2567,
@@ -145,7 +145,7 @@
    "sold": 3508,
    "today": 0,
    "target": 67503,
-   "pace": 6035,
+   "pace": 6081,
    "people": [
     {
      "name": "Lucia N.",
@@ -160,7 +160,7 @@
       }
      ],
      "goal": 22501,
-     "byToday": 2012,
+     "byToday": 2027,
      "full": 0,
      "card": "shop",
      "sd": 1,
@@ -185,7 +185,7 @@
       }
      ],
      "goal": 22501,
-     "byToday": 2012,
+     "byToday": 2027,
      "full": 0,
      "card": "shop",
      "sd": 2,
@@ -213,7 +213,7 @@
       }
      ],
      "goal": 22501,
-     "byToday": 2012,
+     "byToday": 2027,
      "full": 0,
      "card": "shop",
      "sd": 2,
@@ -233,7 +233,7 @@
    "sold": 4095,
    "today": 0,
    "target": 81311,
-   "pace": 7270,
+   "pace": 7324,
    "people": [
     {
      "name": "Jalyn B.",
@@ -242,7 +242,7 @@
      "week": 0,
      "elsewhere": [],
      "goal": 13552,
-     "byToday": 1212,
+     "byToday": 1221,
      "full": 0,
      "card": "rb",
      "sd": 1,
@@ -262,7 +262,7 @@
      "week": 0,
      "elsewhere": [],
      "goal": 13552,
-     "byToday": 1212,
+     "byToday": 1221,
      "full": 0,
      "card": "rb",
      "sd": 1,
@@ -291,7 +291,7 @@
       }
      ],
      "goal": 13552,
-     "byToday": 1212,
+     "byToday": 1221,
      "full": 0,
      "card": "rb",
      "sd": 2,
@@ -317,7 +317,7 @@
       }
      ],
      "goal": 13552,
-     "byToday": 1212,
+     "byToday": 1221,
      "full": 0,
      "card": "rb",
      "sd": 2,
@@ -345,7 +345,7 @@
       }
      ],
      "goal": 13552,
-     "byToday": 1212,
+     "byToday": 1221,
      "full": 0,
      "card": "rb",
      "sd": 2,
@@ -363,7 +363,7 @@
      "week": 304,
      "elsewhere": [],
      "goal": 13552,
-     "byToday": 1212,
+     "byToday": 1221,
      "full": 0,
      "card": "rb",
      "sd": 2,
@@ -381,7 +381,7 @@
    "sold": 629,
    "today": 0,
    "target": 4602,
-   "pace": 412,
+   "pace": 415,
    "people": []
   }
  ]

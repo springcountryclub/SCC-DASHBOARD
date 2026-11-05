@@ -2,9 +2,9 @@
  "day": "2026-11-04",
  "month": "November 2026",
  "goal": 153417,
- "sold": 10858,
+ "sold": 10896,
  "pace": 16734,
- "today": 2626,
+ "today": 2664,
  "todayGoal": 3322,
  "todayLY": 2567,
  "lyDate": "2025-11-05",
@@ -137,7 +137,7 @@
    ]
   ]
  },
- "asOf": "2026-11-05T03:32:21.000Z",
+ "asOf": "2026-11-05T04:02:26.000Z",
  "todayPeople": [
   {
    "name": "Lucia N.",
@@ -209,6 +209,24 @@
    }
   },
   {
+   "name": "Campbell W.",
+   "team": "Range & Bar",
+   "today": 126,
+   "card": "rb",
+   "got": [
+    "coffee",
+    "dinner2",
+    "apps"
+   ],
+   "cards": 0,
+   "prog": {
+    "nabev15": 9,
+    "liquor3": 1,
+    "lunch3": 1,
+    "dinner2": 2
+   }
+  },
+  {
    "name": "Manuela G.",
    "team": "Range & Bar",
    "today": 106,
@@ -220,23 +238,6 @@
     "liquor3": 2,
     "lunch3": 1,
     "dinner2": 0
-   }
-  },
-  {
-   "name": "Campbell W.",
-   "team": "Range & Bar",
-   "today": 87,
-   "card": "rb",
-   "got": [
-    "coffee",
-    "apps"
-   ],
-   "cards": 0,
-   "prog": {
-    "nabev15": 6,
-    "liquor3": 1,
-    "lunch3": 1,
-    "dinner2": 1
    }
   }
  ],
@@ -333,8 +334,8 @@
   },
   {
    "name": "Range & Bar",
-   "sold": 5389,
-   "today": 1294,
+   "sold": 5428,
+   "today": 1333,
    "target": 81311,
    "pace": 8869,
    "people": [
@@ -480,6 +481,24 @@
      ]
     },
     {
+     "name": "Campbell W.",
+     "all": 126,
+     "today": 126,
+     "week": 126,
+     "elsewhere": [],
+     "goal": 10164,
+     "byToday": 1109,
+     "full": 0,
+     "card": "rb",
+     "sd": 1,
+     "cards": 0,
+     "cur": [
+      "coffee",
+      "dinner2",
+      "apps"
+     ]
+    },
+    {
      "name": "Manuela G.",
      "all": 106,
      "today": 106,
@@ -492,23 +511,6 @@
      "sd": 1,
      "cards": 0,
      "cur": []
-    },
-    {
-     "name": "Campbell W.",
-     "all": 87,
-     "today": 87,
-     "week": 87,
-     "elsewhere": [],
-     "goal": 10164,
-     "byToday": 1109,
-     "full": 0,
-     "card": "rb",
-     "sd": 1,
-     "cards": 0,
-     "cur": [
-      "coffee",
-      "apps"
-     ]
     }
    ]
   },

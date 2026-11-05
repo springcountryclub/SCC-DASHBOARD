@@ -2,9 +2,9 @@
  "day": "2026-11-04",
  "month": "November 2026",
  "goal": 153417,
- "sold": 10223,
- "pace": 16264,
- "today": 1990,
+ "sold": 10553,
+ "pace": 16505,
+ "today": 2320,
  "todayGoal": 3322,
  "todayLY": 2567,
  "lyDate": "2025-11-05",
@@ -137,7 +137,7 @@
    ]
   ]
  },
- "asOf": "2026-11-05T01:01:53.000Z",
+ "asOf": "2026-11-05T02:02:04.000Z",
  "todayPeople": [
   {
    "name": "Lucia N.",
@@ -153,6 +153,22 @@
    "prog": {
     "nabev10": 4,
     "snack5": 0
+   }
+  },
+  {
+   "name": "Chisom N.",
+   "team": "Range & Bar",
+   "today": 517,
+   "card": "rb",
+   "got": [
+    "apps"
+   ],
+   "cards": 0,
+   "prog": {
+    "nabev15": 4,
+    "liquor3": 0,
+    "lunch3": 2,
+    "dinner2": 0
    }
   },
   {
@@ -189,20 +205,6 @@
    "prog": {
     "nabev10": 4,
     "snack5": 1
-   }
-  },
-  {
-   "name": "Chisom N.",
-   "team": "Range & Bar",
-   "today": 187,
-   "card": "rb",
-   "got": [],
-   "cards": 0,
-   "prog": {
-    "nabev15": 1,
-    "liquor3": 0,
-    "lunch3": 0,
-    "dinner2": 0
    }
   },
   {
@@ -243,7 +245,7 @@
    "sold": 4727,
    "today": 1219,
    "target": 67503,
-   "pace": 7156,
+   "pace": 7262,
    "people": [
     {
      "name": "Lucia N.",
@@ -258,7 +260,7 @@
       }
      ],
      "goal": 22501,
-     "byToday": 2385,
+     "byToday": 2421,
      "full": 0,
      "card": "shop",
      "sd": 2,
@@ -284,7 +286,7 @@
       }
      ],
      "goal": 22501,
-     "byToday": 2385,
+     "byToday": 2421,
      "full": 0,
      "card": "shop",
      "sd": 3,
@@ -312,7 +314,7 @@
       }
      ],
      "goal": 22501,
-     "byToday": 2385,
+     "byToday": 2421,
      "full": 0,
      "card": "shop",
      "sd": 2,
@@ -329,41 +331,19 @@
   },
   {
    "name": "Range & Bar",
-   "sold": 4846,
-   "today": 751,
+   "sold": 5176,
+   "today": 1081,
    "target": 81311,
-   "pace": 8620,
+   "pace": 8748,
    "people": [
     {
-     "name": "Jalyn B.",
-     "all": 1457,
-     "today": 387,
-     "week": 387,
-     "elsewhere": [],
-     "goal": 10164,
-     "byToday": 1077,
-     "full": 0,
-     "card": "rb",
-     "sd": 2,
-     "cards": 0,
-     "cur": [
-      "coffee",
-      "nabev15",
-      "liquor3",
-      "breakfast",
-      "lunch3",
-      "dinner2",
-      "apps"
-     ]
-    },
-    {
      "name": "Chisom N.",
-     "all": 1139,
-     "today": 187,
-     "week": 187,
+     "all": 1469,
+     "today": 517,
+     "week": 517,
      "elsewhere": [],
      "goal": 10164,
-     "byToday": 1077,
+     "byToday": 1093,
      "full": 0,
      "card": "rb",
      "sd": 2,
@@ -372,6 +352,28 @@
       "coffee",
       "nabev15",
       "bucket",
+      "liquor3",
+      "breakfast",
+      "lunch3",
+      "dinner2",
+      "apps"
+     ]
+    },
+    {
+     "name": "Jalyn B.",
+     "all": 1457,
+     "today": 387,
+     "week": 387,
+     "elsewhere": [],
+     "goal": 10164,
+     "byToday": 1093,
+     "full": 0,
+     "card": "rb",
+     "sd": 2,
+     "cards": 0,
+     "cur": [
+      "coffee",
+      "nabev15",
       "liquor3",
       "breakfast",
       "lunch3",
@@ -392,7 +394,7 @@
       }
      ],
      "goal": 10164,
-     "byToday": 1077,
+     "byToday": 1093,
      "full": 0,
      "card": "rb",
      "sd": 2,
@@ -418,7 +420,7 @@
       }
      ],
      "goal": 10164,
-     "byToday": 1077,
+     "byToday": 1093,
      "full": 0,
      "card": "rb",
      "sd": 2,
@@ -446,7 +448,7 @@
       }
      ],
      "goal": 10164,
-     "byToday": 1077,
+     "byToday": 1093,
      "full": 0,
      "card": "rb",
      "sd": 2,
@@ -464,7 +466,7 @@
      "week": 304,
      "elsewhere": [],
      "goal": 10164,
-     "byToday": 1077,
+     "byToday": 1093,
      "full": 0,
      "card": "rb",
      "sd": 2,
@@ -482,7 +484,7 @@
      "week": 106,
      "elsewhere": [],
      "goal": 10164,
-     "byToday": 1077,
+     "byToday": 1093,
      "full": 0,
      "card": "rb",
      "sd": 1,
@@ -496,7 +498,7 @@
      "week": 71,
      "elsewhere": [],
      "goal": 10164,
-     "byToday": 1077,
+     "byToday": 1093,
      "full": 0,
      "card": "rb",
      "sd": 1,
@@ -513,7 +515,7 @@
    "sold": 649,
    "today": 20,
    "target": 4602,
-   "pace": 488,
+   "pace": 495,
    "people": []
   }
  ]

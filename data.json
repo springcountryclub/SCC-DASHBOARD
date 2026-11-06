@@ -2,9 +2,9 @@
  "day": "2026-11-05",
  "month": "November 2026",
  "goal": 153417,
- "sold": 12908,
+ "sold": 13034,
  "pace": 21858,
- "today": 1945,
+ "today": 2071,
  "todayGoal": 5124,
  "todayLY": 4102,
  "lyDate": "2025-11-06",
@@ -137,7 +137,7 @@
    ]
   ]
  },
- "asOf": "2026-11-06T03:35:42.000Z",
+ "asOf": "2026-11-06T04:05:47.000Z",
  "todayPeople": [
   {
    "name": "Lucia N.",
@@ -183,6 +183,23 @@
    "prog": {
     "nabev10": 0,
     "snack5": 0
+   }
+  },
+  {
+   "name": "Sarah B.",
+   "team": "Range & Bar",
+   "today": 219,
+   "card": "rb",
+   "got": [
+    "liquor3",
+    "dinner2"
+   ],
+   "cards": 0,
+   "prog": {
+    "nabev15": 10,
+    "liquor3": 3,
+    "lunch3": 0,
+    "dinner2": 2
    }
   },
   {
@@ -232,22 +249,6 @@
     "liquor3": 0,
     "lunch3": 0,
     "dinner2": 0
-   }
-  },
-  {
-   "name": "Sarah B.",
-   "team": "Range & Bar",
-   "today": 93,
-   "card": "rb",
-   "got": [
-    "liquor3"
-   ],
-   "cards": 0,
-   "prog": {
-    "nabev15": 2,
-    "liquor3": 3,
-    "lunch3": 0,
-    "dinner2": 1
    }
   }
  ],
@@ -344,8 +345,8 @@
   },
   {
    "name": "Range & Bar",
-   "sold": 6270,
-   "today": 776,
+   "sold": 6396,
+   "today": 902,
    "target": 81311,
    "pace": 11585,
    "people": [
@@ -451,6 +452,26 @@
      ]
     },
     {
+     "name": "Sarah B.",
+     "all": 562,
+     "today": 219,
+     "week": 523,
+     "elsewhere": [],
+     "goal": 10164,
+     "byToday": 1448,
+     "full": 0,
+     "card": "rb",
+     "sd": 3,
+     "cards": 0,
+     "cur": [
+      "coffee",
+      "liquor3",
+      "breakfast",
+      "dinner2",
+      "apps"
+     ]
+    },
+    {
      "name": "Madison M.",
      "all": 452,
      "today": 0,
@@ -471,25 +492,6 @@
      "cur": [
       "nabev15",
       "dinner2",
-      "apps"
-     ]
-    },
-    {
-     "name": "Sarah B.",
-     "all": 436,
-     "today": 93,
-     "week": 397,
-     "elsewhere": [],
-     "goal": 10164,
-     "byToday": 1448,
-     "full": 0,
-     "card": "rb",
-     "sd": 3,
-     "cards": 0,
-     "cur": [
-      "coffee",
-      "liquor3",
-      "breakfast",
       "apps"
      ]
     },

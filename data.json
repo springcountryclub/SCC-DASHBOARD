@@ -2,9 +2,9 @@
  "day": "2026-11-06",
  "month": "November 2026",
  "goal": 153417,
- "sold": 13914,
- "pace": 22985,
- "today": 233,
+ "sold": 13952,
+ "pace": 23202,
+ "today": 256,
  "todayGoal": 6068,
  "todayLY": 4140,
  "lyDate": "2025-11-07",
@@ -137,12 +137,12 @@
    ]
   ]
  },
- "asOf": "2026-11-06T15:36:35.000Z",
+ "asOf": "2026-11-06T16:06:42.000Z",
  "todayPeople": [
   {
    "name": "Lucia N.",
    "team": "Pro Shop",
-   "today": 203,
+   "today": 226,
    "card": "shop",
    "got": [
     "more9"
@@ -171,16 +171,16 @@
  "teams": [
   {
    "name": "Pro Shop",
-   "sold": 6032,
-   "today": 203,
+   "sold": 6055,
+   "today": 226,
    "target": 67503,
-   "pace": 10114,
+   "pace": 10209,
    "people": [
     {
      "name": "Lucia N.",
-     "all": 3539,
-     "today": 203,
-     "week": 1840,
+     "all": 3562,
+     "today": 226,
+     "week": 1863,
      "elsewhere": [
       {
        "team": "Pickleball",
@@ -189,7 +189,7 @@
       }
      ],
      "goal": 22501,
-     "byToday": 3371,
+     "byToday": 3403,
      "full": 0,
      "card": "shop",
      "sd": 4,
@@ -215,7 +215,7 @@
       }
      ],
      "goal": 22501,
-     "byToday": 3371,
+     "byToday": 3403,
      "full": 0,
      "card": "shop",
      "sd": 3,
@@ -244,7 +244,7 @@
       }
      ],
      "goal": 22501,
-     "byToday": 3371,
+     "byToday": 3403,
      "full": 0,
      "card": "shop",
      "sd": 3,
@@ -261,10 +261,10 @@
   },
   {
    "name": "Range & Bar",
-   "sold": 7073,
+   "sold": 7087,
    "today": 30,
    "target": 81311,
-   "pace": 12182,
+   "pace": 12297,
    "people": [
     {
      "name": "Chisom N.",
@@ -273,7 +273,7 @@
      "week": 1100,
      "elsewhere": [],
      "goal": 10164,
-     "byToday": 1523,
+     "byToday": 1537,
      "full": 0,
      "card": "rb",
      "sd": 3,
@@ -296,7 +296,7 @@
      "week": 387,
      "elsewhere": [],
      "goal": 10164,
-     "byToday": 1523,
+     "byToday": 1537,
      "full": 0,
      "card": "rb",
      "sd": 2,
@@ -318,7 +318,7 @@
      "week": 1170,
      "elsewhere": [],
      "goal": 10164,
-     "byToday": 1523,
+     "byToday": 1537,
      "full": 0,
      "card": "rb",
      "sd": 3,
@@ -346,7 +346,7 @@
       }
      ],
      "goal": 10164,
-     "byToday": 1523,
+     "byToday": 1537,
      "full": 0,
      "card": "rb",
      "sd": 4,
@@ -373,7 +373,7 @@
       }
      ],
      "goal": 10164,
-     "byToday": 1523,
+     "byToday": 1537,
      "full": 0,
      "card": "rb",
      "sd": 3,
@@ -402,7 +402,7 @@
       }
      ],
      "goal": 10164,
-     "byToday": 1523,
+     "byToday": 1537,
      "full": 0,
      "card": "rb",
      "sd": 2,
@@ -415,12 +415,12 @@
     },
     {
      "name": "Campbell W.",
-     "all": 349,
+     "all": 363,
      "today": 30,
-     "week": 349,
+     "week": 363,
      "elsewhere": [],
      "goal": 10164,
-     "byToday": 1523,
+     "byToday": 1537,
      "full": 0,
      "card": "rb",
      "sd": 3,
@@ -429,6 +429,7 @@
       "coffee",
       "liquor3",
       "breakfast",
+      "lunch3",
       "dinner2",
       "apps"
      ]
@@ -440,7 +441,7 @@
      "week": 106,
      "elsewhere": [],
      "goal": 10164,
-     "byToday": 1523,
+     "byToday": 1537,
      "full": 0,
      "card": "rb",
      "sd": 1,
@@ -454,7 +455,7 @@
    "sold": 809,
    "today": 0,
    "target": 4602,
-   "pace": 690,
+   "pace": 696,
    "people": []
   }
  ]

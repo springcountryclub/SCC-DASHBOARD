@@ -1,14 +1,14 @@
 {
- "day": "2026-11-05",
+ "day": "2026-11-06",
  "month": "November 2026",
  "goal": 153417,
- "sold": 13034,
- "pace": 21858,
- "today": 2071,
- "todayGoal": 5124,
- "todayLY": 4102,
- "lyDate": "2025-11-06",
- "mtdLY": 19252,
+ "sold": 13726,
+ "pace": 22335,
+ "today": 44,
+ "todayGoal": 6068,
+ "todayLY": 4140,
+ "lyDate": "2025-11-07",
+ "mtdLY": 23392,
  "monthLY": 122905,
  "lyFrom": "2025-11-02",
  "cards": {
@@ -137,134 +137,34 @@
    ]
   ]
  },
- "asOf": "2026-11-06T04:05:47.000Z",
+ "asOf": "2026-11-06T14:06:22.000Z",
  "todayPeople": [
   {
    "name": "Lucia N.",
    "team": "Pro Shop",
-   "today": 691,
+   "today": 44,
    "card": "shop",
-   "got": [
-    "gmerch",
-    "more9"
-   ],
-   "cards": 0,
-   "prog": {
-    "nabev10": 2,
-    "snack5": 0
-   }
-  },
-  {
-   "name": "Chisom N.",
-   "team": "Range & Bar",
-   "today": 386,
-   "card": "rb",
-   "got": [
-    "liquor3",
-    "apps"
-   ],
-   "cards": 0,
-   "prog": {
-    "nabev15": 4,
-    "liquor3": 3,
-    "lunch3": 2,
-    "dinner2": 0
-   }
-  },
-  {
-   "name": "Jim D.",
-   "team": "Pro Shop",
-   "today": 318,
-   "card": "shop",
-   "got": [
-    "lesson"
-   ],
+   "got": [],
    "cards": 0,
    "prog": {
     "nabev10": 0,
     "snack5": 0
-   }
-  },
-  {
-   "name": "Sarah B.",
-   "team": "Range & Bar",
-   "today": 219,
-   "card": "rb",
-   "got": [
-    "liquor3",
-    "dinner2"
-   ],
-   "cards": 0,
-   "prog": {
-    "nabev15": 10,
-    "liquor3": 3,
-    "lunch3": 0,
-    "dinner2": 2
-   }
-  },
-  {
-   "name": "Campbell W.",
-   "team": "Range & Bar",
-   "today": 193,
-   "card": "rb",
-   "got": [
-    "liquor3",
-    "breakfast"
-   ],
-   "cards": 0,
-   "prog": {
-    "nabev15": 2,
-    "liquor3": 3,
-    "lunch3": 2,
-    "dinner2": 0
-   }
-  },
-  {
-   "name": "Ariana H.",
-   "team": "Range & Bar",
-   "today": 160,
-   "card": "rb",
-   "got": [
-    "coffee",
-    "liquor3",
-    "breakfast"
-   ],
-   "cards": 0,
-   "prog": {
-    "nabev15": 11,
-    "liquor3": 3,
-    "lunch3": 2,
-    "dinner2": 0
-   }
-  },
-  {
-   "name": "Khrystin R.",
-   "team": "Range & Bar",
-   "today": 104,
-   "card": "rb",
-   "got": [],
-   "cards": 0,
-   "prog": {
-    "nabev15": 2,
-    "liquor3": 0,
-    "lunch3": 0,
-    "dinner2": 0
    }
   }
  ],
  "teams": [
   {
    "name": "Pro Shop",
-   "sold": 5829,
-   "today": 1009,
+   "sold": 5873,
+   "today": 44,
    "target": 67503,
-   "pace": 9618,
+   "pace": 9827,
    "people": [
     {
      "name": "Lucia N.",
-     "all": 3335,
-     "today": 691,
-     "week": 1636,
+     "all": 3380,
+     "today": 44,
+     "week": 1681,
      "elsewhere": [
       {
        "team": "Pickleball",
@@ -273,10 +173,10 @@
       }
      ],
      "goal": 22501,
-     "byToday": 3206,
+     "byToday": 3276,
      "full": 0,
      "card": "shop",
-     "sd": 3,
+     "sd": 4,
      "cards": 0,
      "cur": [
       "gmerch",
@@ -299,7 +199,7 @@
       }
      ],
      "goal": 22501,
-     "byToday": 3206,
+     "byToday": 3276,
      "full": 0,
      "card": "shop",
      "sd": 3,
@@ -318,7 +218,7 @@
     {
      "name": "Jim D.",
      "all": 829,
-     "today": 318,
+     "today": 0,
      "week": 518,
      "elsewhere": [
       {
@@ -328,7 +228,7 @@
       }
      ],
      "goal": 22501,
-     "byToday": 3206,
+     "byToday": 3276,
      "full": 0,
      "card": "shop",
      "sd": 3,
@@ -345,19 +245,19 @@
   },
   {
    "name": "Range & Bar",
-   "sold": 6396,
-   "today": 902,
+   "sold": 7043,
+   "today": 0,
    "target": 81311,
-   "pace": 11585,
+   "pace": 11838,
    "people": [
     {
      "name": "Chisom N.",
      "all": 2052,
-     "today": 386,
+     "today": 0,
      "week": 1100,
      "elsewhere": [],
      "goal": 10164,
-     "byToday": 1448,
+     "byToday": 1480,
      "full": 0,
      "card": "rb",
      "sd": 3,
@@ -380,7 +280,7 @@
      "week": 387,
      "elsewhere": [],
      "goal": 10164,
-     "byToday": 1448,
+     "byToday": 1480,
      "full": 0,
      "card": "rb",
      "sd": 2,
@@ -396,9 +296,31 @@
      ]
     },
     {
+     "name": "Sarah B.",
+     "all": 1209,
+     "today": 0,
+     "week": 1170,
+     "elsewhere": [],
+     "goal": 10164,
+     "byToday": 1480,
+     "full": 0,
+     "card": "rb",
+     "sd": 3,
+     "cards": 0,
+     "cur": [
+      "coffee",
+      "nabev15",
+      "liquor3",
+      "wbottle",
+      "breakfast",
+      "dinner2",
+      "apps"
+     ]
+    },
+    {
      "name": "Khrystin R.",
      "all": 1113,
-     "today": 104,
+     "today": 0,
      "week": 209,
      "elsewhere": [
       {
@@ -408,7 +330,7 @@
       }
      ],
      "goal": 10164,
-     "byToday": 1448,
+     "byToday": 1480,
      "full": 0,
      "card": "rb",
      "sd": 4,
@@ -425,7 +347,7 @@
     {
      "name": "Ariana H.",
      "all": 1009,
-     "today": 160,
+     "today": 0,
      "week": 1009,
      "elsewhere": [
       {
@@ -435,7 +357,7 @@
       }
      ],
      "goal": 10164,
-     "byToday": 1448,
+     "byToday": 1480,
      "full": 0,
      "card": "rb",
      "sd": 3,
@@ -447,26 +369,6 @@
       "liquor3",
       "breakfast",
       "lunch3",
-      "dinner2",
-      "apps"
-     ]
-    },
-    {
-     "name": "Sarah B.",
-     "all": 562,
-     "today": 219,
-     "week": 523,
-     "elsewhere": [],
-     "goal": 10164,
-     "byToday": 1448,
-     "full": 0,
-     "card": "rb",
-     "sd": 3,
-     "cards": 0,
-     "cur": [
-      "coffee",
-      "liquor3",
-      "breakfast",
       "dinner2",
       "apps"
      ]
@@ -484,7 +386,7 @@
       }
      ],
      "goal": 10164,
-     "byToday": 1448,
+     "byToday": 1480,
      "full": 0,
      "card": "rb",
      "sd": 2,
@@ -498,11 +400,11 @@
     {
      "name": "Campbell W.",
      "all": 319,
-     "today": 193,
+     "today": 0,
      "week": 319,
      "elsewhere": [],
      "goal": 10164,
-     "byToday": 1448,
+     "byToday": 1480,
      "full": 0,
      "card": "rb",
      "sd": 2,
@@ -522,7 +424,7 @@
      "week": 106,
      "elsewhere": [],
      "goal": 10164,
-     "byToday": 1448,
+     "byToday": 1480,
      "full": 0,
      "card": "rb",
      "sd": 1,
@@ -534,9 +436,9 @@
   {
    "name": "Pickleball",
    "sold": 809,
-   "today": 160,
+   "today": 0,
    "target": 4602,
-   "pace": 656,
+   "pace": 670,
    "people": []
   }
  ]

@@ -2,9 +2,9 @@
  "day": "2026-11-09",
  "month": "November 2026",
  "goal": 153417,
- "sold": 25898,
- "pace": 46078,
- "today": 679,
+ "sold": 25928,
+ "pace": 46160,
+ "today": 709,
  "todayGoal": 2233,
  "todayLY": 1164,
  "lyDate": "2025-11-10",
@@ -137,7 +137,7 @@
    ]
   ]
  },
- "asOf": "2026-11-09T22:07:57.000Z",
+ "asOf": "2026-11-09T22:38:05.000Z",
  "todayPeople": [
   {
    "name": "Manuela G.",
@@ -197,6 +197,20 @@
     "lunch3": 1,
     "dinner2": 0
    }
+  },
+  {
+   "name": "Madison M.",
+   "team": "Range & Bar",
+   "today": 30,
+   "card": "rb",
+   "got": [],
+   "cards": 0,
+   "prog": {
+    "nabev15": 0,
+    "liquor3": 0,
+    "lunch3": 0,
+    "dinner2": 0
+   }
   }
  ],
  "teams": [
@@ -205,7 +219,7 @@
    "sold": 11744,
    "today": 303,
    "target": 67503,
-   "pace": 20274,
+   "pace": 20310,
    "people": [
     {
      "name": "Lucia N.",
@@ -220,7 +234,7 @@
       }
      ],
      "goal": 22501,
-     "byToday": 6758,
+     "byToday": 6770,
      "full": 0,
      "card": "shop",
      "sd": 6,
@@ -250,7 +264,7 @@
       }
      ],
      "goal": 22501,
-     "byToday": 6758,
+     "byToday": 6770,
      "full": 0,
      "card": "shop",
      "sd": 4,
@@ -279,7 +293,7 @@
       }
      ],
      "goal": 22501,
-     "byToday": 6758,
+     "byToday": 6770,
      "full": 0,
      "card": "shop",
      "sd": 6,
@@ -297,10 +311,10 @@
   },
   {
    "name": "Range & Bar",
-   "sold": 13028,
-   "today": 376,
+   "sold": 13058,
+   "today": 406,
    "target": 81311,
-   "pace": 24421,
+   "pace": 24465,
    "people": [
     {
      "name": "Chisom N.",
@@ -309,7 +323,7 @@
      "week": 0,
      "elsewhere": [],
      "goal": 10164,
-     "byToday": 3053,
+     "byToday": 3058,
      "full": 0,
      "card": "rb",
      "sd": 4,
@@ -327,9 +341,9 @@
     },
     {
      "name": "Madison M.",
-     "all": 2590,
-     "today": 0,
-     "week": 0,
+     "all": 2620,
+     "today": 30,
+     "week": 30,
      "elsewhere": [
       {
        "team": "Pro Shop",
@@ -338,10 +352,10 @@
       }
      ],
      "goal": 10164,
-     "byToday": 3053,
+     "byToday": 3058,
      "full": 0,
      "card": "rb",
-     "sd": 5,
+     "sd": 6,
      "cards": 0,
      "cur": [
       "nabev15",
@@ -365,7 +379,7 @@
       }
      ],
      "goal": 10164,
-     "byToday": 3053,
+     "byToday": 3058,
      "full": 0,
      "card": "rb",
      "sd": 3,
@@ -388,7 +402,7 @@
      "week": 0,
      "elsewhere": [],
      "goal": 10164,
-     "byToday": 3053,
+     "byToday": 3058,
      "full": 0,
      "card": "rb",
      "sd": 5,
@@ -416,7 +430,7 @@
       }
      ],
      "goal": 10164,
-     "byToday": 3053,
+     "byToday": 3058,
      "full": 0,
      "card": "rb",
      "sd": 6,
@@ -445,7 +459,7 @@
       }
      ],
      "goal": 10164,
-     "byToday": 3053,
+     "byToday": 3058,
      "full": 0,
      "card": "rb",
      "sd": 4,
@@ -474,7 +488,7 @@
       }
      ],
      "goal": 10164,
-     "byToday": 3053,
+     "byToday": 3058,
      "full": 0,
      "card": "rb",
      "sd": 7,
@@ -497,7 +511,7 @@
      "week": 295,
      "elsewhere": [],
      "goal": 10164,
-     "byToday": 3053,
+     "byToday": 3058,
      "full": 0,
      "card": "rb",
      "sd": 3,
@@ -514,7 +528,7 @@
    "sold": 1126,
    "today": 0,
    "target": 4602,
-   "pace": 1382,
+   "pace": 1385,
    "people": []
   }
  ]

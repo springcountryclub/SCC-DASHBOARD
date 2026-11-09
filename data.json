@@ -2,9 +2,9 @@
  "day": "2026-11-09",
  "month": "November 2026",
  "goal": 153417,
- "sold": 25749,
- "pace": 45759,
- "today": 530,
+ "sold": 25769,
+ "pace": 45838,
+ "today": 550,
  "todayGoal": 2233,
  "todayLY": 1164,
  "lyDate": "2025-11-10",
@@ -137,7 +137,7 @@
    ]
   ]
  },
- "asOf": "2026-11-09T20:07:33.000Z",
+ "asOf": "2026-11-09T20:37:41.000Z",
  "todayPeople": [
   {
    "name": "Manuela G.",
@@ -181,6 +181,20 @@
     "nabev10": 0,
     "snack5": 0
    }
+  },
+  {
+   "name": "Sarah B.",
+   "team": "Range & Bar",
+   "today": 20,
+   "card": "rb",
+   "got": [],
+   "cards": 0,
+   "prog": {
+    "nabev15": 0,
+    "liquor3": 0,
+    "lunch3": 0,
+    "dinner2": 0
+   }
   }
  ],
  "teams": [
@@ -189,7 +203,7 @@
    "sold": 11675,
    "today": 235,
    "target": 67503,
-   "pace": 20134,
+   "pace": 20169,
    "people": [
     {
      "name": "Lucia N.",
@@ -204,7 +218,7 @@
       }
      ],
      "goal": 22501,
-     "byToday": 6711,
+     "byToday": 6723,
      "full": 0,
      "card": "shop",
      "sd": 6,
@@ -234,7 +248,7 @@
       }
      ],
      "goal": 22501,
-     "byToday": 6711,
+     "byToday": 6723,
      "full": 0,
      "card": "shop",
      "sd": 4,
@@ -263,7 +277,7 @@
       }
      ],
      "goal": 22501,
-     "byToday": 6711,
+     "byToday": 6723,
      "full": 0,
      "card": "shop",
      "sd": 6,
@@ -281,10 +295,10 @@
   },
   {
    "name": "Range & Bar",
-   "sold": 12947,
-   "today": 295,
+   "sold": 12967,
+   "today": 315,
    "target": 81311,
-   "pace": 24252,
+   "pace": 24294,
    "people": [
     {
      "name": "Chisom N.",
@@ -293,7 +307,7 @@
      "week": 0,
      "elsewhere": [],
      "goal": 10164,
-     "byToday": 3032,
+     "byToday": 3037,
      "full": 0,
      "card": "rb",
      "sd": 4,
@@ -322,7 +336,7 @@
       }
      ],
      "goal": 10164,
-     "byToday": 3032,
+     "byToday": 3037,
      "full": 0,
      "card": "rb",
      "sd": 5,
@@ -349,7 +363,7 @@
       }
      ],
      "goal": 10164,
-     "byToday": 3032,
+     "byToday": 3037,
      "full": 0,
      "card": "rb",
      "sd": 3,
@@ -372,7 +386,7 @@
      "week": 0,
      "elsewhere": [],
      "goal": 10164,
-     "byToday": 3032,
+     "byToday": 3037,
      "full": 0,
      "card": "rb",
      "sd": 5,
@@ -381,6 +395,35 @@
       "coffee",
       "nabev15",
       "liquor3",
+      "breakfast",
+      "lunch3",
+      "dinner2",
+      "apps"
+     ]
+    },
+    {
+     "name": "Sarah B.",
+     "all": 1784,
+     "today": 20,
+     "week": 20,
+     "elsewhere": [
+      {
+       "team": "Pickleball",
+       "amt": 92,
+       "courts": true
+      }
+     ],
+     "goal": 10164,
+     "byToday": 3037,
+     "full": 0,
+     "card": "rb",
+     "sd": 6,
+     "cards": 0,
+     "cur": [
+      "coffee",
+      "nabev15",
+      "liquor3",
+      "wbottle",
       "breakfast",
       "lunch3",
       "dinner2",
@@ -400,7 +443,7 @@
       }
      ],
      "goal": 10164,
-     "byToday": 3032,
+     "byToday": 3037,
      "full": 0,
      "card": "rb",
      "sd": 4,
@@ -410,35 +453,6 @@
       "nabev15",
       "bucket",
       "liquor3",
-      "breakfast",
-      "lunch3",
-      "dinner2",
-      "apps"
-     ]
-    },
-    {
-     "name": "Sarah B.",
-     "all": 1764,
-     "today": 0,
-     "week": 0,
-     "elsewhere": [
-      {
-       "team": "Pickleball",
-       "amt": 92,
-       "courts": true
-      }
-     ],
-     "goal": 10164,
-     "byToday": 3032,
-     "full": 0,
-     "card": "rb",
-     "sd": 5,
-     "cards": 0,
-     "cur": [
-      "coffee",
-      "nabev15",
-      "liquor3",
-      "wbottle",
       "breakfast",
       "lunch3",
       "dinner2",
@@ -458,7 +472,7 @@
       }
      ],
      "goal": 10164,
-     "byToday": 3032,
+     "byToday": 3037,
      "full": 0,
      "card": "rb",
      "sd": 7,
@@ -481,7 +495,7 @@
      "week": 295,
      "elsewhere": [],
      "goal": 10164,
-     "byToday": 3032,
+     "byToday": 3037,
      "full": 0,
      "card": "rb",
      "sd": 3,
@@ -498,7 +512,7 @@
    "sold": 1126,
    "today": 0,
    "target": 4602,
-   "pace": 1373,
+   "pace": 1375,
    "people": []
   }
  ]

@@ -2,9 +2,9 @@
  "day": "2026-11-08",
  "month": "November 2026",
  "goal": 153417,
- "sold": 25033,
- "pace": 43790,
- "today": 4203,
+ "sold": 25219,
+ "pace": 44081,
+ "today": 4389,
  "todayGoal": 8139,
  "todayLY": 5807,
  "lyDate": "2025-11-09",
@@ -137,7 +137,7 @@
    ]
   ]
  },
- "asOf": "2026-11-09T01:34:42.000Z",
+ "asOf": "2026-11-09T02:04:49.000Z",
  "todayPeople": [
   {
    "name": "Lucia N.",
@@ -221,14 +221,17 @@
   {
    "name": "Jalyn B.",
    "team": "Range & Bar",
-   "today": 270,
+   "today": 457,
    "card": "rb",
-   "got": [],
+   "got": [
+    "wbottle",
+    "lunch3"
+   ],
    "cards": 0,
    "prog": {
-    "nabev15": 2,
+    "nabev15": 7,
     "liquor3": 0,
-    "lunch3": 2,
+    "lunch3": 3,
     "dinner2": 0
    }
   },
@@ -269,7 +272,7 @@
    "sold": 11441,
    "today": 1843,
    "target": 67503,
-   "pace": 19268,
+   "pace": 19396,
    "people": [
     {
      "name": "Lucia N.",
@@ -284,7 +287,7 @@
       }
      ],
      "goal": 22501,
-     "byToday": 6423,
+     "byToday": 6465,
      "full": 0,
      "card": "shop",
      "sd": 6,
@@ -314,7 +317,7 @@
       }
      ],
      "goal": 22501,
-     "byToday": 6423,
+     "byToday": 6465,
      "full": 0,
      "card": "shop",
      "sd": 3,
@@ -343,7 +346,7 @@
       }
      ],
      "goal": 22501,
-     "byToday": 6423,
+     "byToday": 6465,
      "full": 0,
      "card": "shop",
      "sd": 5,
@@ -361,10 +364,10 @@
   },
   {
    "name": "Range & Bar",
-   "sold": 12601,
-   "today": 2320,
+   "sold": 12652,
+   "today": 2371,
    "target": 81311,
-   "pace": 23209,
+   "pace": 23363,
    "people": [
     {
      "name": "Chisom N.",
@@ -373,7 +376,7 @@
      "week": 1670,
      "elsewhere": [],
      "goal": 10164,
-     "byToday": 2901,
+     "byToday": 2920,
      "full": 0,
      "card": "rb",
      "sd": 4,
@@ -402,7 +405,7 @@
       }
      ],
      "goal": 10164,
-     "byToday": 2901,
+     "byToday": 2920,
      "full": 0,
      "card": "rb",
      "sd": 5,
@@ -417,13 +420,42 @@
      ]
     },
     {
+     "name": "Jalyn B.",
+     "all": 1913,
+     "today": 457,
+     "week": 843,
+     "elsewhere": [
+      {
+       "team": "Pickleball",
+       "amt": 160,
+       "courts": true
+      }
+     ],
+     "goal": 10164,
+     "byToday": 2920,
+     "full": 0,
+     "card": "rb",
+     "sd": 3,
+     "cards": 0,
+     "cur": [
+      "coffee",
+      "nabev15",
+      "liquor3",
+      "wbottle",
+      "breakfast",
+      "lunch3",
+      "dinner2",
+      "apps"
+     ]
+    },
+    {
      "name": "Campbell W.",
      "all": 1909,
      "today": 771,
      "week": 1909,
      "elsewhere": [],
      "goal": 10164,
-     "byToday": 2901,
+     "byToday": 2920,
      "full": 0,
      "card": "rb",
      "sd": 5,
@@ -451,7 +483,7 @@
       }
      ],
      "goal": 10164,
-     "byToday": 2901,
+     "byToday": 2920,
      "full": 0,
      "card": "rb",
      "sd": 4,
@@ -480,7 +512,7 @@
       }
      ],
      "goal": 10164,
-     "byToday": 2901,
+     "byToday": 2920,
      "full": 0,
      "card": "rb",
      "sd": 5,
@@ -490,34 +522,6 @@
       "nabev15",
       "liquor3",
       "wbottle",
-      "breakfast",
-      "lunch3",
-      "dinner2",
-      "apps"
-     ]
-    },
-    {
-     "name": "Jalyn B.",
-     "all": 1727,
-     "today": 270,
-     "week": 657,
-     "elsewhere": [
-      {
-       "team": "Pickleball",
-       "amt": 25,
-       "courts": true
-      }
-     ],
-     "goal": 10164,
-     "byToday": 2901,
-     "full": 0,
-     "card": "rb",
-     "sd": 3,
-     "cards": 0,
-     "cur": [
-      "coffee",
-      "nabev15",
-      "liquor3",
       "breakfast",
       "lunch3",
       "dinner2",
@@ -537,7 +541,7 @@
       }
      ],
      "goal": 10164,
-     "byToday": 2901,
+     "byToday": 2920,
      "full": 0,
      "card": "rb",
      "sd": 7,
@@ -560,7 +564,7 @@
      "week": 244,
      "elsewhere": [],
      "goal": 10164,
-     "byToday": 2901,
+     "byToday": 2920,
      "full": 0,
      "card": "rb",
      "sd": 2,
@@ -571,10 +575,10 @@
   },
   {
    "name": "Pickleball",
-   "sold": 991,
-   "today": 40,
+   "sold": 1126,
+   "today": 175,
    "target": 4602,
-   "pace": 1314,
+   "pace": 1322,
    "people": []
   }
  ]

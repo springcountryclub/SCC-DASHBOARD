@@ -2,9 +2,9 @@
  "day": "2026-11-11",
  "month": "November 2026",
  "goal": 153417,
- "sold": 33508,
- "pace": 51701,
- "today": 1038,
+ "sold": 33699,
+ "pace": 51819,
+ "today": 1229,
  "todayGoal": 3322,
  "todayLY": 2088,
  "lyDate": "2025-11-12",
@@ -137,26 +137,27 @@
    ]
   ]
  },
- "asOf": "2026-11-11T20:36:44.000Z",
+ "asOf": "2026-11-11T21:06:53.000Z",
  "todayPeople": [
   {
    "name": "Campbell W.",
    "team": "Range & Bar",
-   "today": 539,
+   "today": 615,
    "card": "rb",
    "got": [
     "bucket",
     "liquor3",
     "breakfast",
     "lunch3",
+    "dinner2",
     "apps"
    ],
    "cards": 0,
    "prog": {
-    "nabev15": 5,
+    "nabev15": 6,
     "liquor3": 3,
     "lunch3": 3,
-    "dinner2": 1
+    "dinner2": 2
    }
   },
   {
@@ -169,6 +170,18 @@
    "prog": {
     "nabev10": 2,
     "snack5": 0
+   }
+  },
+  {
+   "name": "Sara W.",
+   "team": "Pro Shop",
+   "today": 115,
+   "card": "shop",
+   "got": [],
+   "cards": 0,
+   "prog": {
+    "nabev10": 1,
+    "snack5": 3
    }
   },
   {
@@ -189,10 +202,10 @@
  "teams": [
   {
    "name": "Pro Shop",
-   "sold": 13259,
-   "today": 484,
+   "sold": 13375,
+   "today": 599,
    "target": 67503,
-   "pace": 22748,
+   "pace": 22800,
    "people": [
     {
      "name": "Lucia N.",
@@ -207,7 +220,7 @@
       }
      ],
      "goal": 22501,
-     "byToday": 7583,
+     "byToday": 7600,
      "full": 0,
      "card": "shop",
      "sd": 7,
@@ -226,9 +239,9 @@
     },
     {
      "name": "Sara W.",
-     "all": 2731,
-     "today": 0,
-     "week": 931,
+     "all": 2847,
+     "today": 115,
+     "week": 1046,
      "elsewhere": [
       {
        "team": "Pickleball",
@@ -237,10 +250,10 @@
       }
      ],
      "goal": 22501,
-     "byToday": 7583,
+     "byToday": 7600,
      "full": 0,
      "card": "shop",
-     "sd": 5,
+     "sd": 6,
      "cards": 0,
      "cur": [
       "gmerch",
@@ -266,7 +279,7 @@
       }
      ],
      "goal": 22501,
-     "byToday": 7583,
+     "byToday": 7600,
      "full": 0,
      "card": "shop",
      "sd": 6,
@@ -284,10 +297,10 @@
   },
   {
    "name": "Range & Bar",
-   "sold": 18943,
-   "today": 554,
+   "sold": 19019,
+   "today": 630,
    "target": 81311,
-   "pace": 27401,
+   "pace": 27464,
    "people": [
     {
      "name": "Khrystin R.",
@@ -302,7 +315,7 @@
       }
      ],
      "goal": 10164,
-     "byToday": 3425,
+     "byToday": 3433,
      "full": 0,
      "card": "rb",
      "sd": 8,
@@ -336,7 +349,7 @@
       }
      ],
      "goal": 10164,
-     "byToday": 3425,
+     "byToday": 3433,
      "full": 0,
      "card": "rb",
      "sd": 7,
@@ -357,7 +370,7 @@
      "week": 0,
      "elsewhere": [],
      "goal": 10164,
-     "byToday": 3425,
+     "byToday": 3433,
      "full": 0,
      "card": "rb",
      "sd": 4,
@@ -375,9 +388,9 @@
     },
     {
      "name": "Campbell W.",
-     "all": 2485,
-     "today": 539,
-     "week": 576,
+     "all": 2561,
+     "today": 615,
+     "week": 652,
      "elsewhere": [
       {
        "team": "Pickleball",
@@ -386,7 +399,7 @@
       }
      ],
      "goal": 10164,
-     "byToday": 3425,
+     "byToday": 3433,
      "full": 0,
      "card": "rb",
      "sd": 7,
@@ -415,7 +428,7 @@
       }
      ],
      "goal": 10164,
-     "byToday": 3425,
+     "byToday": 3433,
      "full": 0,
      "card": "rb",
      "sd": 5,
@@ -444,7 +457,7 @@
       }
      ],
      "goal": 10164,
-     "byToday": 3425,
+     "byToday": 3433,
      "full": 0,
      "card": "rb",
      "sd": 4,
@@ -473,7 +486,7 @@
       }
      ],
      "goal": 10164,
-     "byToday": 3425,
+     "byToday": 3433,
      "full": 0,
      "card": "rb",
      "sd": 6,
@@ -496,7 +509,7 @@
      "week": 295,
      "elsewhere": [],
      "goal": 10164,
-     "byToday": 3425,
+     "byToday": 3433,
      "full": 0,
      "card": "rb",
      "sd": 3,
@@ -513,7 +526,7 @@
    "sold": 1305,
    "today": 0,
    "target": 4602,
-   "pace": 1551,
+   "pace": 1555,
    "people": []
   }
  ]

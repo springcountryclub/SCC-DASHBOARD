@@ -2,9 +2,9 @@
  "day": "2026-11-13",
  "month": "November 2026",
  "goal": 153417,
- "sold": 41644,
+ "sold": 41777,
  "pace": 64411,
- "today": 4676,
+ "today": 4809,
  "todayGoal": 6068,
  "todayLY": 4153,
  "lyDate": "2025-11-14",
@@ -137,7 +137,7 @@
    ]
   ]
  },
- "asOf": "2026-11-14T03:38:31.000Z",
+ "asOf": "2026-11-14T04:08:42.000Z",
  "todayPeople": [
   {
    "name": "Lucia N.",
@@ -157,6 +157,27 @@
    }
   },
   {
+   "name": "Madison M.",
+   "team": "Range & Bar",
+   "today": 1108,
+   "card": "rb",
+   "got": [
+    "coffee",
+    "liquor3",
+    "breakfast",
+    "lunch3",
+    "dinner2",
+    "apps"
+   ],
+   "cards": 0,
+   "prog": {
+    "nabev15": 14,
+    "liquor3": 3,
+    "lunch3": 3,
+    "dinner2": 2
+   }
+  },
+  {
    "name": "Jalyn B.",
    "team": "Range & Bar",
    "today": 1071,
@@ -173,27 +194,6 @@
    "cards": 0,
    "prog": {
     "nabev15": 15,
-    "liquor3": 3,
-    "lunch3": 3,
-    "dinner2": 2
-   }
-  },
-  {
-   "name": "Madison M.",
-   "team": "Range & Bar",
-   "today": 975,
-   "card": "rb",
-   "got": [
-    "coffee",
-    "liquor3",
-    "breakfast",
-    "lunch3",
-    "dinner2",
-    "apps"
-   ],
-   "cards": 0,
-   "prog": {
-    "nabev15": 12,
     "liquor3": 3,
     "lunch3": 3,
     "dinner2": 2
@@ -387,13 +387,13 @@
     },
     {
      "name": "Madison M.",
-     "all": 4069,
-     "today": 975,
-     "week": 1479,
+     "all": 4203,
+     "today": 1108,
+     "week": 1612,
      "elsewhere": [
       {
        "team": "Pickleball",
-       "amt": 42,
+       "amt": 175,
        "courts": true
       },
       {
@@ -587,8 +587,8 @@
   },
   {
    "name": "Pickleball",
-   "sold": 1858,
-   "today": 270,
+   "sold": 1991,
+   "today": 403,
    "target": 4602,
    "pace": 1932,
    "people": []

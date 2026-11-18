@@ -2,9 +2,9 @@
  "day": "2026-11-18",
  "month": "November 2026",
  "goal": 153417,
- "sold": 53539,
- "pace": 87936,
- "today": 754,
+ "sold": 53586,
+ "pace": 88055,
+ "today": 801,
  "todayGoal": 3322,
  "todayLY": 3114,
  "lyDate": "2025-11-19",
@@ -137,7 +137,7 @@
    ]
   ]
  },
- "asOf": "2026-11-18T19:33:44.000Z",
+ "asOf": "2026-11-18T20:03:57.000Z",
  "todayPeople": [
   {
    "name": "Lucia N.",
@@ -156,14 +156,16 @@
   {
    "name": "Manuela G.",
    "team": "Range & Bar",
-   "today": 64,
+   "today": 111,
    "card": "rb",
-   "got": [],
+   "got": [
+    "lunch3"
+   ],
    "cards": 0,
    "prog": {
-    "nabev15": 1,
+    "nabev15": 4,
     "liquor3": 0,
-    "lunch3": 0,
+    "lunch3": 3,
     "dinner2": 0
    }
   }
@@ -174,7 +176,7 @@
    "sold": 21475,
    "today": 690,
    "target": 67503,
-   "pace": 38692,
+   "pace": 38744,
    "people": [
     {
      "name": "Lucia N.",
@@ -189,7 +191,7 @@
       }
      ],
      "goal": 22501,
-     "byToday": 12897,
+     "byToday": 12915,
      "full": 0,
      "card": "shop",
      "sd": 12,
@@ -217,7 +219,7 @@
       }
      ],
      "goal": 22501,
-     "byToday": 12897,
+     "byToday": 12915,
      "full": 0,
      "card": "shop",
      "sd": 8,
@@ -246,7 +248,7 @@
       }
      ],
      "goal": 22501,
-     "byToday": 12897,
+     "byToday": 12915,
      "full": 0,
      "card": "shop",
      "sd": 10,
@@ -266,10 +268,10 @@
   },
   {
    "name": "Range & Bar",
-   "sold": 29427,
-   "today": 64,
+   "sold": 29474,
+   "today": 111,
    "target": 81311,
-   "pace": 46606,
+   "pace": 46669,
    "people": [
     {
      "name": "Khrystin R.",
@@ -289,7 +291,7 @@
       }
      ],
      "goal": 10164,
-     "byToday": 5826,
+     "byToday": 5834,
      "full": 0,
      "card": "rb",
      "sd": 13,
@@ -324,7 +326,7 @@
       }
      ],
      "goal": 10164,
-     "byToday": 5826,
+     "byToday": 5834,
      "full": 0,
      "card": "rb",
      "sd": 12,
@@ -353,7 +355,7 @@
       }
      ],
      "goal": 10164,
-     "byToday": 5826,
+     "byToday": 5834,
      "full": 0,
      "card": "rb",
      "sd": 10,
@@ -375,7 +377,7 @@
       }
      ],
      "goal": 10164,
-     "byToday": 5826,
+     "byToday": 5834,
      "full": 0,
      "card": "rb",
      "sd": 8,
@@ -405,7 +407,7 @@
       }
      ],
      "goal": 10164,
-     "byToday": 5826,
+     "byToday": 5834,
      "full": 0,
      "card": "rb",
      "sd": 10,
@@ -429,7 +431,7 @@
      "week": 0,
      "elsewhere": [],
      "goal": 10164,
-     "byToday": 5826,
+     "byToday": 5834,
      "full": 0,
      "card": "rb",
      "sd": 5,
@@ -458,7 +460,7 @@
       }
      ],
      "goal": 10164,
-     "byToday": 5826,
+     "byToday": 5834,
      "full": 0,
      "card": "rb",
      "sd": 9,
@@ -476,12 +478,12 @@
     },
     {
      "name": "Manuela G.",
-     "all": 1364,
-     "today": 64,
-     "week": 64,
+     "all": 1411,
+     "today": 111,
+     "week": 111,
      "elsewhere": [],
      "goal": 10164,
-     "byToday": 5826,
+     "byToday": 5834,
      "full": 0,
      "card": "rb",
      "sd": 6,
@@ -504,7 +506,7 @@
    "sold": 2637,
    "today": 0,
    "target": 4602,
-   "pace": 2638,
+   "pace": 2642,
    "people": []
   }
  ]

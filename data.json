@@ -2,9 +2,9 @@
  "day": "2026-11-20",
  "month": "November 2026",
  "goal": 153417,
- "sold": 58395,
- "pace": 97053,
- "today": 659,
+ "sold": 58467,
+ "pace": 97270,
+ "today": 731,
  "todayGoal": 6068,
  "todayLY": 3082,
  "lyDate": "2025-11-21",
@@ -137,27 +137,28 @@
    ]
   ]
  },
- "asOf": "2026-11-20T18:08:03.000Z",
+ "asOf": "2026-11-20T18:38:17.000Z",
  "todayPeople": [
   {
    "name": "Lucia N.",
    "team": "Pro Shop",
-   "today": 515,
+   "today": 557,
    "card": "shop",
    "got": [
+    "dmerch",
     "lesson",
     "more9"
    ],
    "cards": 1,
    "prog": {
     "nabev10": 2,
-    "snack5": 0
+    "snack5": 1
    }
   },
   {
    "name": "Pedro O.",
    "team": "Range & Bar",
-   "today": 116,
+   "today": 146,
    "card": "rb",
    "got": [
     "liquor3"
@@ -188,16 +189,16 @@
  "teams": [
   {
    "name": "Pro Shop",
-   "sold": 23425,
-   "today": 515,
+   "sold": 23467,
+   "today": 557,
    "target": 67503,
-   "pace": 42703,
+   "pace": 42799,
    "people": [
     {
      "name": "Lucia N.",
-     "all": 15289,
-     "today": 515,
-     "week": 2219,
+     "all": 15331,
+     "today": 557,
+     "week": 2261,
      "elsewhere": [
       {
        "team": "Pickleball",
@@ -206,7 +207,7 @@
       }
      ],
      "goal": 22501,
-     "byToday": 14234,
+     "byToday": 14266,
      "full": 0,
      "card": "shop",
      "sd": 14,
@@ -234,7 +235,7 @@
       }
      ],
      "goal": 22501,
-     "byToday": 14234,
+     "byToday": 14266,
      "full": 0,
      "card": "shop",
      "sd": 9,
@@ -263,7 +264,7 @@
       }
      ],
      "goal": 22501,
-     "byToday": 14234,
+     "byToday": 14266,
      "full": 0,
      "card": "shop",
      "sd": 11,
@@ -283,10 +284,10 @@
   },
   {
    "name": "Range & Bar",
-   "sold": 32204,
-   "today": 144,
+   "sold": 32234,
+   "today": 174,
    "target": 81311,
-   "pace": 51438,
+   "pace": 51553,
    "people": [
     {
      "name": "Khrystin R.",
@@ -306,7 +307,7 @@
       }
      ],
      "goal": 9035,
-     "byToday": 5715,
+     "byToday": 5728,
      "full": 0,
      "card": "rb",
      "sd": 15,
@@ -336,7 +337,7 @@
       }
      ],
      "goal": 9035,
-     "byToday": 5715,
+     "byToday": 5728,
      "full": 0,
      "card": "rb",
      "sd": 11,
@@ -365,7 +366,7 @@
       }
      ],
      "goal": 9035,
-     "byToday": 5715,
+     "byToday": 5728,
      "full": 0,
      "card": "rb",
      "sd": 12,
@@ -394,7 +395,7 @@
       }
      ],
      "goal": 9035,
-     "byToday": 5715,
+     "byToday": 5728,
      "full": 0,
      "card": "rb",
      "sd": 8,
@@ -424,7 +425,7 @@
       }
      ],
      "goal": 9035,
-     "byToday": 5715,
+     "byToday": 5728,
      "full": 0,
      "card": "rb",
      "sd": 12,
@@ -454,7 +455,7 @@
       }
      ],
      "goal": 9035,
-     "byToday": 5715,
+     "byToday": 5728,
      "full": 0,
      "card": "rb",
      "sd": 10,
@@ -477,7 +478,7 @@
      "week": 213,
      "elsewhere": [],
      "goal": 9035,
-     "byToday": 5715,
+     "byToday": 5728,
      "full": 0,
      "card": "rb",
      "sd": 6,
@@ -500,7 +501,7 @@
      "week": 111,
      "elsewhere": [],
      "goal": 9035,
-     "byToday": 5715,
+     "byToday": 5728,
      "full": 0,
      "card": "rb",
      "sd": 6,
@@ -518,12 +519,12 @@
     },
     {
      "name": "Pedro O.",
-     "all": 552,
-     "today": 116,
-     "week": 552,
+     "all": 582,
+     "today": 146,
+     "week": 582,
      "elsewhere": [],
      "goal": 9035,
-     "byToday": 5715,
+     "byToday": 5728,
      "full": 0,
      "card": "rb",
      "sd": 2,
@@ -541,7 +542,7 @@
    "sold": 2766,
    "today": 0,
    "target": 4602,
-   "pace": 2912,
+   "pace": 2918,
    "people": []
   }
  ]

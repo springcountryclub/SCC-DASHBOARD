@@ -2,9 +2,9 @@
  "day": "2026-11-22",
  "month": "November 2026",
  "goal": 153417,
- "sold": 69333,
- "pace": 111857,
- "today": 1266,
+ "sold": 69649,
+ "pace": 112148,
+ "today": 1582,
  "todayGoal": 8139,
  "todayLY": 7078,
  "lyDate": "2025-11-23",
@@ -137,51 +137,21 @@
    ]
   ]
  },
- "asOf": "2026-11-22T17:08:38.000Z",
- "todayPeople": [
-  {
-   "name": "Lucia N.",
-   "team": "Pro Shop",
-   "today": 1191,
-   "card": "shop",
-   "got": [
-    "dmerch",
-    "nabev10"
-   ],
-   "cards": 1,
-   "prog": {
-    "nabev10": 10,
-    "snack5": 1
-   }
-  },
-  {
-   "name": "Jalyn B.",
-   "team": "Range & Bar",
-   "today": 75,
-   "card": "rb",
-   "got": [],
-   "cards": 0,
-   "prog": {
-    "nabev15": 0,
-    "liquor3": 0,
-    "lunch3": 0,
-    "dinner2": 0
-   }
-  }
- ],
+ "asOf": "2026-11-22T17:38:48.000Z",
+ "todayPeople": [],
  "teams": [
   {
    "name": "Pro Shop",
-   "sold": 29083,
-   "today": 1191,
+   "sold": 29243,
+   "today": 1351,
    "target": 67503,
-   "pace": 49217,
+   "pace": 49345,
    "people": [
     {
      "name": "Lucia N.",
-     "all": 20487,
-     "today": 1191,
-     "week": 7418,
+     "all": 19296,
+     "today": 0,
+     "week": 6227,
      "elsewhere": [
       {
        "team": "Pickleball",
@@ -190,10 +160,10 @@
       }
      ],
      "goal": 22501,
-     "byToday": 16406,
+     "byToday": 16448,
      "full": 0,
      "card": "shop",
-     "sd": 16,
+     "sd": 15,
      "cards": 1,
      "cur": [
       "gmerch",
@@ -220,7 +190,7 @@
       }
      ],
      "goal": 22501,
-     "byToday": 16406,
+     "byToday": 16448,
      "full": 0,
      "card": "shop",
      "sd": 9,
@@ -249,7 +219,7 @@
       }
      ],
      "goal": 22501,
-     "byToday": 16406,
+     "byToday": 16448,
      "full": 0,
      "card": "shop",
      "sd": 13,
@@ -269,10 +239,10 @@
   },
   {
    "name": "Range & Bar",
-   "sold": 37309,
-   "today": 75,
+   "sold": 37465,
+   "today": 231,
    "target": 81311,
-   "pace": 59284,
+   "pace": 59438,
    "people": [
     {
      "name": "Khrystin R.",
@@ -292,7 +262,7 @@
       }
      ],
      "goal": 9035,
-     "byToday": 6587,
+     "byToday": 6604,
      "full": 0,
      "card": "rb",
      "sd": 16,
@@ -322,7 +292,7 @@
       }
      ],
      "goal": 9035,
-     "byToday": 6587,
+     "byToday": 6604,
      "full": 0,
      "card": "rb",
      "sd": 12,
@@ -353,7 +323,7 @@
       }
      ],
      "goal": 9035,
-     "byToday": 6587,
+     "byToday": 6604,
      "full": 0,
      "card": "rb",
      "sd": 13,
@@ -371,9 +341,9 @@
     },
     {
      "name": "Jalyn B.",
-     "all": 5484,
-     "today": 75,
-     "week": 774,
+     "all": 5409,
+     "today": 0,
+     "week": 699,
      "elsewhere": [
       {
        "team": "Pickleball",
@@ -382,10 +352,10 @@
       }
      ],
      "goal": 9035,
-     "byToday": 6587,
+     "byToday": 6604,
      "full": 0,
      "card": "rb",
-     "sd": 10,
+     "sd": 9,
      "cards": 0,
      "cur": [
       "coffee",
@@ -417,7 +387,7 @@
       }
      ],
      "goal": 9035,
-     "byToday": 6587,
+     "byToday": 6604,
      "full": 0,
      "card": "rb",
      "sd": 13,
@@ -447,7 +417,7 @@
       }
      ],
      "goal": 9035,
-     "byToday": 6587,
+     "byToday": 6604,
      "full": 0,
      "card": "rb",
      "sd": 11,
@@ -470,7 +440,7 @@
      "week": 213,
      "elsewhere": [],
      "goal": 9035,
-     "byToday": 6587,
+     "byToday": 6604,
      "full": 0,
      "card": "rb",
      "sd": 6,
@@ -493,7 +463,7 @@
      "week": 804,
      "elsewhere": [],
      "goal": 9035,
-     "byToday": 6587,
+     "byToday": 6604,
      "full": 0,
      "card": "rb",
      "sd": 7,
@@ -516,7 +486,7 @@
      "week": 1106,
      "elsewhere": [],
      "goal": 9035,
-     "byToday": 6587,
+     "byToday": 6604,
      "full": 0,
      "card": "rb",
      "sd": 2,
@@ -535,7 +505,7 @@
    "sold": 2941,
    "today": 0,
    "target": 4602,
-   "pace": 3356,
+   "pace": 3364,
    "people": []
   }
  ]

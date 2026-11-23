@@ -2,9 +2,9 @@
  "day": "2026-11-22",
  "month": "November 2026",
  "goal": 153417,
- "sold": 73568,
- "pace": 117021,
- "today": 5501,
+ "sold": 73680,
+ "pace": 117312,
+ "today": 5573,
  "todayGoal": 8139,
  "todayLY": 7078,
  "lyDate": "2025-11-23",
@@ -137,7 +137,7 @@
    ]
   ]
  },
- "asOf": "2026-11-23T02:01:34.000Z",
+ "asOf": "2026-11-23T02:31:47.000Z",
  "todayPeople": [
   {
    "name": "Lucia N.",
@@ -159,7 +159,7 @@
   {
    "name": "Chisom N.",
    "team": "Range & Bar",
-   "today": 889,
+   "today": 961,
    "card": "rb",
    "got": [
     "nabev15",
@@ -273,11 +273,11 @@
    "sold": 30374,
    "today": 2482,
    "target": 67503,
-   "pace": 51489,
+   "pace": 51617,
    "people": [
     {
      "name": "Lucia N.",
-     "all": 21668,
+     "all": 21862,
      "today": 2372,
      "week": 8599,
      "elsewhere": [
@@ -288,15 +288,15 @@
       },
       {
        "team": "Range & Bar",
-       "amt": 432,
+       "amt": 625,
        "courts": false
       }
      ],
      "goal": 22501,
-     "byToday": 17163,
+     "byToday": 17206,
      "full": 0,
      "card": "shop",
-     "sd": 16,
+     "sd": 17,
      "cards": 1,
      "cur": [
       "gmerch",
@@ -323,7 +323,7 @@
       }
      ],
      "goal": 22501,
-     "byToday": 17163,
+     "byToday": 17206,
      "full": 0,
      "card": "shop",
      "sd": 9,
@@ -352,7 +352,7 @@
       }
      ],
      "goal": 22501,
-     "byToday": 17163,
+     "byToday": 17206,
      "full": 0,
      "card": "shop",
      "sd": 14,
@@ -372,10 +372,10 @@
   },
   {
    "name": "Range & Bar",
-   "sold": 40124,
-   "today": 2890,
+   "sold": 40236,
+   "today": 2962,
    "target": 81311,
-   "pace": 62021,
+   "pace": 62175,
    "people": [
     {
      "name": "Khrystin R.",
@@ -395,7 +395,7 @@
       }
      ],
      "goal": 9035,
-     "byToday": 6891,
+     "byToday": 6908,
      "full": 0,
      "card": "rb",
      "sd": 17,
@@ -425,7 +425,7 @@
       }
      ],
      "goal": 9035,
-     "byToday": 6891,
+     "byToday": 6908,
      "full": 0,
      "card": "rb",
      "sd": 12,
@@ -451,7 +451,7 @@
       }
      ],
      "goal": 9035,
-     "byToday": 6891,
+     "byToday": 6908,
      "full": 0,
      "card": "rb",
      "sd": 10,
@@ -470,7 +470,7 @@
     },
     {
      "name": "Madison M.",
-     "all": 5725,
+     "all": 5531,
      "today": 0,
      "week": 1073,
      "elsewhere": [
@@ -486,10 +486,10 @@
       }
      ],
      "goal": 9035,
-     "byToday": 6891,
+     "byToday": 6908,
      "full": 0,
      "card": "rb",
-     "sd": 13,
+     "sd": 12,
      "cards": 0,
      "cur": [
       "coffee",
@@ -520,7 +520,7 @@
       }
      ],
      "goal": 9035,
-     "byToday": 6891,
+     "byToday": 6908,
      "full": 0,
      "card": "rb",
      "sd": 14,
@@ -539,7 +539,7 @@
     },
     {
      "name": "Sarah B.",
-     "all": 4164,
+     "all": 4204,
      "today": 538,
      "week": 1610,
      "elsewhere": [
@@ -550,7 +550,7 @@
       }
      ],
      "goal": 9035,
-     "byToday": 6891,
+     "byToday": 6908,
      "full": 0,
      "card": "rb",
      "sd": 12,
@@ -568,12 +568,12 @@
     },
     {
      "name": "Chisom N.",
-     "all": 3841,
-     "today": 889,
-     "week": 1102,
+     "all": 3913,
+     "today": 961,
+     "week": 1174,
      "elsewhere": [],
      "goal": 9035,
-     "byToday": 6891,
+     "byToday": 6908,
      "full": 0,
      "card": "rb",
      "sd": 7,
@@ -596,7 +596,7 @@
      "week": 804,
      "elsewhere": [],
      "goal": 9035,
-     "byToday": 6891,
+     "byToday": 6908,
      "full": 0,
      "card": "rb",
      "sd": 7,
@@ -619,7 +619,7 @@
      "week": 1106,
      "elsewhere": [],
      "goal": 9035,
-     "byToday": 6891,
+     "byToday": 6908,
      "full": 0,
      "card": "rb",
      "sd": 2,
@@ -638,7 +638,7 @@
    "sold": 3070,
    "today": 129,
    "target": 4602,
-   "pace": 3511,
+   "pace": 3519,
    "people": []
   }
  ]

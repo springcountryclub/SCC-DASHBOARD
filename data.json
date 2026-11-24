@@ -2,9 +2,9 @@
  "day": "2026-11-24",
  "month": "November 2026",
  "goal": 153417,
- "sold": 76909,
- "pace": 121354,
- "today": 1321,
+ "sold": 77347,
+ "pace": 121463,
+ "today": 1758,
  "todayGoal": 3041,
  "todayLY": 4014,
  "lyDate": "2025-11-25",
@@ -137,37 +137,39 @@
    ]
   ]
  },
- "asOf": "2026-11-24T20:02:45.000Z",
+ "asOf": "2026-11-24T20:32:58.000Z",
  "todayPeople": [
   {
    "name": "Sara W.",
    "team": "Pro Shop",
-   "today": 1210,
+   "today": 1592,
    "card": "shop",
    "got": [
+    "bucket",
     "more9",
     "court"
    ],
    "cards": 0,
    "prog": {
-    "nabev10": 2,
+    "nabev10": 5,
     "snack5": 1
    }
   },
   {
    "name": "Khrystin R.",
    "team": "Range & Bar",
-   "today": 111,
+   "today": 166,
    "card": "rb",
    "got": [
     "coffee",
+    "lunch3",
     "apps"
    ],
    "cards": 0,
    "prog": {
-    "nabev15": 1,
+    "nabev15": 3,
     "liquor3": 0,
-    "lunch3": 0,
+    "lunch3": 3,
     "dinner2": 0
    }
   }
@@ -175,10 +177,10 @@
  "teams": [
   {
    "name": "Pro Shop",
-   "sold": 32891,
-   "today": 1180,
+   "sold": 33274,
+   "today": 1562,
    "target": 67503,
-   "pace": 53396,
+   "pace": 53444,
    "people": [
     {
      "name": "Lucia N.",
@@ -198,7 +200,7 @@
       }
      ],
      "goal": 22501,
-     "byToday": 17798,
+     "byToday": 17814,
      "full": 0,
      "card": "shop",
      "sd": 18,
@@ -217,9 +219,9 @@
     },
     {
      "name": "Sara W.",
-     "all": 6299,
-     "today": 1210,
-     "week": 2091,
+     "all": 6682,
+     "today": 1592,
+     "week": 2473,
      "elsewhere": [
       {
        "team": "Pickleball",
@@ -228,7 +230,7 @@
       }
      ],
      "goal": 22501,
-     "byToday": 17798,
+     "byToday": 17814,
      "full": 0,
      "card": "shop",
      "sd": 11,
@@ -238,6 +240,7 @@
       "dmerch",
       "lesson",
       "liquor",
+      "bucket",
       "nabev10",
       "snack5",
       "more9",
@@ -257,7 +260,7 @@
       }
      ],
      "goal": 22501,
-     "byToday": 17798,
+     "byToday": 17814,
      "full": 0,
      "card": "shop",
      "sd": 15,
@@ -277,16 +280,16 @@
   },
   {
    "name": "Range & Bar",
-   "sold": 40918,
-   "today": 111,
+   "sold": 40973,
+   "today": 166,
    "target": 81311,
-   "pace": 64318,
+   "pace": 64375,
    "people": [
     {
      "name": "Khrystin R.",
-     "all": 9644,
-     "today": 111,
-     "week": 247,
+     "all": 9699,
+     "today": 166,
+     "week": 302,
      "elsewhere": [
       {
        "team": "Pickleball",
@@ -300,7 +303,7 @@
       }
      ],
      "goal": 9035,
-     "byToday": 7146,
+     "byToday": 7153,
      "full": 0,
      "card": "rb",
      "sd": 19,
@@ -330,7 +333,7 @@
       }
      ],
      "goal": 9035,
-     "byToday": 7146,
+     "byToday": 7153,
      "full": 0,
      "card": "rb",
      "sd": 11,
@@ -360,7 +363,7 @@
       }
      ],
      "goal": 9035,
-     "byToday": 7146,
+     "byToday": 7153,
      "full": 0,
      "card": "rb",
      "sd": 12,
@@ -391,7 +394,7 @@
       }
      ],
      "goal": 9035,
-     "byToday": 7146,
+     "byToday": 7153,
      "full": 0,
      "card": "rb",
      "sd": 12,
@@ -425,7 +428,7 @@
       }
      ],
      "goal": 9035,
-     "byToday": 7146,
+     "byToday": 7153,
      "full": 0,
      "card": "rb",
      "sd": 14,
@@ -455,7 +458,7 @@
       }
      ],
      "goal": 9035,
-     "byToday": 7146,
+     "byToday": 7153,
      "full": 0,
      "card": "rb",
      "sd": 12,
@@ -478,7 +481,7 @@
      "week": 5,
      "elsewhere": [],
      "goal": 9035,
-     "byToday": 7146,
+     "byToday": 7153,
      "full": 0,
      "card": "rb",
      "sd": 7,
@@ -501,7 +504,7 @@
      "week": 0,
      "elsewhere": [],
      "goal": 9035,
-     "byToday": 7146,
+     "byToday": 7153,
      "full": 0,
      "card": "rb",
      "sd": 7,
@@ -524,7 +527,7 @@
      "week": 222,
      "elsewhere": [],
      "goal": 9035,
-     "byToday": 7146,
+     "byToday": 7153,
      "full": 0,
      "card": "rb",
      "sd": 3,
@@ -544,7 +547,7 @@
    "sold": 3100,
    "today": 30,
    "target": 4602,
-   "pace": 3641,
+   "pace": 3644,
    "people": []
   }
  ]

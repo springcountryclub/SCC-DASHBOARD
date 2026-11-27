@@ -34,11 +34,11 @@ for l in open(f'{out}/report.txt').read().replace('\f', '').splitlines():
     if m:   # detail line: Date, Member, Area, Ref #, Tkt #, Sales, Discount, Net
         a = next((x for x in AR if x.split(' - ')[0] in m.group(2)), 'Unknown')
         row(c1=m.group(1), c6=a, c11=int(m.group(3)), c12=int(m.group(4)), c14=num(m.group(5)), c16=num(m.group(6)), c17=num(m.group(7))); continue
-    m = re.match(r'(.*?):?\s+(-?[\d.]+)\s+(\S+)\s+(\S+)\s+(\S+)(?:\s+\S+\s+\S+)?$', s)
+    m = re.match(r'(.*?):?\s+(-?[\d,]*\.?\d+)\s+(\S+)\s+(\S+)\s+(\S+)(?:\s+\S+\s+\S+)?$', s)   # units can have a thousands comma (1,395.0)
     if m and m.group(3).startswith(('$', '-$', '($')):   # item row or a Totals row
         name = m.group(1).strip()
         if name.endswith('Totals'): name += ':'
-        row(c0=name, c4=float(m.group(2)), c7=num(m.group(3)), c13=num(m.group(5))); continue
+        row(c0=name, c4=num(m.group(2)), c7=num(m.group(3)), c13=num(m.group(5))); continue
     if len(l) - len(l.lstrip()) > 30: continue   # area name wrapped onto a second line ("Golf")
     row(c0=s)
 json.dump(rows, open(f'{out}/rows.json', 'w'))

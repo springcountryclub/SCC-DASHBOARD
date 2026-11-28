@@ -2,9 +2,9 @@
  "day": "2026-11-28",
  "month": "November 2026",
  "goal": 153417,
- "sold": 90368,
- "pace": 137329,
- "today": 1765,
+ "sold": 90614,
+ "pace": 137635,
+ "today": 2011,
  "todayGoal": 8558,
  "todayLY": 3845,
  "lyDate": "2025-11-29",
@@ -137,15 +137,65 @@
    ]
   ]
  },
- "asOf": "2026-11-28T17:39:20.000Z",
- "todayPeople": [],
+ "asOf": "2026-11-28T18:09:34.000Z",
+ "todayPeople": [
+  {
+   "name": "Madison M.",
+   "team": "Pro Shop",
+   "today": 1783,
+   "card": "shop",
+   "got": [
+    "gmerch",
+    "nabev10",
+    "snack5",
+    "more9"
+   ],
+   "cards": 0,
+   "prog": {
+    "nabev10": 10,
+    "snack5": 5
+   }
+  },
+  {
+   "name": "Manuela G.",
+   "team": "Range & Bar",
+   "today": 152,
+   "card": "rb",
+   "got": [
+    "coffee"
+   ],
+   "cards": 0,
+   "prog": {
+    "nabev15": 3,
+    "liquor3": 0,
+    "lunch3": 0,
+    "dinner2": 0
+   }
+  },
+  {
+   "name": "Campbell W.",
+   "team": "Range & Bar",
+   "today": 76,
+   "card": "rb",
+   "got": [
+    "breakfast"
+   ],
+   "cards": 0,
+   "prog": {
+    "nabev15": 0,
+    "liquor3": 1,
+    "lunch3": 1,
+    "dinner2": 1
+   }
+  }
+ ],
  "teams": [
   {
    "name": "Pro Shop",
-   "sold": 41323,
-   "today": 1613,
+   "sold": 41493,
+   "today": 1783,
    "target": 67503,
-   "pace": 60425,
+   "pace": 60559,
    "people": [
     {
      "name": "Lucia N.",
@@ -160,7 +210,7 @@
       }
      ],
      "goal": 16876,
-     "byToday": 15106,
+     "byToday": 15140,
      "full": 0,
      "card": "shop",
      "sd": 18,
@@ -179,9 +229,9 @@
     },
     {
      "name": "Madison M.",
-     "all": 9747,
-     "today": 0,
-     "week": 3082,
+     "all": 11530,
+     "today": 1783,
+     "week": 4866,
      "elsewhere": [
       {
        "team": "Range & Bar",
@@ -195,10 +245,10 @@
       }
      ],
      "goal": 16876,
-     "byToday": 15106,
+     "byToday": 15140,
      "full": 0,
      "card": "shop",
-     "sd": 17,
+     "sd": 18,
      "cards": 0,
      "cur": [
       "gmerch",
@@ -225,7 +275,7 @@
       }
      ],
      "goal": 16876,
-     "byToday": 15106,
+     "byToday": 15140,
      "full": 0,
      "card": "shop",
      "sd": 12,
@@ -255,7 +305,7 @@
       }
      ],
      "goal": 16876,
-     "byToday": 15106,
+     "byToday": 15140,
      "full": 0,
      "card": "shop",
      "sd": 17,
@@ -275,10 +325,10 @@
   },
   {
    "name": "Range & Bar",
-   "sold": 45750,
-   "today": 152,
+   "sold": 45826,
+   "today": 228,
    "target": 81311,
-   "pace": 72784,
+   "pace": 72946,
    "people": [
     {
      "name": "Khrystin R.",
@@ -298,7 +348,7 @@
       }
      ],
      "goal": 10164,
-     "byToday": 9098,
+     "byToday": 9118,
      "full": 0,
      "card": "rb",
      "sd": 21,
@@ -328,7 +378,7 @@
       }
      ],
      "goal": 10164,
-     "byToday": 9098,
+     "byToday": 9118,
      "full": 0,
      "card": "rb",
      "sd": 13,
@@ -347,9 +397,9 @@
     },
     {
      "name": "Campbell W.",
-     "all": 6671,
-     "today": 0,
-     "week": 1230,
+     "all": 6747,
+     "today": 76,
+     "week": 1306,
      "elsewhere": [
       {
        "team": "Pickleball",
@@ -363,10 +413,10 @@
       }
      ],
      "goal": 10164,
-     "byToday": 9098,
+     "byToday": 9118,
      "full": 0,
      "card": "rb",
-     "sd": 15,
+     "sd": 16,
      "cards": 0,
      "cur": [
       "coffee",
@@ -393,7 +443,7 @@
       }
      ],
      "goal": 10164,
-     "byToday": 9098,
+     "byToday": 9118,
      "full": 0,
      "card": "rb",
      "sd": 13,
@@ -419,7 +469,7 @@
       }
      ],
      "goal": 10164,
-     "byToday": 9098,
+     "byToday": 9118,
      "full": 0,
      "card": "rb",
      "sd": 14,
@@ -442,7 +492,7 @@
      "week": 92,
      "elsewhere": [],
      "goal": 10164,
-     "byToday": 9098,
+     "byToday": 9118,
      "full": 0,
      "card": "rb",
      "sd": 8,
@@ -460,15 +510,15 @@
     },
     {
      "name": "Manuela G.",
-     "all": 2174,
-     "today": 0,
-     "week": 70,
+     "all": 2325,
+     "today": 152,
+     "week": 222,
      "elsewhere": [],
      "goal": 10164,
-     "byToday": 9098,
+     "byToday": 9118,
      "full": 0,
      "card": "rb",
-     "sd": 8,
+     "sd": 9,
      "cards": 0,
      "cur": [
       "coffee",
@@ -488,7 +538,7 @@
      "week": 984,
      "elsewhere": [],
      "goal": 10164,
-     "byToday": 9098,
+     "byToday": 9118,
      "full": 0,
      "card": "rb",
      "sd": 5,
@@ -510,7 +560,7 @@
    "sold": 3295,
    "today": 0,
    "target": 4602,
-   "pace": 4120,
+   "pace": 4129,
    "people": []
   }
  ]
